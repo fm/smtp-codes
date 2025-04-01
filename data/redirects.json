@@ -1,0 +1,42 @@
+[
+  {
+    "fromPath": "/provider/gmail",
+    "toPath": "/provider/google",
+    "isPermanent": true
+  },
+  {
+    "fromPath": "/provider/microsoft",
+    "toPath": "/provider/outlook",
+    "isPermanent": true
+  },
+  {
+    "fromPath": "/provider/hotmail",
+    "toPath": "/provider/microsoft",
+    "isPermanent": true
+  },
+  {
+    "fromPath": "/provider/icloud",
+    "toPath": "/provider/apple",
+    "isPermanent": true
+  },
+  {
+    "fromPath": "/provider/verizon",
+    "toPath": "/provider/yahoo",
+    "isPermanent": true
+  },
+  {
+    "fromPath": "/provider/aol",
+    "toPath": "/provider/yahoo",
+    "isPermanent": true
+  },
+  {
+    "fromPath": "/provider/symantec",
+    "toPath": "/provider/emailsecuritycloud",
+    "isPermanent": true
+  },
+  {
+    "fromPath": "/spamfilter/office365",
+    "toPath": "/spamfilter/exchangeonline",
+    "isPermanent": true
+  }
+]

@@ -1,0 +1,18 @@
+{
+    "code": 422,
+    "description": "The mail server encountered a temporary failure. If the command is repeated without any change, it might be completed. Mail servers can use temporary failures like this to keep untrusted senders at bay.",
+    "providers": [
+        {
+            "id": "barracuda",
+            "name": "Barracuda",
+            "responses": [
+                {
+                    "status": "1",
+                    "response": "422 License Expired",
+                    "description": "",
+                    "links": []
+                }
+            ]
+        }
+    ]
+}

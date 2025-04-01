@@ -1,0 +1,149 @@
+{
+    "code": 552,
+    "description": "The transaction failed permanently. The server will not try to send the message again. ",
+    "providers": [
+        {
+            "id": "google",
+            "name": "Google",
+            "responses": [
+                {
+                    "status": "5.2.2",
+                    "response": "552 5.2.2 The email account that you tried to reach is over quota. Please direct the recipient to https:\/\/support.google.com\/mail\/?p=OverQuotaPerm - gsmtp",
+                    "description": "",
+                    "links": [
+                        "https:\/\/support.google.com\/mail\/answer\/81126"
+                    ]
+                },
+                {
+                    "status": "5.2.3",
+                    "response": " 552-5.2.3 Your message exceeded Google's message size limits. Please visit http:\/\/mail.google.com\/support\/bin\/answer.py?answer=8770 to review our size guidelines.",
+                    "description": "",
+                    "links": [
+                        "http:\/\/mail.google.com\/support\/bin\/answer.py?answer=8770"
+                    ]
+                },
+                {
+                    "status": "5.7.0",
+                    "response": " 552-5.7.0 Our system detected an illegal attachment on your message. Please visit http:\/\/mail.google.com\/support\/bin\/answer.py?answer=6590 to review our attachment guidelines.",
+                    "description": "",
+                    "links": [
+                        "http:\/\/mail.google.com\/support\/bin\/answer.py?answer=6590"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "zoho",
+            "name": "Zoho",
+            "responses": [
+                {
+                    "status": "5.1.1",
+                    "response": "552 5.1.1 <example@zoho.com> Mailbox delivery failure policy error",
+                    "description": "",
+                    "links": []
+                },
+                {
+                    "status": "5.7.1",
+                    "response": "552 5.7.1 virus [name] detected by Zoho Mail",
+                    "description": "A known virus was detected in your message content, attachments, and\/or URLs. Run the full message and its headers through a virus scanner to identify the source.",
+                    "links": []
+                }
+            ]
+        },
+        {
+            "id": "yahoo",
+            "name": "Yahoo Inc",
+            "responses": [
+                {
+                    "status": "5.1.1",
+                    "response": "552 1 Requested mail action aborted, mailbox not found",
+                    "description": "Treat this bounce as a 'bad-mailbox'. Experience has shown that the email address is invalid and should not be sent to in the future.",
+                    "links": [
+                        "https:\/\/postmaster.yahooinc.com\/",
+                        "https:\/\/postmaster.yahooinc.com\/error-codes"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "yandex",
+            "name": "Yandex",
+            "responses": [
+                {
+                    "status": "5.2.2",
+                    "response": "552 5.2.2 Mailbox size limit exceeded",
+                    "description": "The recipient's mailbox is full. This usually happens because the recipient does not use their mailbox often and their mailbox is full.",
+                    "links": [
+                        "https:\/\/yandex.com\/support\/mail\/bounces\/yandex.html"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "apple",
+            "name": "Apple",
+            "responses": [
+                {
+                    "status": "5.2.2",
+                    "response": "552 5.2.2 <example@icloud.com>: user is overquota",
+                    "description": "",
+                    "links": [
+                        "https:\/\/support.apple.com\/en-us\/HT204137"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "orange",
+            "name": "Orange",
+            "responses": [
+                {
+                    "status": "5.1.1",
+                    "response": "552 5.1.1 Boite du destinataire pleine. Recipient overquota. OFR_417 [417]",
+                    "description": "",
+                    "links": []
+                }
+            ]
+        },
+        {
+            "id": "free",
+            "name": "Free",
+            "responses": [
+                {
+                    "status": "5.2.2",
+                    "response": "552 5.2.2 user quota exceeded (UserSearch)",
+                    "description": "",
+                    "links": []
+                }
+            ]
+        },
+        {
+            "id": "comcast",
+            "name": "Comcast",
+            "responses": [
+                {
+                    "status": "5.1.1",
+                    "response": "552 5.1.1 <example@comcast.net> recipient rejected - extended quota violation",
+                    "description": "",
+                    "links": [
+                        "http:\/\/postmaster.comcast.net\/"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "gmx",
+            "name": "GMX",
+            "responses": [
+                {
+                    "status": "1",
+                    "response": "552 Requested mail action aborted: exceeded storage allocation Quota exceeded.",
+                    "description": "We were unable to deliver your email because the potential recipient does not have sufficient free space in their inbox. Please use a different method to contact the person in question and inform them of the situation.",
+                    "links": [
+                        "https:\/\/postmaster.gmx.net\/en\/error-messages"
+                    ]
+                }
+            ]
+        }
+    ]
+}
