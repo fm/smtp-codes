@@ -9,19 +9,6 @@
         ]
     },
     {
-        "id": "icloud",
-        "name": "iCloud",
-        "domains": [
-            "icloud.com",
-            "me.com",
-            "mac.com"
-        ],
-        "description": "iCloud provides Apple customers with free email accounts. Users can also link their custom domains to it. Their postmaster includes some basic deliverability recommendations, but troubleshooting requires contacting their Postmaster team.",
-        "links": [
-            "https:\/\/support.apple.com\/en-us\/HT204137"
-        ]
-    },
-    {
         "id": "att",
         "name": "AT&T",
         "domains": [
@@ -145,6 +132,19 @@
         "description": "Hostpoint is a swiss-based web and email provider that provides email hosting for domains hosted at Hostpoint.",
         "links": [
             "https:\/\/support.hostpoint.ch\/en\/technical\/e-mail"
+        ]
+    },
+    {
+        "id": "icloud",
+        "name": "iCloud",
+        "domains": [
+            "icloud.com",
+            "me.com",
+            "mac.com"
+        ],
+        "description": "iCloud provides Apple customers with free email accounts. Users can also link their custom domains to it. Their postmaster includes some basic deliverability recommendations, but troubleshooting requires contacting their Postmaster team.",
+        "links": [
+            "https:\/\/support.apple.com\/en-us\/HT204137"
         ]
     },
     {
