@@ -98,8 +98,8 @@
             ]
         },
         {
-            "id": "apple",
-            "name": "Apple",
+            "id": "icloud",
+            "name": "iCloud",
             "responses": [
                 {
                     "status": "4.7.0",
