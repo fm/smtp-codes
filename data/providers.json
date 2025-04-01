@@ -3,20 +3,20 @@
         "id": "amazonses",
         "name": "Amazon Simple Email Service",
         "domains": [],
-        "description": "Amazon Simple Email Service (also know as \"Amazon SES\") is an email platform promoted to businesses as a part of Amazon Web Services (AWS), headquartered in Washington. Typically the recipient themselves will need to open a ticket with AWS support for in-depth troubleshooting if the issue can't be resolved using manual controls.",
+        "description": "Amazon Simple Email Service (also know as \"Amazon SES\") is an email platform promoted to businesses as a part of Amazon Web Services (AWS). Typically the recipient themselves will need to open a ticket with AWS support for in-depth troubleshooting if the issue can't be resolved using manual controls.",
         "links": [
             "https:\/\/docs.aws.amazon.com\/ses\/latest\/DeveloperGuide\/receiving-email.html"
         ]
     },
     {
         "id": "apple",
-        "name": "Apple",
+        "name": "Apple / iCloud",
         "domains": [
             "icloud.com",
             "me.com",
             "mac.com"
         ],
-        "description": "Apple Mail (also known as \"Mail\") is an email provider for customers of Apple, headquartered in California. Their postmaster includes some basic deliverability recommendations, but troubleshooting requires contacting their support team.",
+        "description": "iCloud provides Apple customers with free email accounts. Users can also link their custom domains to it. Their postmaster includes some basic deliverability recommendations, but troubleshooting requires contacting their Postmaster team.",
         "links": [
             "https:\/\/support.apple.com\/en-us\/HT204137"
         ]
@@ -32,7 +32,7 @@
             "pacbell.net",
             "prodigy.com"
         ],
-        "description": "AT&T is the world's largest telecommunications company, headquartered in Texas. It offers free email accounts for past customers at sbcglobal.net and bellsouth.net, and new and non-customers can register an att.net or currently.com free email account. AT&T provides a detailed Postmaster page with contact options for investigating false-positive spam verdicts.",
+        "description": "AT&T offers free email accounts for past customers at sbcglobal.net and bellsouth.net, and new and non-customers can register an att.net or currently.com free email account. AT&T provides a detailed Postmaster page with contact options for investigating false-positive spam verdicts.",
         "links": [
             "https:\/\/www.att.com\/support\/article\/email-support\/KM1401980\/",
             "https:\/\/www.att.com\/support\/article\/email-support\/KM1010455\/"
@@ -41,7 +41,7 @@
     {
         "id": "barracuda",
         "name": "Barracuda",
-        "description": "Barracuda is a spam filter, block list, and firewall promoted for businesses, headquartered in California. Mail is routed through mailservers owned by Barracuda before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such as allow lists, but sender reputation issues that affect all Barracuda customers globally may require contacting Barracuda support directly to resolve.",
+        "description": "Barracuda is a spam filter, block list, and firewall for businesses. Mail is routed through mailservers owned by Barracuda before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such as allow lists, but sender reputation issues that affect all Barracuda customers globally may require contacting Barracuda support directly to resolve.",
         "links": [
             "https:\/\/campus.barracuda.com\/product\/emailsecuritygateway\/doc\/39815000\/smtp-error-codes\/"
         ]
@@ -49,7 +49,7 @@
     {
         "id": "cisco",
         "name": "Cisco",
-        "description": "Cisco Secure Email is a spam filter, block list, and firewall solution promoted for businesses, headquartered in California. Mail is routed through mailservers owned by Cisco (iphmx.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in Cisco's User Guide to identify and resolve delivery issues.",
+        "description": "Cisco Secure Email is a spam filter, block list, and firewall solution for businesses. Mail is routed through mailservers owned by Cisco (iphmx.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists,so it helps to ask the recipient to run the described debugging tests in the user guide to identify and resolve delivery issues, as there is no way to contact the vendor directly.",
         "links": []
     },
     {
@@ -58,7 +58,7 @@
         "domains": [
             "comcast.net"
         ],
-        "description": "Comcast (also known as \"Xfinity\") is an internet service provider that also provides email addresses to its customers, headquartered in Pennsylvania. Former customers can still have access to their comcast.net address if they've logged in in the past 90 days, but that also means many of these addresses become inactive over time.",
+        "description": "Comcast (also known as \"Xfinity\") is an American internet service provider that also provides email addresses to its customers. Former customers can still have access to their comcast.net address if they've logged in in the past 90 days, but that also means many of these addresses become inactive over time.",
         "links": [
             "http:\/\/postmaster.comcast.net\/"
         ]
@@ -66,7 +66,7 @@
     {
         "id": "emailsecuritycloud",
         "name": "Email Security.cloud",
-        "description": "\"Email Security.cloud\" is a product working in combination with \"Symantec Messaging Gateway\" as part of a range of services offered by Broadcom, headquartered in California. It features spam filtering, firewall protection, and block lists with resource guides of detailed troubleshooting steps for email delivery. Additionally, a legitimate email which has been incorrectly given a verdict of spam can be submitted to Symantec for analysis and filter review.",
+        "description": "\"Email Security.cloud\" is a product working in combination with \"Symantec Messaging Gateway\" as part of a range of services offered by Broadcom. It features spam filtering, firewall protection, and block lists. Mail is routed through mailservers owned by them (messagelabs.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in the user guide to identify and resolve delivery issues, as there is no way to contact the vendor directly.",
         "links": [
             "https:\/\/knowledge.broadcom.com\/external\/article\/165144\/smtp-bounce-back-error-codes-for-email-s.html",
             "https:\/\/ipremoval.sms.symantec.com\/"
@@ -84,14 +84,14 @@
     {
         "id": "fireeye",
         "name": "FireEye",
-        "description": "FireEye is a spam filter, block list, and firewall solution promoted for businesses. Mail is routed through mailservers owned by FireEye before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in the user guide to identify and resolve delivery issues.",
+        "description": "FireEye is a spam filter, block list, and firewall solution for businesses. Mail is routed through mailservers owned by FireEye before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in the user guide to identify and resolve delivery issues.",
         "links": []
     },
     {
         "id": "free",
         "name": "Free",
         "domains": [],
-        "description": "Free is an internet service provider headquartered in Paris. It provides free email accounts to its customers, notably those of Free and Alice. Their postmaster page is filled with detailed information about error codes and IP lookup options, including instructions to report a false-positive spam verdict.",
+        "description": "Free is an internet service provider headquartered in France. It provides free email accounts to its customers, notably those of Free and Alice. Their postmaster page is filled with detailed information about error codes and IP lookup options, including instructions to report a false-positive spam verdict.",
         "links": [
             "https:\/\/postmaster.free.fr\/index_en.html"
         ]
@@ -110,7 +110,7 @@
         "id": "godaddy",
         "name": "GoDaddy",
         "domains": [],
-        "description": "GoDaddy is a domain hosting provider with a range of online services, headquartered in Arizona. It offers both email to its customers (via Microsoft 365) as well as email forwarding. Both cases provide spam filtering with very little customization, but GoDaddy's support guide on SMTP errors also includes a link to a contact form for more investigation.",
+        "description": "GoDaddy is a domain hosting provider with a range of online services. It offers both email to its customers (via Microsoft 365) as well as email through their own platform (Workspace) and email forwarding. Both cases provide spam filtering with very little customization, but GoDaddy's support guide on SMTP errors also includes a link to a contact form for more investigation.",
         "links": [
             "https:\/\/ca.godaddy.com\/help\/what-does-my-email-bounceback-mean-3568",
             "https:\/\/checkspam.godaddy.com\/"
@@ -123,7 +123,7 @@
             "gmail.com",
             "googlemail.com"
         ],
-        "description": "Google is a popular search engine and email provider, headquartered in California. It offers both a freemail option (Gmail) and a range of online services for business domains (GSuite). They boast total automation and machine learning as their spam filtering and anti-abuse systems. There are few methods for contacting a human to review delivery issues, since options for human intervention in these kinds of processes are also limited. Instead all senders should be monitoring their domains at Google Postmaster Tools daily for insight into reputation and performance.",
+        "description": "Google offers both a freemail option (Gmail) and a range of online services for business domains (Google Workspace). They boast total automation and machine learning as their spam filtering and anti-abuse systems. There are few methods for contacting a human to review delivery issues, since options for human intervention in these kinds of processes are also limited. Instead all senders should be monitoring their domains at Google Postmaster Tools daily for insight into reputation and performance.",
         "links": [
             "https:\/\/support.google.com\/a\/answer\/3726730?hl=en",
             "https:\/\/postmaster.google.com"
@@ -133,7 +133,7 @@
         "id": "hey",
         "name": "HEY",
         "domains": [],
-        "description": "HEY is an email provider offered by the software company Basecamp, headquartered in Illinois. It's a paid service for both hey.com recipients and those with their own domain hosting email in the HEY app. HEY boasts especially strict spam filtering and a manual screening process per sender. There's little a sender can do to troubleshoot delivery, as the individual recipient decides which email addresses they accept mail from.",
+        "description": "HEY is an email provider offered by the software company 37Signals. It's a paid service for both hey.com recipients and those with their own domain hosting email in the HEY app. HEY boasts especially strict spam filtering and a manual screening process per sender. There's little a sender can do to troubleshoot delivery, as the individual recipient decides which email addresses they accept mail from.",
         "links": [
             "https:\/\/hey.com\/how-it-works\/"
         ]
@@ -181,7 +181,7 @@
     {
         "id": "mimecast",
         "name": "Mimecast",
-        "description": "Mimecast is a spam filter, block list, and firewall solution for promoted for businesses, headquartered in London. Mail is routed through mailservers owned by Mimecast (*.mimecast.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such as spam policy levels and overrides (allow lists).",
+        "description": "Mimecast is a spam filter, block list, and firewall solution for businesses. Mail is routed through mailservers owned by Mimecast (*.mimecast.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in the user guide to identify and resolve delivery issues.",
         "links": [
             "https:\/\/community.mimecast.com\/s\/article\/Mimecast-SMTP-Error-Codes-842605754#451"
         ]
@@ -190,14 +190,14 @@
         "id": "mxroute",
         "name": "MXroute",
         "domains": [],
-        "description": "MXroute is an American email host obsessed with high IP reputation. Their offer a low-cost, no-frills solution that guarantees delivery of your corporate emails.",
+        "description": "MXroute is an email host obsessed with high IP reputation. Their offer a low-cost, no-frills solution that guarantees delivery of your corporate emails.",
         "links": []
     },
     {
         "id": "orange",
         "name": "Orange",
         "domains": [],
-        "description": "Orange is an internet service provider that provides free email accounts to both its customers and registered non-customers, headquartered in Paris. Eurproean receivers tend to have high expectations for GDPR legal complaince, so after you've ensured the mail is legitimate and following all best practices, you can typically report false-positive blocks and spam filtering to Orange's \"Abuse Cell\" team to investigate.",
+        "description": "Orange is an internet service provider that provides free email accounts to both its customers and registered non-customers, headquartered in France. Eurproean receivers tend to have high expectations for GDPR legal complaince, so after you've ensured the mail is legitimate and following all best practices, you can typically report false-positive blocks and spam filtering to Orange's \"Abuse Cell\" team to investigate.",
         "links": [
             "https:\/\/assistance.orange.fr\/ordinateurs-peripheriques\/depanner\/probleme-de-mail\/probleme-avec-la-reception-de-mails-douteux\/la-cellule-abuse-presentation_206348-41412#onglet3"
         ]
@@ -211,7 +211,7 @@
             "msn.com",
             "live.com"
         ],
-        "description": "Outlook is an email provider for predominantly Outlook, Hotmail, and Live freemail addresses, headquartered in Washington as part of Microsoft. For legitimate messages going to the spam filter or getting blocked, you'll likely need to file a false-positive report with Outlook support. For globally-blocked IPs, the adminstrator of the IP will need to request delisting directly.",
+        "description": "Outlook is an email provider for predominantly Outlook, Hotmail, and Live freemail addresses, as part of Microsoft. For legitimate messages going to the spam filter or getting blocked, you'll likely need to file a false-positive report with Outlook support. For globally-blocked IPs, the adminstrator of the IP will need to request delisting directly.",
         "links": [
             "https:\/\/postmaster.live.com\/pm\/postmaster.aspx",
             "http:\/\/go.microsoft.com\/fwlink\/?LinkID=614866",
@@ -221,7 +221,7 @@
     {
         "id": "proofpoint",
         "name": "Proofpoint",
-        "description": "Proofpoint is a spam filter, block list, and firewall promoted for businesses, headquartered in California. Mail is routed through mailservers owned by Proofpoint (*.ppe-hosted.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists and spam filtering policy levels. For globally-blocked IPs, the adminstrator of the IP will need to request delisting directly.",
+        "description": "Proofpoint is a spam filter, block list, and firewall promoted for businesses. Mail is routed through mailservers owned by Proofpoint (*.pphosted.com or *.ppe-hosted.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists and spam filtering policy levels. For globally-blocked IPs, the adminstrator of the IP will need to request delisting directly.",
         "links": [
             "https:\/\/help.proofpoint.com\/Proofpoint_Essentials\/Email_Security\/User_Topics\/040_spamsettings\/041_adjustingyourspamsettings",
             "https:\/\/help.proofpoint.com\/Proofpoint_Essentials\/Email_Security\/Administrator_Topics\/110_logs\/Common_Error_Codes_found_in_Message_Details",
@@ -248,7 +248,7 @@
         "id": "rackspace",
         "name": "Rackspace",
         "domains": [],
-        "description": "Rackspace is a range of online services promoted to businesses, headquartered in Texas. It includes an email hosting product with spam filtering, firewall, and block list features. Their public postmaster page is especially informative, including email addresses you can contact to resolve special cases.",
+        "description": "Rackspace is a range of online services promoted to businesses. It includes an email hosting product with spam filtering, firewall, and block list features. Their public postmaster page is especially informative, including email addresses you can contact to resolve special cases.",
         "links": [
             "https:\/\/postmaster.apps.rackspace.com\/home"
         ]
@@ -265,7 +265,7 @@
     {
         "id": "trendmicro",
         "name": "Trend Micro",
-        "description": "Trend Micro is a spam filter, block list, and firewall solution for promoted for businesses, headquartered in Tokyo. Mail is routed through mailservers owned by Trend Micro (example: *.trendmicro.com). The recipient is able to manage a lot of delivery settings such as spam policy levels and overrides (allow lists).",
+        "description": "Trend Micro is a spam filter, block list, and firewall solution for businesses. Mail is routed through mailservers owned by Trend Micro (example: *.trendmicro.com). The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in the user guide to identify and resolve delivery issues.",
         "links": [
             "https:\/\/docs.trendmicro.com\/en-us\/enterprise\/deep-discovery-email-inspector-36\/administration_001\/sender-filtering.aspx",
             "https:\/\/www.ers.trendmicro.com\/reputations\/index"
@@ -288,10 +288,9 @@
             "aol.com",
             "verizon.net"
         ],
-        "description": "Yahoo Inc is headquartered in New York City. It's known for its freemail services AOL and Yahoo. Yahoo Inc provides a detailed Postmaster page with contact options for investigating false-positive spam verdicts. Some senders may also qualify for their \"Email Marketing Data Feeds\" with detailed insight on performance in the inbox.",
+        "description": "Known for its freemail services AOL and Yahoo, they provide a detailed Postmaster page with contact options for investigating false-positive spam verdicts. Some senders may also qualify for their \"Email Marketing Data Feeds\" with detailed insight on performance in the inbox.",
         "links": [
-            "https:\/\/postmaster.yahooinc.com\/",
-            "https:\/\/postmaster.yahooinc.com\/email-deliverability-performance-feeds"
+            "https:\/\/senders.yahooinc.com",
         ]
     },
     {
@@ -321,7 +320,7 @@
         "domains": [
             "zoho.com"
         ],
-        "description": "Zoho is a range of online services promoted to businesses, headquartered in India. It includes an email hosting product with spam filtering, firewall, and block list features.",
+        "description": "Zoho is a range of online services for businesses. It includes an email hosting product with spam filtering, firewall, and block list features.",
         "links": [
             "https:\/\/www.zoho.com\/mail\/help\/spam-reason.html"
         ]
