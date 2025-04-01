@@ -16,3 +16,6 @@ Feel free to contact us if you encounter any issues. Please leave all comments, 
 
 ## License
 smtp.codes is licensed under the MIT license. Please refer to the [LICENSE](https://github.com/fm/smtp-codes/blob/main/LICENSE) for more information.
+
+## Acknowledgements
+We'd like to thank the ActiveCampaign Postmark team for spear-heading the initiative with SMTP Field Manual, from where we based the initial scope for this project.
