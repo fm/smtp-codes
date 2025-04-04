@@ -68,6 +68,18 @@
                     "links": []
                 }
             ]
+        },
+        {
+            "id": "godaddy",
+            "name": "GoDaddy",
+            "responses": [
+                {
+                    "status": "1",
+                    "response": "HELO\/EHLO rejected. IB301",
+                    "description": "The server is rejecting the HELO\/EHLO command. Try using a different HELO\/EHLO string, and verify the one you are using isn't being abused.",
+                    "links": []
+                }
+            ]
         }
     ]
 }
