@@ -7,7 +7,6 @@
             "name": "Google",
             "responses": [
                 {
-                    "status": "4.2.1",
                     "response": "450 4.2.1 The user you are trying to contact is receiving mail at a rate that prevents additional messages from being delivered. Please resend your message at a later time. If the user is able to receive mail at that time, your message will be delivered. For more information, please visit https:\/\/support.google.com\/mail\/?p=ReceivingRate - gsmtp",
                     "description": "The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.",
                     "links": [
@@ -21,7 +20,6 @@
             "name": "Yahoo Inc",
             "responses": [
                 {
-                    "status": "4.0.0",
                     "response": "450 User is receiving mail too quickly",
                     "description": "The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.",
                     "links": [
@@ -36,7 +34,6 @@
             "name": "Outlook",
             "responses": [
                 {
-                    "status": "4.7.3",
                     "response": "450 4.7.3 Organization queue quota exceeded. [outlook.com]",
                     "description": "The receiving email domain is currently receiving an email at a high rate. This messages indicates the domain is not currently able to receive emial. Sending email in the future will most likely be successful.",
                     "links": []
@@ -48,7 +45,6 @@
             "name": "Yandex",
             "responses": [
                 {
-                    "status": "4.2.1",
                     "response": "450 4.2.1 The recipient has exceeded message rate limit. Try again later.",
                     "description": "The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.",
                     "links": []
@@ -60,7 +56,6 @@
             "name": "Infomaniak",
             "responses": [
                 {
-                    "status": "4.1.8",
                     "response": "450 4.1.8 Sender address rejected: Domain not found (in reply to RCPT TO command))",
                     "description": "The sender domain is not a valid domain or the domain has not been registered yet. This prevents spammers from making up non-existent domains that can't receive email.",
                     "links": []
@@ -72,7 +67,6 @@
             "name": "ImprovMX",
             "responses": [
                 {
-                    "status": "4.2.1",
                     "response": "450 4.2.1 Please try again later. (#id-5.9.4)",
                     "description": "Their anti-spam check failed. We need the sender to retry sending.",
                     "links": []
@@ -84,7 +78,6 @@
             "name": "Comcast",
             "responses": [
                 {
-                    "status": "4.2.0",
                     "response": "450 4.2.0 <example@comcast.net> - Recipient temporarily unavailable",
                     "description": "The email address is currently unable to receive email. Sending email in the future will most likely be successful.",
                     "links": []
@@ -96,7 +89,6 @@
             "name": "Rackspace",
             "responses": [
                 {
-                    "status": "4.7.1",
                     "response": "450 4.7.1 Client host {IP} has no PTR record (G1F)",
                     "description": "Rackspace require that incoming IPs have a valid PTR. If you run your own server, consult your IP provider on how to add it. Else contact your email provider's support team.",
                     "links": [
@@ -104,7 +96,6 @@
                     ]
                 },
                 {
-                    "status": "4.7.1",
                     "response": "450 4.7.1 Client host {IP} has no PTR record (G1F)",
                     "description": "Rackspace require that incoming IPs have a valid PTR. If you run your own server, consult your IP provider on how to add it. Else, contact your email provider's support team.",
                     "links": [
@@ -112,7 +103,6 @@
                     ]
                 },
                 {
-                    "status": "4.4.1",
                     "response": "450 4.4.1 <email@example.com>: The recipient's server was temporarily unavailable to accept your message (G6)",
                     "description": "A temporary failure while attempting to verify the recipient address. Retrying in a few minutes should work.",
                     "links": [
@@ -120,7 +110,6 @@
                     ]
                 },
                 {
-                    "status": "4.2.1",
                     "response": "450 4.2.1 <email@example.com>: Mailbox received too much email in a short period of time (G30)",
                     "description": "Rackspace rate limit inbound email to mailboxes to protect the entire system. The user may be experiencing a list bomb attack or similar and trying again in a few minutes should work.",
                     "links": [
@@ -128,7 +117,6 @@
                     ]
                 },
                 {
-                    "status": "4.4.6",
                     "response": "450 4.4.6 Routing loop detected (G16)",
                     "description": "An undeliverable mail loop was detected. Try again in a few minutes; if it does not subside, try contacting postmaster@emailsrvr.com",
                     "links": [
@@ -136,7 +124,6 @@
                     ]
                 },
                 {
-                    "status": "4.4.0",
                     "response": "450 4.4.0 <email@example.com> Temporary DMARC DNS lookup failure (G1E)",
                     "description": "A temporary failure while looking up sender's DMARC policy. Trying again in a few minutes should succeed.",
                     "links": [
@@ -150,7 +137,6 @@
             "name": "Barracuda",
             "responses": [
                 {
-                    "status": "4.7.1",
                     "response": "450 cuda_nsu 4.7.1 <email@example.com>: Recipient address rejected: Policy Rejection- Abuse. Go away.",
                     "description": "If you know the recipient personally, try reaching out through other means to confirm why the message was rejected (include the full source and headers of the rejected message). Only the recipient and their mailserver admin can resolve this bounce.",
                     "links": []
@@ -162,7 +148,6 @@
             "name": "Email Security.cloud",
             "responses": [
                 {
-                    "status": "1",
                     "response": "450 Requested action aborted [9] #-#, please visit https:\/\/knowledge.broadcom.com\/external\/article?legacyId=TECH246726 for more details about this error message.",
                     "description": "",
                     "links": []
@@ -174,7 +159,6 @@
             "name": "ZeroSpam",
             "responses": [
                 {
-                    "status": "4.2.0",
                     "response": "450 4.2.0 <email@example.com>: Recipient address rejected: example.com greylisted for 60 seconds by ZEROSPAM",
                     "description": "Greylisting is a common antispam measure. This mesage is asking the sending mail server to retry sending, most mail servers handle this automatically and will resend the message automatically, leading to a successful delivery.",
                     "links": []

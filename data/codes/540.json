@@ -7,13 +7,11 @@
             "name": "Rambler",
             "responses": [
                 {
-                    "status": "5.7.1",
                     "response": "540 5.7.1 <example@rambler.ru>: recipient address rejected: Inactive",
                     "description": "",
                     "links": []
                 },
                 {
-                    "status": "5.7.1-2",
                     "response": "540 5.7.1 <example@rambler.ru>: recipient address rejected: Blocked",
                     "description": "",
                     "links": []

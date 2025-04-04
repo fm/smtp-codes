@@ -7,7 +7,6 @@
             "name": "Google",
             "responses": [
                 {
-                    "status": "4.2.2",
                     "response": "452 4.2.2 The email account that you tried to reach is over quota. Please direct the recipient to https:\/\/support.google.com\/mail\/?p=OverQuotaTemp - gsmtp",
                     "description": "Google Mail has has restrictions on the amount of storage a user can use, the recepiepnt is over their storage limit and unable to receive new messages. They will need to delete emails to start to receive messages again. Once they've done this, they'll be able to start to receive messages again.",
                     "links": [
@@ -21,7 +20,6 @@
             "name": "Yahoo Inc",
             "responses": [
                 {
-                    "status": "4.0.0",
                     "response": "452 temporary domain failure <example@example.com>",
                     "description": "",
                     "links": [
@@ -36,7 +34,6 @@
             "name": "Outlook",
             "responses": [
                 {
-                    "status": "4.3.1",
                     "response": "452 4.3.1 Insufficient system resources (TSTE) [outlook.com]",
                     "description": "The receiving mail server is currently out of storage space. The administers at the receiving domain will need to resolve this issue. Once they've done this, they'll be able to start to receive messages again.",
                     "links": []
@@ -48,13 +45,11 @@
             "name": "Zoho",
             "responses": [
                 {
-                    "status": "1",
                     "response": "452 <example@zoho.com> Mailbox delivery restricted by policy error",
                     "description": "Zoho allows the receiving domain to set mail filters. The receiving domain has filters set-up that are blocking this message. To resolve this, you'll need to contact an administrator of this domain through another channel to have them adjust their filters and allow delivery.",
                     "links": []
                 },
                 {
-                    "status": "4.3.1",
                     "response": "452 4.3.1 Temporary System Error",
                     "description": "This indicates that the domain at Zoho is not currently accepting email. Sending messages again in the future will most likely be successful.",
                     "links": []
@@ -66,7 +61,6 @@
             "name": "Comcast",
             "responses": [
                 {
-                    "status": "4.1.1",
                     "response": "452 4.1.1 <example@comcast.net> too many recent messages; Try again later",
                     "description": "The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.",
                     "links": [
@@ -74,7 +68,6 @@
                     ]
                 },
                 {
-                    "status": "4.1.1-2",
                     "response": "452 4.1.1 <example@comcast.net> user over quota",
                     "description": "The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.",
                     "links": [
@@ -88,7 +81,6 @@
             "name": "Rambler",
             "responses": [
                 {
-                    "status": "4.5.3",
                     "response": "452 4.5.3  rate limit exceeded",
                     "description": "The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.",
                     "links": [
@@ -102,11 +94,9 @@
             "name": "GoDaddy",
             "responses": [
                 {
-                    "status": "1",
                     "response": "452 $(_toemail) temporarily unavailable. Try again later.",
                     "description": "The mail server encountered a temporary failure. Most likely it isn't anything to do with the session, but rather the server is overloaded or having issues. If you try again later, it should work.",
-                    "links": [
-                    ]
+                    "links": []
                 }
             ]
         }

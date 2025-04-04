@@ -7,7 +7,6 @@
             "name": "Google",
             "responses": [
                 {
-                    "status": "5.2.2",
                     "response": "552 5.2.2 The email account that you tried to reach is over quota. Please direct the recipient to https:\/\/support.google.com\/mail\/?p=OverQuotaPerm - gsmtp",
                     "description": "",
                     "links": [
@@ -15,7 +14,6 @@
                     ]
                 },
                 {
-                    "status": "5.2.3",
                     "response": " 552-5.2.3 Your message exceeded Google's message size limits. Please visit http:\/\/mail.google.com\/support\/bin\/answer.py?answer=8770 to review our size guidelines.",
                     "description": "",
                     "links": [
@@ -23,7 +21,6 @@
                     ]
                 },
                 {
-                    "status": "5.7.0",
                     "response": " 552-5.7.0 Our system detected an illegal attachment on your message. Please visit http:\/\/mail.google.com\/support\/bin\/answer.py?answer=6590 to review our attachment guidelines.",
                     "description": "",
                     "links": [
@@ -37,13 +34,11 @@
             "name": "Zoho",
             "responses": [
                 {
-                    "status": "5.1.1",
                     "response": "552 5.1.1 <example@zoho.com> Mailbox delivery failure policy error",
                     "description": "",
                     "links": []
                 },
                 {
-                    "status": "5.7.1",
                     "response": "552 5.7.1 virus [name] detected by Zoho Mail",
                     "description": "A known virus was detected in your message content, attachments, and\/or URLs. Run the full message and its headers through a virus scanner to identify the source.",
                     "links": []
@@ -55,7 +50,6 @@
             "name": "Yahoo Inc",
             "responses": [
                 {
-                    "status": "5.1.1",
                     "response": "552 1 Requested mail action aborted, mailbox not found",
                     "description": "Treat this bounce as a 'bad-mailbox'. Experience has shown that the email address is invalid and should not be sent to in the future.",
                     "links": [
@@ -70,7 +64,6 @@
             "name": "Yandex",
             "responses": [
                 {
-                    "status": "5.2.2",
                     "response": "552 5.2.2 Mailbox size limit exceeded",
                     "description": "The recipient's mailbox is full. This usually happens because the recipient does not use their mailbox often and their mailbox is full.",
                     "links": [
@@ -84,7 +77,6 @@
             "name": "iCloud",
             "responses": [
                 {
-                    "status": "5.2.2",
                     "response": "552 5.2.2 <example@icloud.com>: user is overquota",
                     "description": "",
                     "links": [
@@ -98,7 +90,6 @@
             "name": "Orange",
             "responses": [
                 {
-                    "status": "5.1.1",
                     "response": "552 5.1.1 Boite du destinataire pleine. Recipient overquota. OFR_417 [417]",
                     "description": "",
                     "links": []
@@ -110,7 +101,6 @@
             "name": "Free",
             "responses": [
                 {
-                    "status": "5.2.2",
                     "response": "552 5.2.2 user quota exceeded (UserSearch)",
                     "description": "",
                     "links": []
@@ -122,7 +112,6 @@
             "name": "Comcast",
             "responses": [
                 {
-                    "status": "5.1.1",
                     "response": "552 5.1.1 <example@comcast.net> recipient rejected - extended quota violation",
                     "description": "",
                     "links": [
@@ -136,7 +125,6 @@
             "name": "GMX",
             "responses": [
                 {
-                    "status": "1",
                     "response": "552 Requested mail action aborted: exceeded storage allocation Quota exceeded.",
                     "description": "We were unable to deliver your email because the potential recipient does not have sufficient free space in their inbox. Please use a different method to contact the person in question and inform them of the situation.",
                     "links": [
@@ -150,22 +138,23 @@
             "name": "GoDaddy",
             "responses": [
                 {
-                    "status": "1",
                     "response": "552 $(_sid) - $(_id) Message size exceeds maximum permitted. Please reduce message size, and retry.",
                     "description": " The message size exceeds the maximum limit set by the recipient's email server. This can happen if the email contains large attachments or if the total size of the email exceeds the allowed limit (Currently 30MB).",
                     "links": []
                 },
                 {
-                    "status": "2",
                     "response": "552 $(_sid) - $(_id) Virus infected message rejected. IB705 <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#crb>",
                     "description": "A known virus was detected in your message content, attachments, and\/or URLs. Run the full message and its headers through a virus scanner to identify the source.",
-                    "links": ["https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#crb>"]
+                    "links": [
+                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#crb>"
+                    ]
                 },
                 {
-                    "status": "3",
                     "response": "552 $(_sid) - $(_id) This message has been rejected due to content judged to be spam by the internet community IB212 - If you feel this is in error, please submit a request using the following page. <https:\/\/checkspam.secureserver.net\/?sid=$(_sid)&mid=$(_id)>",
                     "description": "The message was rejected because it was detected as spam. This can happen if the email contains certain domains, keywords, ipaddresses, phrases, etc that are commonly associated with spam and have been reported as such.",
-                    "links": ["https:\/\/checkspam.secureserver.net\/?sid=$(_sid)&mid=$(_id"]
+                    "links": [
+                        "https:\/\/checkspam.secureserver.net\/?sid=$(_sid)&mid=$(_id"
+                    ]
                 }
             ]
         }

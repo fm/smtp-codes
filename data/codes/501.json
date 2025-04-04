@@ -7,7 +7,6 @@
             "name": "Outlook",
             "responses": [
                 {
-                    "status": "5.1.3",
                     "response": "501 5.1.3 Invalid address [outlook.com]",
                     "description": "",
                     "links": []
@@ -19,7 +18,6 @@
             "name": "Yahoo Inc",
             "responses": [
                 {
-                    "status": "5.0.0",
                     "response": "501 Syntax error in parameters or arguments",
                     "description": "",
                     "links": [
@@ -34,7 +32,6 @@
             "name": "GMX",
             "responses": [
                 {
-                    "status": "1",
                     "response": "501 Syntax error in parameters or arguments",
                     "description": "Due to an incorrect configuration, email reception has been refused. Please contact your administrator who should correct the server configuration based on our recommendations and apply to us for the systems to be unblocked.",
                     "links": [
@@ -48,7 +45,6 @@
             "name": "QQ",
             "responses": [
                 {
-                    "status": "1",
                     "response": "501 Bad address syntax. http:\/\/service.exmail.qq.com\/cgi-bin\/help?subtype=1&&id=20022&&no=1000730",
                     "description": "",
                     "links": [
@@ -62,7 +58,6 @@
             "name": "Orange",
             "responses": [
                 {
-                    "status": "1",
                     "response": "501 5.1.0 Emetteur invalide. Invalid Sender. OFR004_405 [405]",
                     "description": "This error suggests that Orange is seeing an issue with the Return-Path (SPF) of the message. Check the settings with your sending email provider to make sure your Return-Path is aligned with your sending domain.",
                     "links": []
@@ -74,7 +69,6 @@
             "name": "GoDaddy",
             "responses": [
                 {
-                    "status": "1",
                     "response": "HELO\/EHLO rejected. IB301",
                     "description": "The server is rejecting the HELO\/EHLO command. Try using a different HELO\/EHLO string, and verify the one you are using isn't being abused.",
                     "links": []
