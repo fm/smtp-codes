@@ -140,6 +140,36 @@
             ]
         },
         {
+            "id": "rackspace",
+            "name": "Rackspace",
+            "responses": [
+                {
+                    "status": "554",
+                    "response": "554 5.7.1 user@example.com: Sender address rejected: Blocked by this recipient (GE)",
+                    "description": "You have been manually added to the recipient's block list.",
+                    "links": [
+                        "https:\/\/postmaster.emailsrvr.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "554",
+                    "response": "554 5.7.1 ACL dns_rbl; Client host {IP} blocked using Senderscore. Please visit Senderscore for more information on why this message could not be delivered (G31)",
+                    "description": "Your IP has bad reputation with Validity's SenderScore. Use the link below to get more information.",
+                    "links": [
+                        "https:\/\/senderscore.org\/rtbl"
+                    ]
+                },
+                {
+                    "status": "554",
+                    "response": "554 5.7.1 ACL dns_rbl; Client host {IP} blocked using Spamhaus XBL. Please visit Spamhaus for more information on why this message could not be delivered (G31)",
+                    "description": "Your IP is listed in the Spamhaus XBL. Use the link below to get more information.",
+                    "links": [
+                        "https:\/\/check.spamhaus.org"
+                    ]
+                }
+            ]
+        },
+        {
             "id": "rambler",
             "name": "Rambler",
             "responses": [

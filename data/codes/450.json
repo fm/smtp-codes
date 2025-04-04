@@ -92,6 +92,60 @@
             ]
         },
         {
+            "id": "rackspace",
+            "name": "Rackspace",
+            "responses": [
+                {
+                    "status": "4.7.1",
+                    "response": "450 4.7.1 Client host {IP} has no PTR record (G1F)",
+                    "description": "Rackspace require that incoming IPs have a valid PTR. If you run your own server, consult your IP provider on how to add it. Else contact your email provider's support team.",
+                    "links": [
+                        "https:\/\/postmaster.emailsrvr.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "4.7.1",
+                    "response": "450 4.7.1 Client host {IP} has no PTR record (G1F)",
+                    "description": "Rackspace require that incoming IPs have a valid PTR. If you run your own server, consult your IP provider on how to add it. Else, contact your email provider's support team.",
+                    "links": [
+                        "https:\/\/postmaster.emailsrvr.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "4.4.1",
+                    "response": "450 4.4.1 <email@example.com>: The recipient's server was temporarily unavailable to accept your message (G6)",
+                    "description": "A temporary failure while attempting to verify the recipient address. Retrying in a few minutes should work.",
+                    "links": [
+                        "https:\/\/postmaster.emailsrvr.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "4.2.1",
+                    "response": "450 4.2.1 <email@example.com>: Mailbox received too much email in a short period of time (G30)",
+                    "description": "Rackspace rate limit inbound email to mailboxes to protect the entire system. The user may be experiencing a list bomb attack or similar and trying again in a few minutes should work.",
+                    "links": [
+                        "https:\/\/postmaster.emailsrvr.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "4.4.6",
+                    "response": "450 4.4.6 Routing loop detected (G16)",
+                    "description": "An undeliverable mail loop was detected. Try again in a few minutes; if it does not subside, try contacting postmaster@emailsrvr.com",
+                    "links": [
+                        "https:\/\/postmaster.emailsrvr.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "4.4.0",
+                    "response": "450 4.4.0 <email@example.com> Temporary DMARC DNS lookup failure (G1E)",
+                    "description": "A temporary failure while looking up sender's DMARC policy. Trying again in a few minutes should succeed.",
+                    "links": [
+                        "https:\/\/postmaster.emailsrvr.com\/system-info\/response-codes"
+                    ]
+                }
+            ]
+        },
+        {
             "id": "barracuda",
             "name": "Barracuda",
             "responses": [

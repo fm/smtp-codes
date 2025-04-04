@@ -120,6 +120,20 @@
             ]
         },
         {
+            "id": "rackspace",
+            "name": "Rackspace",
+            "responses": [
+                {
+                    "status": "421",
+                    "response": "421 Too many concurrent connections from this client (G2)",
+                    "description": "Too many concurrent connections from your IP. Throttle and reduce the number of connections your MTA is making.",
+                    "links": [
+                        "https:\/\/postmaster.emailsrvr.com\/system-info\/response-codes"
+                    ]
+                }
+            ]
+        },
+        {
             "id": "exchangeonline",
             "name": "Exchange Online",
             "responses": [

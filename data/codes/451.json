@@ -115,6 +115,20 @@
             ]
         },
         {
+            "id": "rackspace",
+            "name": "Rackspace",
+            "responses": [
+                {
+                    "status": "4.7.1",
+                    "response": "451 4.7.1 Received too many messages from a new or untrusted IP (G28)",
+                    "description": "Rackspace require that incoming IPs establish good sending behavior before sending large volumes of mail to their platform. Be sure to warm up your IP correctly with them and throttle your sending for the next couple of weeks.",
+                    "links": [
+                        "https:\/\/postmaster.emailsrvr.com\/system-info\/response-codes"
+                    ]
+                }
+            ]
+        },
+        {
             "id": "mimecast",
             "name": "Mimecast",
             "responses": [

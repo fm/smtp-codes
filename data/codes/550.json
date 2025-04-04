@@ -354,8 +354,96 @@
             "responses": [
                 {
                     "status": "5.1.1",
-                    "response": "550 5.1.1 Email address could not be found, or was misspelled (G8)",
-                    "description": "Recipient address does not exist on our system",
+                    "response": "550 5.1.1 Email address could not be found, or was misspelled (G8) or (G9)",
+                    "description": "The email address does not exist. Check to make sure there are no typos or other mistakes with the address.",
+                    "links": [
+                        "https:\/\/postmaster.apps.rackspace.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "5.7.1",
+                    "response": "550 5.7.1 The recipient's server refused to accept your message (G7)",
+                    "description": "Contact the recipient by other means or try reaching out to postmaster@emailsrvr.com",
+                    "links": [
+                        "https:\/\/postmaster.apps.rackspace.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "5.7.1",
+                    "response": "550 5.7.1 Sender's MX record not allowed (G14)",
+                    "description": "The senders domain's MX records match a blocklisted provider.",
+                    "links": [
+                        "https:\/\/postmaster.apps.rackspace.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "5.1.0",
+                    "response": "550 5.1.0 Sender is not allowed to send from example.com",
+                    "description": "Make sure your email is authenticated and aligned with SPF and DKIM. Contact your email provider for more details.",
+                    "links": [
+                        "https:\/\/postmaster.apps.rackspace.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "5.7.1",
+                    "response": "550 5.7.1 Virus found (G3) or (G4) or (G5)",
+                    "description": "Your message was indentified as transmitting a virus.",
+                    "links": [
+                        "https:\/\/postmaster.apps.rackspace.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "5.1.1",
+                    "response": "550 5.7.1 Email rejected per DMARC policy for example.com (G15)",
+                    "description": "The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and DKIM. Contact your email provider for more details.",
+                    "links": [
+                        "https:\/\/postmaster.apps.rackspace.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "5.7.0",
+                    "response": "550 5.7.0 header_contenttype_1 (G18)",
+                    "description": "Your messahe was rejected for matching a known virus signature.",
+                    "links": [
+                        "https:\/\/postmaster.apps.rackspace.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "5.7.0",
+                    "response": "550 5.7.0 header_contenttype_2 - Multi-part MIME messages are rejected as dangerous (G19)",
+                    "description": "Partial MIME messages are not supported. Please check your message structure and try again.",
+                    "links": [
+                        "https:\/\/postmaster.apps.rackspace.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "5.1.1",
+                    "response": "550 5.7.0 mime_banned_file - Your message has been rejected because it contains a banned file attachment (G1A)",
+                    "description": "Executables in compressed attachments are not allowed.",
+                    "links": [
+                        "https:\/\/postmaster.apps.rackspace.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "5.1.1",
+                    "response": "550 5.7.0 mime_banned_file - Your message has been rejected because it contains a banned file attachment (G1B)",
+                    "description": "File Types that exploit vulnerabilities in Windows programs are not allowed.",
+                    "links": [
+                        "https:\/\/postmaster.apps.rackspace.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "5.1.1",
+                    "response": "550 5.7.0 mime_banned_file - File attachment is not allowed because they can be used to exploit Winzip (G1C)",
+                    "description": "Messages with attachment file extensions linked to WinZip vulnerabilities are not allowed.",
+                    "links": [
+                        "https:\/\/postmaster.apps.rackspace.com\/system-info\/response-codes"
+                    ]
+                },
+                {
+                    "status": "5.1.1",
+                    "response": "550 5.7.0 mime_banned_file - CLSID file extensions are dangerous (G1D)",
+                    "description": "Messages with attachment file names containing Windows classIDs are not allowed.",
                     "links": [
                         "https:\/\/postmaster.apps.rackspace.com\/system-info\/response-codes"
                     ]

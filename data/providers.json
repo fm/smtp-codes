@@ -87,7 +87,7 @@
         "id": "gmx",
         "name": "GMX",
         "domains": [],
-        "description": "GMX is an email provider including Mail.com recipients, headquartered in Germany. Eurproean receivers tend to have high expectations for GDPR legal complaince, and in some cases email deliverability is aided when the sender is included in high profile \"whitelists\" and certification programs. You can use the GMX postmaster site to investigate most issues, and their contact form to submit things for in-depth investigation. You can also reach out to mailsecurity@gmxnet.de directly in urgent cases. ",
+        "description": "GMX is an email provider including Mail.com recipients, headquartered in Germany. European receivers tend to have high expectations for GDPR legal complaince, and in some cases email deliverability is aided when the sender is included in high profile \"whitelists\" and certification programs. You can use the GMX postmaster site to investigate most issues, and their contact form to submit things for in-depth investigation. You can also reach out to mailsecurity@gmxnet.de directly in urgent cases. ",
         "links": [
             "https:\/\/postmaster.gmx.com",
             "https:\/\/postmaster.gmx.net\/en\/contact"
@@ -100,9 +100,9 @@
             "godaddy.com",
             "secureserver.net"
         ],
-        "description": "GoDaddy is a domain hosting provider with a range of online services. It offers both email to its customers (via Microsoft 365) as well as email through their own platform (Profesional Email) email forwarding, as well as mail originating from their hosting platforms. secureserver.net is the domain used for their email servers. Any mail to or from a server with that domain will be controlled by GoDaddy All cases provide spam filtering with very little customization, but GoDaddy's support guide on SMTP errors also includes a link to a contact form for more investigation.",
+        "description": "GoDaddy is a domain hosting provider with a range of online services. It offers both email to its customers (via Microsoft 365) as well as email through their own platform (Profesional Email) email forwarding, as well as mail originating from their hosting platforms. secureserver.net is the domain used for their email servers. Any mail to or from a server with that domain will be controlled by GoDaddy. All cases provide spam filtering with very little customization, but GoDaddy's support guide on SMTP errors also includes a link to a contact form for more investigation.",
         "links": [
-            "https:\/\/ca.godaddy.com\/help\/what-does-my-email-bounceback-mean-3568",
+            "https:\/\/www.godaddy.com\/en-ca\/help\/what-does-my-email-bounce-mean-3568",
             "https:\/\/checkspam.godaddy.com\/"
         ]
     },
@@ -193,7 +193,7 @@
         "id": "mxroute",
         "name": "MXroute",
         "domains": [],
-        "description": "MXroute is an email host obsessed with high IP reputation. Their offer a low-cost, no-frills solution that guarantees delivery of your corporate emails.",
+        "description": "MXroute is an email host obsessed with high IP reputation. They offer a low-cost, no-frills solution that guarantees delivery of your corporate emails.",
         "links": []
     },
     {
