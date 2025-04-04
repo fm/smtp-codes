@@ -96,6 +96,19 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "godaddy",
+            "name": "GoDaddy",
+            "responses": [
+                {
+                    "status": "1",
+                    "response": "452 $(_toemail) temporarily unavailable. Try again later.",
+                    "description": "The mail server encountered a temporary failure. Most likely it isn't anything to do with the session, but rather the server is overloaded or having issues. If you try again later, it should work.",
+                    "links": [
+                    ]
+                }
+            ]
         }
     ]
 }
