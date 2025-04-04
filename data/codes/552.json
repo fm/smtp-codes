@@ -143,14 +143,14 @@
                     "links": []
                 },
                 {
-                    "response": "552 $(_sid) - $(_id) Virus infected message rejected. IB705 <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#crb>",
+                    "response": "552 $(_sid) - $(_id) Virus infected message rejected. IB705",
                     "description": "A known virus was detected in your message content, attachments, and\/or URLs. Run the full message and its headers through a virus scanner to identify the source.",
                     "links": [
                         "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#crb>"
                     ]
                 },
                 {
-                    "response": "552 $(_sid) - $(_id) This message has been rejected due to content judged to be spam by the internet community IB212 - If you feel this is in error, please submit a request using the following page. <https:\/\/checkspam.secureserver.net\/?sid=$(_sid)&mid=$(_id)>",
+                    "response": "552 $(_sid) - $(_id) This message has been rejected due to content judged to be spam by the internet community IB212 - If you feel this is in error, please submit a request using the link below.",
                     "description": "The message was rejected because it was detected as spam. This can happen if the email contains certain domains, keywords, ipaddresses, phrases, etc that are commonly associated with spam and have been reported as such.",
                     "links": [
                         "https:\/\/checkspam.secureserver.net\/?sid=$(_sid)&mid=$(_id"

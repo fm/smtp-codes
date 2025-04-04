@@ -121,19 +121,32 @@
             "name": "Mimecast",
             "responses": [
                 {
-                    "response": "451 Open relay not allowed - https:\/\/community.mimecast.com\/docs\/DOC-1369#451 [#]",
-                    "description": "",
-                    "links": []
+                    "response": "451 Open relay not allowed",
+                    "description": "The sender and recipient domains specified in the transmission are external to Mimecast. They aren't allowed to relay through the Mimecast service, and/or the connecting IP address isn't recognized as authorized.",
+                    "links": [
+                        "https:\/\/mimecastsupport.zendesk.com\/hc\/en-us\/articles\/34000709564691-Policies-Mimecast-SMTP-Error-Codes"
+                    ]
                 },
                 {
-                    "response": "451 Internal resource temporarily unavailable - https:\/\/community.mimecast.com\/docs\/DOC-1369#451 [#]",
-                    "description": "",
-                    "links": []
+                    "response": "451 Internal resource temporarily unavailable",
+                    "description": "The sending mail server is subjected to Greylisting. This requires the server to retry the connection between one minute and 12 hours. Alternatively, the sender's IP address has a poor reputation.",
+                    "links": [
+                        "https:\/\/mimecastsupport.zendesk.com\/hc\/en-us\/articles\/34000709564691-Policies-Mimecast-SMTP-Error-Codes"
+                    ]
                 },
                 {
-                    "response": "451 Invalid Recipient - https:\/\/community.mimecast.com\/docs\/DOC-1369#451 [#]",
-                    "description": "",
-                    "links": []
+                    "response": "451 Account inbounds disabled.",
+                    "description": "The customer account Inbound emails are disabled in the Mimecast Administration Console.",
+                    "links": [
+                        "https:\/\/mimecastsupport.zendesk.com\/hc\/en-us\/articles\/34000709564691-Policies-Mimecast-SMTP-Error-Codes"
+                    ]
+                },
+                {
+                    "response": "451 Account service is temporarily unavailable",
+                    "description": "There are too many concurrent inbound connections for the account. The default is 20.",
+                    "links": [
+                        "https:\/\/mimecastsupport.zendesk.com\/hc\/en-us\/articles\/34000709564691-Policies-Mimecast-SMTP-Error-Codes"
+                    ]
                 }
             ]
         },
