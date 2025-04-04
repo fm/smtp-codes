@@ -1,16 +1,3 @@
-/*
-Schema Definition
-
-    {
-    "id": "", // Will become the URL of the provider -- see examples below
-    "name": "", // Name of the provider
-    "domains": [], // Domains associated with the provider
-    "description": "", // Brief description about the provider
-    "links": [
-        "" // Links to provider documentation or postmaster page
-    ]
-},
-*/
 [
     {
         "id": "amazonses",
