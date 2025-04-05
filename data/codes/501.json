@@ -15,13 +15,12 @@
         },
         {
             "id": "yahoo",
-            "name": "Yahoo Inc",
+            "name": "Yahoo",
             "responses": [
                 {
                     "response": "501 Syntax error in parameters or arguments",
                     "description": "",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/",
                         "https:\/\/postmaster.yahooinc.com\/error-codes"
                     ]
                 }

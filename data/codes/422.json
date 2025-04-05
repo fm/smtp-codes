@@ -8,7 +8,7 @@
             "responses": [
                 {
                     "response": "422 License Expired",
-                    "description": "",
+                    "description": "The recipient's Barracuda license expired and they are not processing any more emails.",
                     "links": []
                 }
             ]

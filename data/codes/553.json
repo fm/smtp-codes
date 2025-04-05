@@ -8,7 +8,7 @@
             "responses": [
                 {
                     "response": "553 5.1.2 The recipient address <example@example.com> is not a valid RFC-5321 address. - gsmtp",
-                    "description": "",
+                    "description": "The recipient address is malformed. Please verify and try again.",
                     "links": [
                         "https:\/\/tools.ietf.org\/html\/rfc5321"
                     ]
@@ -28,21 +28,21 @@
         },
         {
             "id": "yahoo",
-            "name": "Yahoo Inc",
+            "name": "Yahoo",
             "responses": [
                 {
                     "response": "host xx.yahoodns.net [x.xx.xx.xx] SMTP error from remote mail server after MAIL FROM:<user@example.com> SIZE=2022: 553 5.7.1 [BL21] Connections will not be accepted from x.xx.xx.xx, because the ip is in Spamhaus's list; see http:\/\/postmaster.yahoo.com\/550-bl23.html",
-                    "description": "",
+                    "description": "Your IP is listed in the Spamhaus ZEN list. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/",
+                        "https:\/\/check.spamhaus.org",
                         "https:\/\/postmaster.yahooinc.com\/error-codes"
                     ]
                 },
                 {
-                    "response": "host xx.yahoodns.net [x.xx.xx.xx] SMTP error from remote mail server after MAIL FROM:<user@example.com> SIZE=2022: 553 Mail from x.xx.xx.xx not allowed - 5.7.1 [BL23] Connections not accepted from IP addresses on Spamhaus XBL; see http:\/\/postmaster.yahoo.com\/errors\/550-bl23.html [550]",
-                    "description": "",
+                    "response": "host xx.yahoodns.net [x.xx.xx.xx] SMTP error from remote mail server after MAIL FROM:<user@example.com> SIZE=2022: 553 Mail from x.xx.xx.xx not allowed - 5.7.1 [BL23] Connections not accepted from IP addresses on Spamhaus XBL [550]",
+                    "description": "Your IP is listed in the Spamhaus XBL list. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/",
+                        "https:\/\/check.spamhaus.org",
                         "https:\/\/postmaster.yahooinc.com\/error-codes"
                     ]
                 }
@@ -53,13 +53,13 @@
             "name": "Email Security.cloud",
             "responses": [
                 {
-                    "response": "553 Message filtered. Refer to the Troubleshooting page at http:\/\/www.symanteccloud.com\/troubleshooting for more information. (#5.7.1)",
-                    "description": "",
+                    "response": "553 Message filtered. (#5.7.1)",
+                    "description": "Your message triggered a spam rule. Contact the mail admin via alternate means so they can check the logs and troubleshoot.",
                     "links": []
                 },
                 {
-                    "response": "553 you are trying to use me [xx.messagelabs.com] as a relay, but I have not been configured to let you [x.xx.xx.xx, example.com] do this. Please visit www.symanteccloud.com\/troubleshooting for more details about this error message and instructions to resolve this issue. (#5.7.1)",
-                    "description": "",
+                    "response": "553 you are trying to use me [xx.messagelabs.com] as a relay, but I have not been configured to let you [x.xx.xx.xx, example.com] do this. (#5.7.1)",
+                    "description": "You are delivering mail to a domain not configured to use their service. There is little you can do, as it's likely a misconfiguration on the receiver's end.",
                     "links": []
                 }
             ]

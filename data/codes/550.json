@@ -51,8 +51,16 @@
                 },
                 {
                     "response": "550 5.7.1 Unauthenticated email from example.com is not accepted due to domain's DMARC policy. Please contact the administrator of example.com domain if this was a legitimate mail. Please visit https:\/\/support.google.com\/mail\/answer\/2451690 to learn about the DMARC initiative. - gsmtp",
-                    "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC support.",
+                    "description": "The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and/or DKIM. Contact your email provider for more details on how to configure them.",
                     "links": [
+                        "https:\/\/support.google.com\/mail\/answer\/81126"
+                    ]
+                },
+                {
+                    "response": "550 5.7.26 Your email has been blocked because the sender is unauthenticated. Gmail requires all senders to authenticate with either SPF or DKIM. Authentication results: DKIM = did not pass. SPF [example.com] with ip: x.x.x.x = did not pass - gsmtp",
+                    "description": "The message did not pass SPF or DKIM. As of February 2024, Google requires SPF and DKIM to be correctly set up in order to be able to send emails to their customers. Contact your email provider to set up SPF and\/or DKIM correctly.",
+                    "links": [
+                        "https:\/\/redsift.com\/guides\/bulk-email-sender-requirements",
                         "https:\/\/support.google.com\/mail\/answer\/81126"
                     ]
                 },
@@ -67,13 +75,12 @@
         },
         {
             "id": "yahoo",
-            "name": "Yahoo Inc",
+            "name": "Yahoo",
             "responses": [
                 {
                     "response": "550 relaying denied for <example@example.com>",
-                    "description": "",
+                    "description": "This domain is not hosted at Yahoo. There is little you can do, as it is likely a misconfiguration on the receipient's end.",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/",
                         "https:\/\/postmaster.yahooinc.com\/error-codes"
                     ]
                 }
@@ -92,23 +99,23 @@
                 },
                 {
                     "response": "550 5.7.1 [CS01] Message rejected due to local policy. Please visit https:\/\/support.apple.com\/en-us\/HT204137",
-                    "description": "Apple Mail is blocking the email because of an email filter policy on their end. If you're unsure of the source of this issue, and following Apple's suggested best practices, you can contact Apple's postmaster team with mail logs for delivery support. ",
+                    "description": "Apple Mail is blocking the email because of an email filter policy on their end. If you're unsure of the source of this issue, and following Apple's suggested best practices, you can contact Apple's postmaster team with mail logs for delivery support.",
                     "links": [
                         "https:\/\/support.apple.com\/en-us\/HT204137"
                     ]
                 },
                 {
-                    "response": "550 5.7.1 Your message was rejected due to example.com\u2019s DMARC policy. See https:\/\/support.apple.com\/en-us\/HT204137 for info",
-                    "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC support. ",
+                    "response": "550 5.7.1 Your message was rejected due to example.com DMARC policy.",
+                    "description": "The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and/or DKIM. Contact your email provider for more details on how to configure them.",
                     "links": [
                         "https:\/\/support.apple.com\/en-us\/HT204137"
                     ]
                 },
                 {
                     "response": "550 5.7.1 Your email was rejected due to having a domain present in the Spamhaus DBL -- see https:\/\/www.spamhaus.org\/dbl\/",
-                    "description": "Apple Mail checks all URLs in your message content against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. You must cooperate with Spamhaus volunteers to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume. ",
+                    "description": "Apple Mail checks all URLs in your message content against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.",
                     "links": [
-                        "https:\/\/www.spamhaus.org\/lookup\/"
+                        "https:\/\/check.spamhaus.org"
                     ]
                 }
             ]
@@ -133,7 +140,7 @@
                 },
                 {
                     "response": "550 5.2.0 Message rejected due to DMARC. Please see http:\/\/postmaster.comcast.net\/smtp-error-codes.php#DM000001",
-                    "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC support. ",
+                    "description": "The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and/or DKIM. Contact your email provider for more details on how to configure them.",
                     "links": []
                 },
                 {
@@ -156,9 +163,9 @@
                 },
                 {
                     "response": "550 5.7.1 Service unavailable, MailFrom domain is listed in Spamhaus. To request removal from this list see https:\/\/www.spamhaus.org\/query\/lookup\/ (S8002) [#.eop-nam02.prod.protection.outlook.com]",
-                    "description": "The MailFrom domain is also known as the Return-Path header domain, and is used to validate SPF authentication (it's not always the same domain as your From address for the message). Outlook checks your MailFrom domain against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. You must cooperate with Spamhaus volunteers to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.",
+                    "description": "The MailFrom domain is also known as the Return-Path header domain, and is used to validate SPF authentication (it's not always the same domain as your From address for the message). Outlook checks your MailFrom domain against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.",
                     "links": [
-                        "https:\/\/www.spamhaus.org\/lookup\/"
+                        "https:\/\/check.spamhaus.org"
                     ]
                 },
                 {
@@ -240,7 +247,7 @@
                 },
                 {
                     "response": "550 5.7.1 Connections not accepted from servers without a valid sender domain. ## Fix reverse DNS for x.xx.xx.xx",
-                    "description": "Usually this is a reverse DNS (PTR) issue with the sending IP, but sometimes lookup failures by AT&T can cause this bounce to be a false-positive. After confirming reverse DNS is properly set up and the record has fully propagated, try resending the message. ",
+                    "description": "Usually this is a reverse DNS (PTR) issue with the sending IP, but sometimes lookup failures by AT&T can cause this bounce to be a false-positive. After confirming reverse DNS is properly set up and the record has fully propagated, try resending the message.",
                     "links": [
                         "https:\/\/www.att.com\/support\/article\/email-support\/KM1401980\/"
                     ]
@@ -252,15 +259,13 @@
             "name": "Zoho",
             "responses": [
                 {
-                    "response": "550 5.7.1 Email rejected per DMARC policy for zoho.com",
-                    "description": "This is related to using a zoho.com address from an external service or app without the Zoho SMTP settings in those apps.",
-                    "links": [
-                        "https:\/\/help.zoho.com\/portal\/en\/community\/topic\/preventing-spam-emails-using-zoho-com-enforcing-spf-dkim-and-dmarc-for-zoho-com-accounts"
-                    ]
+                    "response": "550 5.7.1 Email rejected per DMARC policy for example.com",
+                    "description": "The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and/or DKIM. Contact your email provider for more details on how to configure them.",
+                    "links": []
                 },
                 {
                     "response": "550 5.1.1 <example@zoho.com> User unknown",
-                    "description": "",
+                    "description": "The email address does not exist. Check for typos or other errors.",
                     "links": []
                 }
             ]
@@ -360,7 +365,7 @@
                 },
                 {
                     "response": "550 5.7.1 Email rejected per DMARC policy for example.com (G15)",
-                    "description": "The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and DKIM. Contact your email provider for more details.",
+                    "description": "The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and/or DKIM. Contact your email provider for more details on how to configure them.",
                     "links": [
                         "https:\/\/postmaster.apps.rackspace.com\/system-info\/response-codes"
                     ]
@@ -469,21 +474,21 @@
                     ]
                 },
                 {
-                    "response": "550 Mailbox not found. http:\/\/service.exmail.qq.com\/cgi-bin\/help?subtype=1&&id=20022&&no=1000728",
+                    "response": "550 Mailbox not found.",
                     "description": "This recipient does not exist.",
                     "links": [
                         "https:\/\/service.exmail.qq.com\/cgi-bin\/help?subtype=1&&id=20022&&no=1000728"
                     ]
                 },
                 {
-                    "response": "550 Mail content denied. http:\/\/service.exmail.qq.com\/cgi-bin\/help?subtype=1&&id=20022&&no=1000726",
+                    "response": "550 Mail content denied.",
                     "description": "The content of the email was suspected of being sent in large numbers and was reported by a lot of users as spam.",
                     "links": [
                         "http:\/\/service.exmail.qq.com\/cgi-bin\/help?subtype=1&&id=20022&&no=1000726"
                     ]
                 },
                 {
-                    "response": "550 Sender frequency limited. http:\/\/service.exmail.qq.com\/cgi-bin\/help?subtype=1&&id=20022&&no=1000723",
+                    "response": "550 Sender frequency limited.",
                     "description": "The sender 's sending frequency exceeded the limit. The amount of time that further mail is prohibited from being delivered depends on the limit exceeded. (for example, sender, hourly, daily). These limits are not disclosed.",
                     "links": [
                         "http:\/\/service.exmail.qq.com\/cgi-bin\/help?subtype=1&&id=20022&&no=1000723"
@@ -497,8 +502,8 @@
                     ]
                 },
                 {
-                    "response": "550 DMARC check failed http:\/\/service.mail.qq.com\/cgi-bin\/help?subtype=1&&no=1001508&&id=16.",
-                    "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC support. ",
+                    "response": "550 DMARC check failed ",
+                    "description": "The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and/or DKIM. Contact your email provider for more details on how to configure them.",
                     "links": [
                         "http:\/\/service.mail.qq.com\/cgi-bin\/help?subtype=1&&no=1001508&&id=16"
                     ]
@@ -522,7 +527,7 @@
             "responses": [
                 {
                     "response": "550 5.7.1 rejected by DMARC policy for example.com (in reply to end of DATA command),",
-                    "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to configure SPF and\/or DKIM properly.",
+                    "description": "The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and/or DKIM. Contact your email provider for more details on how to configure them.",
                     "links": []
                 },
                 {
@@ -774,27 +779,6 @@
                     "links": [
                         "https:\/\/mimecastsupport.zendesk.com\/hc\/en-us\/articles\/34000709564691-Policies-Mimecast-SMTP-Error-Codes"
                     ]
-                },
-                {
-                    "response": "550 Email rejected due to security policies (e.g., MCSpamSignature.x.x).",
-                    "description": "A signature could be a virus or a spam score over the maximum threshold. The spam score isn't available in the Administration Console. If you aren't a Mimecast customer but have emails rejected with this error code, contact the recipient to adjust their configuration and permit your address. If unsuccessful, your IT department can- submit a request to review these email rejections via our Sender Feedback form linked below.",
-                    "links": [
-                        "https:\/\/go.smtp.codes\/mimecastsenderfeedback"
-                    ]
-                },
-                {
-                    "response": "550 Mail loop detected.",
-                    "description": "The message has too many Received Headers as it has been forwarded across multiple hops. Once 25 hops have been reached; the email is rejected.",
-                    "links": [
-                        "https:\/\/mimecastsupport.zendesk.com\/hc\/en-us\/articles\/34000709564691-Policies-Mimecast-SMTP-Error-Codes"
-                    ]
-                },
-                {
-                    "response": "550 Host network not allowed.",
-                    "description": "The message has triggered a Geographical Restriction policy set by the administrator.",
-                    "links": [
-                        "https:\/\/mimecastsupport.zendesk.com\/hc\/en-us\/articles\/34000709564691-Policies-Mimecast-SMTP-Error-Codes"
-                    ]
                 }
             ]
         },
@@ -804,7 +788,7 @@
             "responses": [
                 {
                     "response": "550 5.1.1 <email@example>: Recipient address rejected: User unknown",
-                    "description": "",
+                    "description": "The email address does not exist. Please check address for typos or other errors.",
                     "links": []
                 },
                 {
@@ -814,7 +798,7 @@
                 },
                 {
                     "response": "550 5.1.1 User Unknown",
-                    "description": "",
+                    "description": "The email address does not exist. Please check address for typos or other errors.",
                     "links": []
                 },
                 {
@@ -839,12 +823,12 @@
                 },
                 {
                     "response": "550 5.7.0 Email rejected per sender's DMARC policy",
-                    "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC support.",
+                    "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC.",
                     "links": []
                 },
                 {
                     "response": "550 5.7.1 <email@example.com>: Recipient address rejected: User email address is marked as invalid.",
-                    "description": "",
+                    "description": "The email address was marked as invalid by Proofpoint after being rejected by the recipient's mail server. If this is a valid address, the mail admin needs to remove it from the invalid list in the Proofpoint Admin Console.",
                     "links": [
                         "https:\/\/help.proofpoint.com\/Proofpoint_Essentials\/Email_Security\/Administrator_Topics\/110_logs\/Common_Error_Codes_found_in_Message_Details"
                     ]
@@ -983,7 +967,7 @@
             "responses": [
                 {
                     "response": "550 5.7.26 <example@example.com>: ETP205 DMARC Failure for domain",
-                    "description": "The message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC support.",
+                    "description": "The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and/or DKIM. Contact your email provider for more details on how to configure them.",
                     "links": []
                 }
             ]

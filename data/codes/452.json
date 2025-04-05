@@ -17,13 +17,12 @@
         },
         {
             "id": "yahoo",
-            "name": "Yahoo Inc",
+            "name": "Yahoo",
             "responses": [
                 {
                     "response": "452 temporary domain failure <example@example.com>",
-                    "description": "",
+                    "description": "The mail server encountered a temporary failure. Most likely it isn't anything to do with the session, but rather the server is overloaded or having issues. If you try again later, it should work.",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/",
                         "https:\/\/postmaster.yahooinc.com\/error-codes"
                     ]
                 }

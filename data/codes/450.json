@@ -17,13 +17,12 @@
         },
         {
             "id": "yahoo",
-            "name": "Yahoo Inc",
+            "name": "Yahoo",
             "responses": [
                 {
                     "response": "450 User is receiving mail too quickly",
                     "description": "The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/",
                         "https:\/\/postmaster.yahooinc.com\/error-codes"
                     ]
                 }

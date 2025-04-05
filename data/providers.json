@@ -185,7 +185,7 @@
     {
         "id": "mimecast",
         "name": "Mimecast",
-        "description": "Mimecast is a spam filter, block list, and firewall solution for businesses. Mail is routed through mailservers owned by Mimecast (*.mimecast.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in the user guide to identify and resolve delivery issues.",
+        "description": "Mimecast is a spam filter for businesses. Mail is routed through mailservers owned by Mimecast (*.mimecast.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in the user guide to identify and resolve delivery issues.",
         "links": [
             "https:\/\/mimecastsupport.zendesk.com\/hc\/en-us\/articles\/34000709564691-Policies-Mimecast-SMTP-Error-Codes"
         ]
@@ -225,7 +225,7 @@
     {
         "id": "proofpoint",
         "name": "Proofpoint",
-        "description": "Proofpoint is a spam filter, block list, and firewall promoted for businesses. Mail is routed through mailservers owned by Proofpoint (*.pphosted.com or *.ppe-hosted.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists and spam filtering policy levels. For globally-blocked IPs, the adminstrator of the IP will need to request delisting directly.",
+        "description": "Proofpoint is a spam filter for businesses. Mail is routed through mailservers owned by Proofpoint (*.pphosted.com or *.ppe-hosted.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists and spam filtering policy levels. For globally-blocked IPs, the adminstrator of the IP will need to request delisting directly.",
         "links": [
             "https:\/\/help.proofpoint.com\/Proofpoint_Essentials\/Email_Security\/User_Topics\/040_spamsettings\/041_adjustingyourspamsettings",
             "https:\/\/help.proofpoint.com\/Proofpoint_Essentials\/Email_Security\/Administrator_Topics\/110_logs\/Common_Error_Codes_found_in_Message_Details",
