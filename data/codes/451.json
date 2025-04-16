@@ -161,6 +161,13 @@
                     "response": "451 4.7.500 Server busy. Please try again later from [x.xx.xx.x]. (AS77712344) [#.prod.protection.outlook.com]",
                     "description": "",
                     "links": []
+                },
+                {
+                    "response": "451 4.4.62 Mail sent to the wrong Office 365 region. ATTR35. For more information please go to  https://go.microsoft.com/fwlink/?linkid=865268 [#.prod.protection.outlook.com]",
+                    "description": "This error can result from misconfigured connectors, expired certificates, or incorrect mail routing in hybrid Exchange environments.",
+                    "links": [
+                        "https:\/\/learn.microsoft.com\/en-us\/exchange\/troubleshoot\/email-delivery\/wrong-office-365-region-exo"
+                    ]
                 }
             ]
         },
