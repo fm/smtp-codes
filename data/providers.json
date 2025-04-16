@@ -276,6 +276,17 @@
         ]
     },
     {
+        "id": "tonline",
+        "name": "t-online",
+        "domains": [
+            "t-online.de"
+        ],
+        "description": "T-Online is the email service of Deutsche Telekom, one of Germany's largest telecommunications providers. It offers both free and paid email accounts, featuring webmail access, POP3/IMAP support, spam and virus protection, and integration with Telekom's MagentaCloud storage.",
+        "links": [
+            "https://postmaster.t-online.de/"
+        ]
+    },
+    {
         "id": "webde",
         "name": "Web.de",
         "domains": [],
