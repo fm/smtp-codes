@@ -154,7 +154,7 @@
         },
         {
             "id": "outlook",
-            "name": "Outlook",
+            "name": "Outlook.com",
             "responses": [
                 {
                     "response": "550 5.5.0 Requested action not taken: mailbox unavailable. [#.eop-nam12.prod.protection.outlook.com]",

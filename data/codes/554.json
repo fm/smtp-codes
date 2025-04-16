@@ -4,7 +4,7 @@
     "providers": [
         {
             "id": "outlook",
-            "name": "Outlook",
+            "name": "Outlook.com",
             "responses": [
                 {
                     "response": "554 5.2.122 The recipient has exceeded their limit for the number of messages they can receive per hour. For more information go to http:\/\/go.microsoft.com\/fwlink\/?LinkId=526653. (#) [outlook.com]",
@@ -19,6 +19,17 @@
                     "links": [
                         "http:\/\/go.microsoft.com\/fwlink\/?LinkId=526653"
                     ]
+                }
+            ]
+        },
+        {
+            "id": "exchangeonline",
+            "name": "Exchange Online Protection",
+            "responses": [
+                {
+                    "response": "554 5.4.14 Hop count exceeded - possible mail loop ATTR34",
+                    "description": "That means the message is being passed around like a hot potato between servers. Possible reasons include: A misconfigured hybrid environment; internal M365 wonkiness; they are forwarding it somewhere, and it's being sent back to 365 multiple times; a mailbox is being migrated between clusters, or the mailbox was corrupted/misconfigured. There is nothing you as the sender can do; if it's an important email, try contacting the recipient via alternate means.",
+                    "links": []
                 }
             ]
         },

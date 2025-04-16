@@ -30,7 +30,7 @@
         },
         {
             "id": "outlook",
-            "name": "Outlook",
+            "name": "Outlook.com",
             "responses": [
                 {
                     "response": "452 4.3.1 Insufficient system resources (TSTE) [outlook.com]",

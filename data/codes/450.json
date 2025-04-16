@@ -30,7 +30,7 @@
         },
         {
             "id": "outlook",
-            "name": "Outlook",
+            "name": "Outlook.com",
             "responses": [
                 {
                     "response": "450 4.7.3 Organization queue quota exceeded. [outlook.com]",
