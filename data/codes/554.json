@@ -112,7 +112,21 @@
                 },
                 {
                     "response": "554 5.7.1 [CS01] Message rejected due to local policy.",
-                    "description": "Apple Mail is blocking the email because of an email filter policy on their end. If you're following Apple's suggested best practices, you can also contact Apple's postmaster team with mail logs for delivery support.",
+                    "description": "Apple Mail is blocking the email because of an email filter policy on their end. Usually due to to the sender domain / IP reputation. If you're following Apple's suggested best practices, you can also contact Apple's postmaster team with mail logs for delivery support.",
+                    "links": [
+                        "https:\/\/support.apple.com\/en-us\/HT204137"
+                    ]
+                },
+                {
+                    "response": "554 5.7.1 [HM08] Message rejected due to local policy.",
+                    "description": "Apple Mail is blocking the email because of an email filter policy on their end. Usually due to to the sender domain / IP reputation. If you're following Apple's suggested best practices, you can also contact Apple's postmaster team with mail logs for delivery support.",
+                    "links": [
+                        "https:\/\/support.apple.com\/en-us\/HT204137"
+                    ]
+                },
+                {
+                    "response": "554 5.7.1 [BS01] Message rejected due to local policy.",
+                    "description": "Apple Mail is blocking the email because of an email filter policy on their end. Please make sure that affected customers have valid SPF, DKIM and DMARC to remediate them. If you're following Apple's suggested best practices, you can also contact Apple's postmaster team with mail logs for delivery support.",
                     "links": [
                         "https:\/\/support.apple.com\/en-us\/HT204137"
                     ]
