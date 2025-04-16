@@ -962,6 +962,19 @@
             ]
         },
         {
+            "id": "tonline",
+            "name": "t-online",
+            "responses": [
+                {
+                    "response": "550 5.7.0 Message considered as spam or virus, rejected",
+                    "description": "Your message has been rejected due to spam or virus classification. If you believe this is incorrect, please report the above error codes to FPR@RX.T-ONLINE.DE so we can investigate the classification. We apologize for any inconvenience and thank you for your support.",
+                    "links": [
+                        "https://postmaster.t-online.de/"
+                    ]
+                }
+            ]
+        },
+        {
             "id": "fireeye",
             "name": "FireEye",
             "responses": [
@@ -1013,19 +1026,6 @@
                     "description": "The recipient email address was not found to be a valid recipient on our system. Please check the address and try again.",
                     "links": [
                         "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#irbpl_id=1592&prog_id=domainspricedright#irb"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "tonline",
-            "name": "t-online",
-            "responses": [
-                {
-                    "response": "550 5.7.0 Message considered as spam or virus, rejected",
-                    "description": "Your message has been rejected due to spam or virus classification. If you believe this is incorrect, please report the above error codes to FPR@RX.T-ONLINE.DE so we can investigate the classification. We apologize for any inconvenience and thank you for your support.",
-                    "links": [
-                        "https://postmaster.t-online.de/"
                     ]
                 }
             ]
