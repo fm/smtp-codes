@@ -145,7 +145,7 @@
                     "response": "552 $(_sid) - $(_id) Virus infected message rejected. IB705",
                     "description": "A known virus was detected in your message content, attachments, and\/or URLs. Run the full message and its headers through a virus scanner to identify the source.",
                     "links": [
-                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#crb>"
+                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#crb>"
                     ]
                 },
                 {

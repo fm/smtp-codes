@@ -1004,28 +1004,28 @@
                     "response": "550 $(_ipsrc) is not allowed to send from <$(_fromdomain)> per its SPF Record. Please inspect your SPF settings, and try again. IB508",
                     "description": "The connecting IP is not allowed to send from the domain in the 'From' address. This can happen if the SPF record for the domain does not include the sending IP. Please check your SPF settings and try again.",
                     "links": [
-                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#srb"
+                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#srb"
                     ]
                 },
                 {
                     "response": "550 $(_ipsrc)> This IP has sent too many messages this hour. IB504",
                     "description": "The connecting IP has sent too many messages this hour based on it's class of service. Please try again later.",
                     "links": [
-                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rlb"
+                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb"
                     ]
                 },
                 {
                     "response": "550 $(_ipsrc)> This message has exceded the max number of messages per session. Please open a new session and try again. IB510",
                     "description": "The connecting IP has sent too many messages in a single session. Please open a new session and try again.",
                     "links": [
-                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rlb"
+                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb"
                     ]
                 },
                 {
                     "response": "550 $(_toemail)> Recipient not found.",
                     "description": "The recipient email address was not found to be a valid recipient on our system. Please check the address and try again.",
                     "links": [
-                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#irbpl_id=1592&prog_id=domainspricedright#irb"
+                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#irbpl_id=3153&prog_id=3153#irb"
                     ]
                 }
             ]
