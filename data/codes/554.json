@@ -321,43 +321,43 @@
             "responses": [
                 {
                     "status": "1",
-                    "response": "554 $(_ipsrc) has been temporarily blocked for attempting to mail too many invalid recipients. IB112 <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rlb",
+                    "response": "554 $(_ipsrc) has been temporarily blocked for attempting to mail too many invalid recipients. IB112 <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb",
                     "description": "The connecting IP has attempted to send to a number of invalid recipients, and has been blocked for at least an hour. Please check to ensure you aren't sending to lists containing invalid recipients. If you are, please remove those addresses from your list and try again later.",
                     "links": [
-                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rlb"
+                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb"
                     ]
                 },
                 {
                     "status": "2",
-                    "response": "554 $(_ipsrc) has been blocked for the day, for attempting to mail too many invalid recipients. IB113 <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rlb",
+                    "response": "554 $(_ipsrc) has been blocked for the day, for attempting to mail too many invalid recipients. IB113 <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb",
                     "description": "The connecting IP has attempted to send to a number of invalid recipients, over the course of multiple hours and has been blocked for at least a day. Please check to ensure you aren't sending to lists containing invalid recipients. If you are, please remove those addresses from your list and try again later.",
                     "links": [
-                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rlb"
+                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb"
                     ]
                 },
                 {
                     "status": "3",
-                    "response": "554 $(_ipsrc) has been temporarily blocked for attempting to send too many messages containing content judged to be spam by the internet community. IB110 <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rlb]",
+                    "response": "554 $(_ipsrc) has been temporarily blocked for attempting to send too many messages containing content judged to be spam by the internet community. IB110 <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb]",
                     "description": "The connecting IP has attempted to send too many messages considered spam, and has been blocked for at least an hour. Please check to ensure you aren't sending messages considered as spam, and try again later.",
                     "links": [
-                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rlb"
+                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb"
                     ]
                 },
                 {
                     "status": "4",
-                    "response": "554 $(_ipsrc) has been blocked for the day, for attempting to send too many messages containing content judged to be spam by the internet community. IB111 <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rlb",
+                    "response": "554 $(_ipsrc) has been blocked for the day, for attempting to send too many messages containing content judged to be spam by the internet community. IB111 <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb",
                     "description": "The connecting IP has attempted to send too many messages considered spam over the course of multiple hours, and has been blocked for at least a day. Please check to ensure you aren't sending messages considered as spam, and try again later.",
                     "links": [
-                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rlb"
+                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb"
                     ]
                 },
                 {
                     "status": "5",
-                    "response": "554 RBL Reject -Please submit an unblock request <http:\/\/unblock.secureserver.net\/?ip=$(_ipsrc)> <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rbl",
+                    "response": "554 RBL Reject -Please submit an unblock request <http:\/\/unblock.secureserver.net\/?ip=$(_ipsrc)> <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl",
                     "description": "The connecting IP address exists on an internal block list. Please check to ensure you aren't sending messages considered as spam, to valid recipients and please submit an unblock request.",
                     "links": [
                         "http:\/\/unblock.secureserver.net\/?ip=$(_ipsrc)",
-                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rbl"
+                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl"
                     ] 
                 },
                 {
@@ -366,7 +366,7 @@
                     "description": "The connecting IP address exists on Cloudmark Sender Intelligence (CSI) block list. Please check to ensure you aren't sending messages considered as spam, to valid recipients and please submit an unblock request.",
                     "links": [
                         "http:\/\/csi.cloudmark.com\/reset-request\/?ip=$(_ipsrc)",
-                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rbl"
+                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl"
                     ]
                 },
                 {
@@ -375,7 +375,7 @@
                     "description": "The connecting IP address exists on Spamhaus' (SBL) block list. Please check to ensure you aren't sending messages considered as spam, to valid recipients and please submit an unblock request.",
                     "links": [
                         "http:\/\/www.spamhaus.org\/sbl",
-                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rbl"
+                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl"
                     ]
                 },
                 {
@@ -384,7 +384,7 @@
                     "description": "The connecting IP address exists on Spamhaus' (XBL) block list. Please check to ensure you aren't sending messages considered as spam, to valid recipients and please submit an unblock request.",
                     "links": [
                         "http:\/\/www.spamhaus.org\/xbl",
-                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rbl"
+                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl"
                     ]
                 },
                 {
@@ -393,7 +393,7 @@
                     "description": "The connecting IP address exists on Spamhaus' (PBL) block list. Please check to ensure you aren't sending messages considered as spam, to valid recipients and please submit an unblock request.",
                     "links": [
                         "http:\/\/www.spamhaus.org\/sbl",
-                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rbl"
+                        "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl"
                     ]
                 }
                 

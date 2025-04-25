@@ -185,9 +185,9 @@
             "responses": [
                 {
                     "status": "1",
-                    "response": "421 Connection refused, too many sessions from $(_ipsrc). Please lower the number of concurrent sessions. IB007 <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rlb",
+                    "response": "421 Connection refused, too many sessions from $(_ipsrc). Please lower the number of concurrent sessions. IB007 <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb",
                     "description": "The connecting IP address has exceeded the maximum number of concurrent connections allowed to the server. This can happen if you are sending a large number of emails in a short period of time.",
-                    "links": ["https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#rlb"]
+                    "links": ["https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb"]
                 }
             ]
         },
@@ -209,9 +209,9 @@
             "responses": [
                 {
                     "status": "3",
-                    "response": "421 Temporarily rejected. Reverse DNS for $(_ipsrc) failed. IB108 <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#srb",
+                    "response": "421 Temporarily rejected. Reverse DNS for $(_ipsrc) failed. IB108 <https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#srb",
                     "description": "The mail server encountered a temporary failure. Most likely it isn't anything to do with the session, but rather the server is overloaded or having issues. If you try again later, it should work.",
-                    "links": ["https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=1592&prog_id=domainspricedright#srb"]
+                    "links": ["https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#srb"]
                 }
             ]
         }
