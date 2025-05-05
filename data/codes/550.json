@@ -176,6 +176,13 @@
                     ]
                 },
                 {
+                    "response": "550 5.7.515 Access denied, sending domain example.com does not meet the required authentication level.",
+                    "description": "The 550 5.7.515 error means your message was rejected because it didn't meet Outlook’s authentication requirements for high-volume senders. If you're sending over 5,000 messages per day, your domain must pass SPF and DKIM, and have a DMARC policy in place.",
+                    "links": [
+                        "https:\/\/techcommunity.microsoft.com\/blog\/microsoftdefenderforoffice365blog\/strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders\/4399730"
+                    ]
+                },
+                {
                     "response": "550 5.4.1 All recipient addresses rejected : Access denied [#.eop-nam02.prod.protection.outlook.com]",
                     "description": "This could be due to an active block on the sender for abuse reasons, but typically it's a policy that only specific senders\/servers are allowed to send mail to this host. Reach out the recipient directly for options to add the sender to their 'allow list'.",
                     "links": []
