@@ -8,9 +8,10 @@ if(!is_dir($docs_dir)) {
 	mkdir($docs_dir, 0755, true);
 }
 
-$html = <<<HTML
-Hello, world!
-HTML;
+$code_count = count(__DIR__.'/../codes/*');
+
+$html = '<h1>smtp.codes</h1>
+<p>Processed '.$code_count.' codes.</p>';
 
 file_put_contents($docs_dir.'/index.html', $html);
 
