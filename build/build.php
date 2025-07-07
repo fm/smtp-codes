@@ -180,14 +180,16 @@ foreach($providers as $provider) {
 		foreach($provider['links'] as $link) {
 			$content .= '<li><a href="'.$link.'">'.$link.'</a></li>'."\n";
 		}
-		$content .= '<ul>'."\n";
+		$content .= '</ul>'."\n";
 	}
 	
 	if(isset($provider['domains']) && count($provider['domains']) > 0) {
 		$content .= '<h2>Domains</h2>'."\n";
-		
-		$domain_list = implode(' &#183; ', $provider['domains']);
-		$content .= '<p>'.$domain_list.'</p>'."\n";
+		$content .= '<ul>'."\n";
+		foreach($provider['domains'] as $domain) {
+			$content .= '<li>'.$domain.'</li>'."\n";
+		}
+		$content .= '</ul>'."\n";
 	}
 	
 	$codes = [];
