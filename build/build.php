@@ -11,12 +11,13 @@ if(!is_dir($docs_dir)) {
 function clear_directory($dir) {
 	if (!is_dir($dir)) return;
 	$items = array_diff(scandir($dir), ['.', '..']);
-foreach ($items as $item) {
+	foreach ($items as $item) {
 		$path = $dir . DIRECTORY_SEPARATOR . $item;
 		if (is_dir($path)) {
 			clear_directory($path);
 			rmdir($path);
-		} else {
+		}
+		else {
 			unlink($path);
 		}
 	}
@@ -313,7 +314,7 @@ if(!is_dir(__DIR__.'/../docs/contributors')) {
 }
 
 // Write the contributors page
-file_put_contents(__DIR__.'/../contributors/index.html', $output);
+file_put_contents(__DIR__.'/../docs/contributors/index.html', $output);
 
 // Build landing page
 
@@ -337,7 +338,6 @@ foreach($all_providers as $provider_id => $provider_name) {
 	$content .= '<li><a href="/'.$provider_id.'">'.$provider_name.'</a>'."\n";
 }
 $content .= '</ul>'."\n";
-
 
 // Perform template substitutions and prepare the output
 $output = $template;
