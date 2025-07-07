@@ -174,6 +174,15 @@ foreach($providers as $provider) {
 	$content .= '<h1>'.$title.'</h1>'."\n";
 	$content .= '<p>'.$description.'</p>'."\n";
 	
+	if(isset($provider['links']) && count($provider['links']) > 0) {
+		$content .= '<h2>Links</h2>'."\n";
+		$content .= '<ul>'."\n";
+		foreach($provider['links'] as $link) {
+			$content .= '<li><a href="'.$link.'">'.$link.'</a></li>'."\n";
+		}
+		$content .= '<ul>'."\n";
+	}
+	
 	if(isset($provider['domains']) && count($provider['domains']) > 0) {
 		$content .= '<h2>Domains</h2>'."\n";
 		
@@ -301,7 +310,7 @@ if(!is_dir(__DIR__.'/../docs/contributors')) {
 	mkdir(__DIR__.'/../docs/contributors', 0755, true);
 }
 
-// Write the landing page
+// Write the contributors page
 file_put_contents(__DIR__.'/../contributors/index.html', $output);
 
 // Build landing page
