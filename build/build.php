@@ -8,7 +8,7 @@ if(!is_dir($docs_dir)) {
 	mkdir($docs_dir, 0755, true);
 }
 
-$code_count = count(__DIR__.'/../codes/*');
+$code_count = count(glob(__DIR__.'/../codes/*'));
 
 $html = '<h1>smtp.codes</h1>
 <p>Processed '.$code_count.' codes.</p>';
