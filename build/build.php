@@ -8,18 +8,6 @@ if(!is_dir($docs_dir)) {
 	mkdir($docs_dir, 0755, true);
 }
 
-$code_count = count(glob(__DIR__.'/../data/codes/*'));
-
-$html = '<h1>smtp.codes</h1>
-<p>Processed '.$code_count.' codes.</p>';
-
-file_put_contents($docs_dir.'/index.html', $html);
-
-echo "Build complete.\n";
-
-
-
-
 function clear_directory($dir) {
 	if (!is_dir($dir)) return;
 	$items = array_diff(scandir($dir), ['.', '..']);
@@ -349,6 +337,9 @@ $output = str_replace('{timestamp}', time(), $output);
 
 // Write the landing page
 file_put_contents(__DIR__.'/../docs/index.html', $output);
+
+// Write the CNAME file
+file_put_contents(__DIR__.'/../docs/CNAME', 'smtp.codes');
 
 $end = microtime(1);
 
