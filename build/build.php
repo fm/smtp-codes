@@ -24,28 +24,28 @@ function clear_directory($dir) {
 }
 
 $start = microtime(1);
-echo 'Building!';
+echo 'Building!'."\n";
 
 // Check JSON formatting
 foreach(glob(__DIR__.'/../data/codes/*') as $file) {
 	$code = json_decode(file_get_contents($file), 1);
 	if(!json_validate(file_get_contents($file))) {
-		die("The file $file is not valid JSON. Please correct the format and try again.");
+		die("The file $file is not valid JSON. Please correct the format and try again.\n");
 	}
 }
 
 $file = __DIR__.'/../data/contributors.json';
 if(!json_validate(file_get_contents($file))) {
-	die("The file $file is not valid JSON. Please correct the format and try again.");
+	die("The file $file is not valid JSON. Please correct the format and try again.\n");
 }
 
 $file = __DIR__.'/../data/providers.json';
 if(!json_validate(file_get_contents($file))) {
-	die("The file $file is not valid JSON. Please correct the format and try again.");
+	die("The file $file is not valid JSON. Please correct the format and try again.\n");
 }
 
 clear_directory($docs_dir);
-echo 'Cleared existing /docs directory.';
+echo 'Cleared existing /docs directory.'."\n";
 
 mkdir($docs_dir.'/assets', 0755, true);
 
@@ -354,4 +354,4 @@ file_put_contents(__DIR__.'/../docs/CNAME', 'smtp.codes');
 
 $end = microtime(1);
 
-echo 'Built smtp.codes in '.round(($end - $start), 3).' seconds. <a href="https://smtp.codes/">View the site.</a>';
+echo 'Built smtp.codes in '.round(($end - $start), 3).' seconds. View the site: https://smtp.codes"\n";';
