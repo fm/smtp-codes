@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>AT&T</title>
+<meta charset="utf-8">
+<meta name="title" content="AT&T">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="AT&T">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>AT&T</h1>
+<p>AT&T offers free email accounts for past customers at sbcglobal.net and bellsouth.net, and new and non-customers can register an att.net or currently.com free email account. AT&T provides a detailed Postmaster page with contact options for investigating false-positive spam verdicts.</p>
+<h2>Domains</h2>
+<p>att.net &#183; sbcglobal.net &#183; swbell.net &#183; bellsouth.net &#183; pacbell.net &#183; prodigy.com</p>
+<h2>Codes</h2>
+<p><a href="#550">550</a></p>
+<dl>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 5.2.1 &lt;EXAMPLE@PRODIGY.NET&gt;... Addressee unknown, relay=[x.xx.xx.xx]</summary><ul>
+<li><a href="https://www.att.com/support/article/email-support/KM1401980/">https://www.att.com/support/article/email-support/KM1401980/</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.2.1 &lt;example@prodigy.net&gt;... blank mailhost - invalid address, relay=[x.xx.xx.xx]</summary><ul>
+<li><a href="https://www.att.com/support/article/email-support/KM1401980/">https://www.att.com/support/article/email-support/KM1401980/</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 Connections not accepted from servers without a valid sender domain. ## Fix reverse DNS for x.xx.xx.xx</summary><p class="info">Usually this is a reverse DNS (PTR) issue with the sending IP, but sometimes lookup failures by AT&T can cause this bounce to be a false-positive. After confirming reverse DNS is properly set up and the record has fully propagated, try resending the message.</p><ul>
+<li><a href="https://www.att.com/support/article/email-support/KM1401980/">https://www.att.com/support/article/email-support/KM1401980/</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

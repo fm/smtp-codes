@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Infomaniak</title>
+<meta charset="utf-8">
+<meta name="title" content="Infomaniak">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Infomaniak">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Infomaniak</h1>
+<p>Infomaniak is a swiss-based web and email provider that provides email hosting for domains bought at Infomaniak.</p>
+<h2>Codes</h2>
+<p><a href="#450">450</a> &#183; <a href="#550">550</a> &#183; <a href="#554">554</a></p>
+<dl>
+<div class="card">
+<dt id="450"><a href="/450">450</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 4.1.8 Sender address rejected: Domain not found (in reply to RCPT TO command))</summary><p class="info">The sender domain is not a valid domain or the domain has not been registered yet. This prevents spammers from making up non-existent domains that can't receive email.</p></details></dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 5.7.1 rejected by DMARC policy for example.com (in reply to end of DATA command),</summary><p class="info">The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and/or DKIM. Contact your email provider for more details on how to configure them.</p></details></dd>
+<dd><details><summary>550 5.1.1 Recipient address rejected: User unknown in virtual mailbox table,</summary><p class="info">The email address does not exist. Check to make sure there are no typos or other mistakes with the address</p></details></dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.7.1 Relay access denied</summary><p class="info">You are sending an email to a server that has not been configured to receive email for that domain.</p></details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

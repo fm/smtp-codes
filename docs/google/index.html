@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Google</title>
+<meta charset="utf-8">
+<meta name="title" content="Google">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Google">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Google</h1>
+<p>Google offers both a freemail option (Gmail) and a range of online services for business domains (Google Workspace). They boast total automation and machine learning as their spam filtering and anti-abuse systems. There are few methods for contacting a human to review delivery issues, since options for human intervention in these kinds of processes are also limited. Instead all senders should be monitoring their domains at Google Postmaster Tools daily for insight into reputation and performance.</p>
+<h2>Domains</h2>
+<p>gmail.com &#183; googlemail.com</p>
+<h2>Codes</h2>
+<p><a href="#421">421</a> &#183; <a href="#450">450</a> &#183; <a href="#451">451</a> &#183; <a href="#452">452</a> &#183; <a href="#550">550</a> &#183; <a href="#552">552</a> &#183; <a href="#553">553</a></p>
+<dl>
+<div class="card">
+<dt id="421"><a href="/421">421</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 4.7.0 [x.xx.xx.xx] Our system has detected that this message is suspicious due to the very low reputation of the sending domain. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp</summary><p class="info">Gmail has determined that the sending domain has a low reputation, so messages are now temporarily rejected. See Google's documentation on how to determine the source of this poor reputation and how to improve deliverability.</p><ul>
+<li><a href="https://support.google.com/mail/answer/188131">https://support.google.com/mail/answer/188131</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>421 4.7.0 [x.xx.xx.xx] Our system has detected that this message is suspicious due to the nature of the content and/or the links within. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp</summary><p class="info">Gmail has determined that the content of the message has a low reputation. See Google's documentation on how to determine the source of this poor reputation and how to improve deliverability.</p><ul>
+<li><a href="https://support.google.com/mail/answer/188131">https://support.google.com/mail/answer/188131</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>421 4.7.28 [x.xx.xx.xx] Our system has detected an unusual rate of unsolicited mail originating from your IP address. To protect our users from spam, mail sent from your IP address has been temporarily rate limited. Please visit https://support.google.com/mail/?p=UnsolicitedRateLimitError to review our Bulk Email Senders Guidelines. - gsmtp</summary><p class="info">Gmail has determined your messages are unsolicted, so messages sent over this IP may be temporarily rejected. See Google's documentation for best practices on sending to Gmail to avoid this.</p><ul>
+<li><a href="https://support.google.com/mail/answer/81126">https://support.google.com/mail/answer/81126</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>4.7.26 This mail has been rate limited because it is unauthenticated. Gmail requires all senders to authenticate with either SPF or DKIM. Authentication results: DKIM = did not pass. SPF example.com with ip: x.x.x.x = did not pass</summary><p class="info">The message did not pass SPF or DKIM. As of February 2024, Google requires SPF and DKIM to be correctly set up in order to be able to send emails to their customers. Contact your email provider to set up SPF and/or DKIM correctly.</p><ul>
+<li><a href="https://redsift.com/guides/bulk-email-sender-requirements">https://redsift.com/guides/bulk-email-sender-requirements</a></li>
+<li><a href="https://support.google.com/mail/answer/81126#authentication">https://support.google.com/mail/answer/81126#authentication</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>4.7.32 This mail has been rate limited because there is no DMARC alignment</summary><p class="info">The message is missing DKIM or SPF alignment for DMARC. As of February 2024, Google requires SPF and DKIM to be correctly set up in order to be able to send emails to their customers. Contact your email provider to set up SPF and/or DKIM correctly.</p><ul>
+<li><a href="https://support.google.com/a/answer/10032578">https://support.google.com/a/answer/10032578</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="450"><a href="/450">450</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 4.2.1 The user you are trying to contact is receiving mail at a rate that prevents additional messages from being delivered. Please resend your message at a later time. If the user is able to receive mail at that time, your message will be delivered. For more information, please visit https://support.google.com/mail/?p=ReceivingRate - gsmtp</summary><p class="info">The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.</p><ul>
+<li><a href="https://support.google.com/mail/answer/81126">https://support.google.com/mail/answer/81126</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="451"><a href="/451">451</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>451 4.3.0 Mail server temporarily rejected message. - gsmtp</summary><p class="info">The mail server encountered a temporary failure. Most likely it isn't anything to do with the session, but rather the server is overloaded or having issues. If you try again later, it should work.</p><ul>
+<li><a href="https://support.google.com/mail/answer/81126">https://support.google.com/mail/answer/81126</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="452"><a href="/452">452</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>452 4.2.2 The email account that you tried to reach is over quota. Please direct the recipient to https://support.google.com/mail/?p=OverQuotaTemp - gsmtp</summary><p class="info">Google Mail has has restrictions on the amount of storage a user can use, the recepiepnt is over their storage limit and unable to receive new messages. They will need to delete emails to start to receive messages again. Once they've done this, they'll be able to start to receive messages again.</p><ul>
+<li><a href="https://support.google.com/mail/answer/6374270?p=OverQuotaTemp&visit_id=637466814024175068-236829835&rd=2">https://support.google.com/mail/answer/6374270?p=OverQuotaTemp&visit_id=637466814024175068-236829835&rd=2</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient&#039;s email address for typos or unnecessary spaces. Learn more at https://support.google.com/mail/?p=NoSuchUser - gsmtp</summary><ul>
+<li><a href="https://support.google.com/mail/answer/188131">https://support.google.com/mail/answer/188131</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.2.1 The email account that you tried to reach is disabled. Learn more at https://support.google.com/mail/?p=DisabledUser - gsmtp</summary><p class="info">The email address you are sending to has been disabled by the organization admin.</p><ul>
+<li><a href="https://support.google.com/mail/answer/81126">https://support.google.com/mail/answer/81126</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.2.1 The email account that you tried to reach is inactive. Learn more at https://support.google.com/mail/?p=DisabledUser - gsmtp</summary><p class="info">The email address you are sending to has been disabled by the organization admin.</p><ul>
+<li><a href="https://support.google.com/mail/answer/81126">https://support.google.com/mail/answer/81126</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.2.1 The user you are trying to contact is receiving mail at a rate that prevents additional messages from being delivered. For more information, please visit https://support.google.com/mail/?p=ReceivingRatePerm - gsmtp</summary><p class="info">While this could indicate a busy or inactive Gmail user, sometimes this indicates the recipient is being 'mail bombed' - a tactic used to disable a victim's mailbox in order to hide malicious activity. Please verify the recipient was not added to your list by an automated script or other malicious entity.</p><ul>
+<li><a href="https://support.google.com/mail/answer/81126">https://support.google.com/mail/answer/81126</a></li>
+<li><a href="https://krebsonsecurity.com/2016/08/massive-email-bombs-target-gov-addresses/">https://krebsonsecurity.com/2016/08/massive-email-bombs-target-gov-addresses/</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 [x.xx.xx.xx] Our system has detected that this message is likely suspicious due to the very low reputation of the sending domain. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp</summary><p class="info">Gmail has determined that the sending domain has a low reputation, so messages are now permanently rejected. See Google's documentation on how to determine the source of this poor reputation and how to improve deliverability.</p><ul>
+<li><a href="https://support.google.com/mail/answer/81126">https://support.google.com/mail/answer/81126</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 [x.xx.xx.xx] Our system has detected that this message is likely unsolicited mail. To reduce the amount of spam sent to Gmail, this message has been blocked. Please visit https://support.google.com/mail/?p=UnsolicitedMessageError for more information. - gsmtp</summary><p class="info">Gmail has determined your messages are unsolicited, so messages are now permanently rejected. See Google's documentation for best practices to monitor and investigate this. </p><ul>
+<li><a href="https://support.google.com/mail/?p=UnsolicitedRateLimitError">https://support.google.com/mail/?p=UnsolicitedRateLimitError</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 Unauthenticated email from example.com is not accepted due to domain&#039;s DMARC policy. Please contact the administrator of example.com domain if this was a legitimate mail. Please visit https://support.google.com/mail/answer/2451690 to learn about the DMARC initiative. - gsmtp</summary><p class="info">The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and/or DKIM. Contact your email provider for more details on how to configure them.</p><ul>
+<li><a href="https://support.google.com/mail/answer/81126">https://support.google.com/mail/answer/81126</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.26 Your email has been blocked because the sender is unauthenticated. Gmail requires all senders to authenticate with either SPF or DKIM. Authentication results: DKIM = did not pass. SPF [example.com] with ip: x.x.x.x = did not pass - gsmtp</summary><p class="info">The message did not pass SPF or DKIM. As of February 2024, Google requires SPF and DKIM to be correctly set up in order to be able to send emails to their customers. Contact your email provider to set up SPF and/or DKIM correctly.</p><ul>
+<li><a href="https://redsift.com/guides/bulk-email-sender-requirements">https://redsift.com/guides/bulk-email-sender-requirements</a></li>
+<li><a href="https://support.google.com/mail/answer/81126">https://support.google.com/mail/answer/81126</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 [x.xx.xx.xx 14] Messages missing a valid address in From: header, or having no From: header, are not accepted. - gsmtp</summary><p class="info">In most cases this is the result of a malformatted From name or email address.</p><ul>
+<li><a href="https://tools.ietf.org/html/rfc2822#appendix-A.6">https://tools.ietf.org/html/rfc2822#appendix-A.6</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="552"><a href="/552">552</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>552 5.2.2 The email account that you tried to reach is over quota. Please direct the recipient to https://support.google.com/mail/?p=OverQuotaPerm - gsmtp</summary><ul>
+<li><a href="https://support.google.com/mail/answer/81126">https://support.google.com/mail/answer/81126</a></li>
+</ul>
+</details></dd>
+<dd><details><summary> 552-5.2.3 Your message exceeded Google&#039;s message size limits. Please visit http://mail.google.com/support/bin/answer.py?answer=8770 to review our size guidelines.</summary><ul>
+<li><a href="http://mail.google.com/support/bin/answer.py?answer=8770">http://mail.google.com/support/bin/answer.py?answer=8770</a></li>
+</ul>
+</details></dd>
+<dd><details><summary> 552-5.7.0 Our system detected an illegal attachment on your message. Please visit http://mail.google.com/support/bin/answer.py?answer=6590 to review our attachment guidelines.</summary><ul>
+<li><a href="http://mail.google.com/support/bin/answer.py?answer=6590">http://mail.google.com/support/bin/answer.py?answer=6590</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="553"><a href="/553">553</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>553 5.1.2 The recipient address &lt;example@example.com&gt; is not a valid RFC-5321 address. - gsmtp</summary><p class="info">The recipient address is malformed. Please verify and try again.</p><ul>
+<li><a href="https://tools.ietf.org/html/rfc5321">https://tools.ietf.org/html/rfc5321</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

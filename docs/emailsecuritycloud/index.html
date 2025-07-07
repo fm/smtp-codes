@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Email Security.cloud</title>
+<meta charset="utf-8">
+<meta name="title" content="Email Security.cloud">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Email Security.cloud">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Email Security.cloud</h1>
+<p>"Email Security.cloud" is a product working in combination with "Symantec Messaging Gateway" as part of a range of services offered by Broadcom. It features spam filtering, firewall protection, and block lists. Mail is routed through mailservers owned by them (messagelabs.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in the user guide to identify and resolve delivery issues, as there is no way to contact the vendor directly.</p>
+<h2>Codes</h2>
+<p><a href="#421">421</a> &#183; <a href="#450">450</a> &#183; <a href="#550">550</a> &#183; <a href="#553">553</a></p>
+<dl>
+<div class="card">
+<dt id="421"><a href="/421">421</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>421 Service Temporarily Unavailable</dd>
+</div>
+<div class="card">
+<dt id="450"><a href="/450">450</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>450 Requested action aborted [9] #-#, please visit https://knowledge.broadcom.com/external/article?legacyId=TECH246726 for more details about this error message.</dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>550 Invalid recipient &lt;email@example.com&gt; (#5.1.1)</dd>
+</div>
+<div class="card">
+<dt id="553"><a href="/553">553</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>553 Message filtered. (#5.7.1)</summary><p class="info">Your message triggered a spam rule. Contact the mail admin via alternate means so they can check the logs and troubleshoot.</p></details></dd>
+<dd><details><summary>553 you are trying to use me [xx.messagelabs.com] as a relay, but I have not been configured to let you [x.xx.xx.xx, example.com] do this. (#5.7.1)</summary><p class="info">You are delivering mail to a domain not configured to use their service. There is little you can do, as it's likely a misconfiguration on the receiver's end.</p></details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

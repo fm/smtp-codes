@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Zoho</title>
+<meta charset="utf-8">
+<meta name="title" content="Zoho">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Zoho">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Zoho</h1>
+<p>Zoho is a range of online services for businesses. It includes an email hosting product with spam filtering, firewall, and block list features.</p>
+<h2>Domains</h2>
+<p>zoho.com</p>
+<h2>Codes</h2>
+<p><a href="#451">451</a> &#183; <a href="#452">452</a> &#183; <a href="#550">550</a> &#183; <a href="#552">552</a> &#183; <a href="#553">553</a> &#183; <a href="#554">554</a></p>
+<dl>
+<div class="card">
+<dt id="451"><a href="/451">451</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>541 5.4.1 Mail rejected by destination domain</summary><p class="info">Zoho allows the receiving domain to set mail filters. The receiving domain has filters set-up that are blocking this message. To resolve this, you'll need to contact an administrator of this domain through another channel to have them adjust their filters and allow delivery.</p></details></dd>
+</div>
+<div class="card">
+<dt id="452"><a href="/452">452</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>452 &lt;example@zoho.com&gt; Mailbox delivery restricted by policy error</summary><p class="info">Zoho allows the receiving domain to set mail filters. The receiving domain has filters set-up that are blocking this message. To resolve this, you'll need to contact an administrator of this domain through another channel to have them adjust their filters and allow delivery.</p></details></dd>
+<dd><details><summary>452 4.3.1 Temporary System Error</summary><p class="info">This indicates that the domain at Zoho is not currently accepting email. Sending messages again in the future will most likely be successful.</p></details></dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 5.7.1 Email rejected per DMARC policy for example.com</summary><p class="info">The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and/or DKIM. Contact your email provider for more details on how to configure them.</p></details></dd>
+<dd><details><summary>550 5.1.1 &lt;example@zoho.com&gt; User unknown</summary><p class="info">The email address does not exist. Check for typos or other errors.</p></details></dd>
+</div>
+<div class="card">
+<dt id="552"><a href="/552">552</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>552 5.1.1 &lt;example@zoho.com&gt; Mailbox delivery failure policy error</dd>
+<dd><details><summary>552 5.7.1 virus [name] detected by Zoho Mail</summary><p class="info">A known virus was detected in your message content, attachments, and/or URLs. Run the full message and its headers through a virus scanner to identify the source.</p></details></dd>
+</div>
+<div class="card">
+<dt id="553"><a href="/553">553</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>failed,5.1.1 (bad destination mailbox address),553 Relaying disallowed,mx.zoho.com</dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.2.3 MailPolicy violation Error delivering to mailboxes,mx.zoho.com</summary><p class="info">Reasons for this response vary significantly, so the best place to start is the Zoho Community forum.</p><ul>
+<li><a href="https://help.zoho.com/portal/en/community">https://help.zoho.com/portal/en/community</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 Email cannot be delivered. Reason: Email flagged as Spam.</summary><ul>
+<li><a href="https://www.zoho.com/mail/help/spam-reason.html">https://www.zoho.com/mail/help/spam-reason.html</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

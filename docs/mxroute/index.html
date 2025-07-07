@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>MXroute</title>
+<meta charset="utf-8">
+<meta name="title" content="MXroute">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="MXroute">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>MXroute</h1>
+<p>MXroute is an email host obsessed with high IP reputation. They offer a low-cost, no-frills solution that guarantees delivery of your corporate emails.</p>
+<h2>Codes</h2>
+<p><a href="#550">550</a></p>
+<dl>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 Unauthenticated mail not allowed from this range</summary><p class="info">The sending IP is in a range of IPs that are considered low reputation or should not be sending emails. If you believe this to be a false positive, request a review at https://whitelistrequest.mxrouting.net</p></details></dd>
+<dd><details><summary>550 No such recipient here</summary><p class="info">The email address does not exist. Check to make sure there are no typos or other mistakes with the address.</p><ul>
+<li><a href="https://mxroutedocs.com/troubleshooting/nosuchrecipient/">https://mxroutedocs.com/troubleshooting/nosuchrecipient/</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 Relay not permitted</summary><p class="info">You are sending an email to a server that has not been configured to receive email for that domain.</p></details></dd>
+<dd><details><summary>550 Authentication Required</summary><p class="info">You are sending an email to a server that has not been configured to receive email for that domain. Read the link below for possible fixes.</p><ul>
+<li><a href="https://mxroutedocs.com/troubleshooting/550auth/">https://mxroutedocs.com/troubleshooting/550auth/</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Barracuda</title>
+<meta charset="utf-8">
+<meta name="title" content="Barracuda">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Barracuda">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Barracuda</h1>
+<p>Barracuda is a spam filter, block list, and firewall for businesses. Mail is routed through mailservers owned by Barracuda before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such as allow lists, but sender reputation issues that affect all Barracuda customers globally may require contacting Barracuda support directly to resolve.</p>
+<h2>Codes</h2>
+<p><a href="#421">421</a> &#183; <a href="#422">422</a> &#183; <a href="#450">450</a> &#183; <a href="#451">451</a> &#183; <a href="#550">550</a> &#183; <a href="#554">554</a></p>
+<dl>
+<div class="card">
+<dt id="421"><a href="/421">421</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 Temporary failure, please try again later.</summary><p class="info">This response is followed by the bounce received from one of the intended recipients of the message. You'll want to resolve the delivery issue for the quoted recipient before sending to this group of addresses again.</p></details></dd>
+<dd><details><summary>422 License Expired</summary><p class="info">The recepient domain uses a Barracuda mail filter and their license for that service is expired. They'll need to resolve their license issue with Barracuda to start to receive messages again.</p></details></dd>
+</div>
+<div class="card">
+<dt id="422"><a href="/422">422</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>422 License Expired</summary><p class="info">The recipient's Barracuda license expired and they are not processing any more emails.</p></details></dd>
+</div>
+<div class="card">
+<dt id="450"><a href="/450">450</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 cuda_nsu 4.7.1 &lt;email@example.com&gt;: Recipient address rejected: Policy Rejection- Abuse. Go away.</summary><p class="info">If you know the recipient personally, try reaching out through other means to confirm why the message was rejected (include the full source and headers of the rejected message). Only the recipient and their mailserver admin can resolve this bounce.</p></details></dd>
+</div>
+<div class="card">
+<dt id="451"><a href="/451">451</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>451 4.7.1 &lt;email@example.com&gt;: Recipient address rejected: Greylisted for 5 minutes</dd>
+<dd>451 4.7.1 Try again later</dd>
+<dd>451 cuda_nsu 4.4.3 Temporary server error. Please try again later</dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 cuda_nsu 5.1.1 &lt;email@example.com&gt; Recipient address rejected: User unknown</summary><p class="info">This mailbox does not exist at this mail server. Check to make sure there are no typos with the address.</p></details></dd>
+<dd><details><summary>550 No such user (email@example.com)</summary><p class="info">This mailbox does not exist at this mail server. Check to make sure there are no typos with the address.</p></details></dd>
+<dd><details><summary>550 Blocked</summary><p class="info">Barracuda states that a 550 SMTP code means that the requested command failed because the user's mailbox was unavailable (for example, because it was not found, or because the command was rejected for policy reasons).</p><ul>
+<li><a href="https://campus.barracuda.com/product/emailsecuritygateway/doc/39815000/smtp-error-codes/">https://campus.barracuda.com/product/emailsecuritygateway/doc/39815000/smtp-error-codes/</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 rejecting spoofed message</summary><p class="info">Barracuda thinks you're attempting to impersonate a known brand. Check your sending domains, 'From' details, and content and links for potential unintended references.</p></details></dd>
+<dd><details><summary>550 permanent failure for one or more recipients (email@example.com:blocked)</summary><p class="info">This specific message is being blocked for content or domain related reasons. It's not necessarily a permanent failure since a different message may deliver later.</p><ul>
+<li><a href="https://campus.barracuda.com/product/emailsecuritygateway/doc/39815000/smtp-error-codes/">https://campus.barracuda.com/product/emailsecuritygateway/doc/39815000/smtp-error-codes/</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 rejected due to spam URL in content</summary><p class="info">A URL in your message content may be on a public or private block list. Some recipients may also filter URLs based on their geo-location. Check all of the domains, subdomains, and full URLs in your content against as many public lists as you can to narrow-down the culprit.</p><ul>
+<li><a href="http://multirbl.valli.org">http://multirbl.valli.org</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 rejecting banned content</summary><p class="info">Check your content, phrasing, and links for any potentially suspicious characteristics. Even something as simple as an unfortunate typo or a link to an exploited webpage can block a message from delivering.</p></details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

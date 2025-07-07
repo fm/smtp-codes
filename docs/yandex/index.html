@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Yandex</title>
+<meta charset="utf-8">
+<meta name="title" content="Yandex">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Yandex">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Yandex</h1>
+<p>Yandex is a search engine and email provider, headquartered in Moscow. They have strict published requirements for delivering mail, such as details on the opt-in and unsubscribe process. They used to maintain a detailed postmaster tools site, but it was discontinued due to abuse of the service.</p>
+<h2>Domains</h2>
+<p>yandex.com</p>
+<h2>Codes</h2>
+<p><a href="#421">421</a> &#183; <a href="#450">450</a> &#183; <a href="#451">451</a> &#183; <a href="#550">550</a> &#183; <a href="#551">551</a> &#183; <a href="#552">552</a> &#183; <a href="#554">554</a></p>
+<dl>
+<div class="card">
+<dt id="421"><a href="/421">421</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>421 4.4.2 mail.yandex.net Error: timeout exceeded</dd>
+</div>
+<div class="card">
+<dt id="450"><a href="/450">450</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 4.2.1 The recipient has exceeded message rate limit. Try again later.</summary><p class="info">The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.</p></details></dd>
+</div>
+<div class="card">
+<dt id="451"><a href="/451">451</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>451 4.7.1 Sorry, the service is currently unavailable. Please come back later.</dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 5.7.1 Policy rejection on the target address</summary><p class="info">The recipient's account has been blocked due to User Agreement violations.</p><ul>
+<li><a href="https://yandex.com/support/mail/bounces/yandex.html">https://yandex.com/support/mail/bounces/yandex.html</a></li>
+<li><a href="https://yandex.com/legal/rules/">https://yandex.com/legal/rules/</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 No such user!</summary><p class="info">The email was sent to a non-existing address.</p><ul>
+<li><a href="https://yandex.com/support/mail/bounces/yandex.html">https://yandex.com/support/mail/bounces/yandex.html</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="551"><a href="/551">551</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>551 5.3.0 Unknown error</dd>
+</div>
+<div class="card">
+<dt id="552"><a href="/552">552</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>552 5.2.2 Mailbox size limit exceeded</summary><p class="info">The recipient's mailbox is full. This usually happens because the recipient does not use their mailbox often and their mailbox is full.</p><ul>
+<li><a href="https://yandex.com/support/mail/bounces/yandex.html">https://yandex.com/support/mail/bounces/yandex.html</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.7.1 [1] Message rejected under suspicion of SPAM; https://ya.cc/1IrBc ##</summary><p class="info">While a message being rejected as spam isn't good news for anyone, this bounce response is especially helpful for those who don't typically send to Russian domains. In those cases, you'll see this bounce when online forms are being exploited by spam bots repeatedly victimizing Yandex recipients. Please check all of your online forms to be sure that they are properly protected.</p><ul>
+<li><a href="https://yandex.ru/support/mail/web/spam.html#troubleshooting__sending-limits">https://yandex.ru/support/mail/web/spam.html#troubleshooting__sending-limits</a></li>
+<li><a href="https://postmarkapp.com/blog/when-spambots-attack-protecting-your-forms-from-abuse">https://postmarkapp.com/blog/when-spambots-attack-protecting-your-forms-from-abuse</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>GMX</title>
+<meta charset="utf-8">
+<meta name="title" content="GMX">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="GMX">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>GMX</h1>
+<p>GMX is an email provider including Mail.com recipients, headquartered in Germany. European receivers tend to have high expectations for GDPR legal complaince, and in some cases email deliverability is aided when the sender is included in high profile "whitelists" and certification programs. You can use the GMX postmaster site to investigate most issues, and their contact form to submit things for in-depth investigation. You can also reach out to mailsecurity@gmxnet.de directly in urgent cases. </p>
+<h2>Codes</h2>
+<p><a href="#501">501</a> &#183; <a href="#550">550</a> &#183; <a href="#552">552</a></p>
+<dl>
+<div class="card">
+<dt id="501"><a href="/501">501</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>501 Syntax error in parameters or arguments</summary><p class="info">Due to an incorrect configuration, email reception has been refused. Please contact your administrator who should correct the server configuration based on our recommendations and apply to us for the systems to be unblocked.</p><ul>
+<li><a href="https://postmaster.gmx.net/en/error-messages">https://postmaster.gmx.net/en/error-messages</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 Requested action not taken: mailbox unavailable</summary><p class="info">The specified recipient does not exist on their systems or the recipient has not used their inbox for an extended period of time and the inbox has been temporarily disabled due to inactivity. Please check the spelling of the email address.</p><ul>
+<li><a href="https://postmaster.gmx.net/en/error-messages">https://postmaster.gmx.net/en/error-messages</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>Requested action not taken: mailbox unavailable Reject due to policy restrictions.</summary><p class="info">The message is being rejected due to policy reasons. This is likely down to the sender or IP being a spam source, or technical information included in the email doesn't meet some RFC standards.</p><ul>
+<li><a href="https://www.gmx.net/mail/senderguidelines/">https://www.gmx.net/mail/senderguidelines/</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="552"><a href="/552">552</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>552 Requested mail action aborted: exceeded storage allocation Quota exceeded.</summary><p class="info">We were unable to deliver your email because the potential recipient does not have sufficient free space in their inbox. Please use a different method to contact the person in question and inform them of the situation.</p><ul>
+<li><a href="https://postmaster.gmx.net/en/error-messages">https://postmaster.gmx.net/en/error-messages</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

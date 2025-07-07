@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>SMTP Error Code 450</title>
+<meta charset="utf-8">
+<meta name="title" content="SMTP Error Code 450">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="SMTP Error Code 450">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v={timestamp}">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>SMTP Error Code 450</h1>
+<p>The mail server encountered a temporary failure. If the command is repeated without any change, it might be completed. Mail servers can use temporary failures like this to keep untrusted senders at bay.</p>
+<h2>Providers</h2>
+<p><a href="#barracuda">Barracuda</a> &#183; <a href="#comcast">Comcast</a> &#183; <a href="#emailsecuritycloud">Email Security.cloud</a> &#183; <a href="#google">Google</a> &#183; <a href="#improvmx">ImprovMX</a> &#183; <a href="#infomaniak">Infomaniak</a> &#183; <a href="#outlook">Outlook.com</a> &#183; <a href="#rackspace">Rackspace</a> &#183; <a href="#yahoo">Yahoo</a> &#183; <a href="#yandex">Yandex</a> &#183; <a href="#zerospam">ZeroSpam</a></p>
+<dl>
+<div class="card">
+<dt id="barracuda">Barracuda<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 cuda_nsu 4.7.1 &lt;email@example.com&gt;: Recipient address rejected: Policy Rejection- Abuse. Go away.</summary><p class="info">If you know the recipient personally, try reaching out through other means to confirm why the message was rejected (include the full source and headers of the rejected message). Only the recipient and their mailserver admin can resolve this bounce.</p></details></dd>
+</div>
+<div class="card">
+<dt id="comcast">Comcast<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 4.2.0 &lt;example@comcast.net&gt; - Recipient temporarily unavailable</summary><p class="info">The email address is currently unable to receive email. Sending email in the future will most likely be successful.</p></details></dd>
+</div>
+<div class="card">
+<dt id="emailsecuritycloud">Email Security.cloud<span class="top"><a href="#">↑</a></span></dt>
+<dd>450 Requested action aborted [9] #-#, please visit https://knowledge.broadcom.com/external/article?legacyId=TECH246726 for more details about this error message.</dd>
+</div>
+<div class="card">
+<dt id="google">Google<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 4.2.1 The user you are trying to contact is receiving mail at a rate that prevents additional messages from being delivered. Please resend your message at a later time. If the user is able to receive mail at that time, your message will be delivered. For more information, please visit https://support.google.com/mail/?p=ReceivingRate - gsmtp</summary><p class="info">The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.</p><ul>
+<li><a href="https://support.google.com/mail/answer/81126">https://support.google.com/mail/answer/81126</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="improvmx">ImprovMX<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 4.2.1 Please try again later. (#id-5.9.4)</summary><p class="info">Their anti-spam check failed. We need the sender to retry sending.</p></details></dd>
+</div>
+<div class="card">
+<dt id="infomaniak">Infomaniak<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 4.1.8 Sender address rejected: Domain not found (in reply to RCPT TO command))</summary><p class="info">The sender domain is not a valid domain or the domain has not been registered yet. This prevents spammers from making up non-existent domains that can't receive email.</p></details></dd>
+</div>
+<div class="card">
+<dt id="outlook">Outlook.com<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 4.7.3 Organization queue quota exceeded. [outlook.com]</summary><p class="info">The receiving email domain is currently receiving an email at a high rate. This messages indicates the domain is not currently able to receive emial. Sending email in the future will most likely be successful.</p></details></dd>
+</div>
+<div class="card">
+<dt id="rackspace">Rackspace<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 4.7.1 Client host {IP} has no PTR record (G1F)</summary><p class="info">Rackspace require that incoming IPs have a valid PTR. If you run your own server, consult your IP provider on how to add it. Else contact your email provider's support team.</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>450 4.7.1 Client host {IP} has no PTR record (G1F)</summary><p class="info">Rackspace require that incoming IPs have a valid PTR. If you run your own server, consult your IP provider on how to add it. Else, contact your email provider's support team.</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>450 4.4.1 &lt;email@example.com&gt;: The recipient&#039;s server was temporarily unavailable to accept your message (G6)</summary><p class="info">A temporary failure while attempting to verify the recipient address. Retrying in a few minutes should work.</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>450 4.2.1 &lt;email@example.com&gt;: Mailbox received too much email in a short period of time (G30)</summary><p class="info">Rackspace rate limit inbound email to mailboxes to protect the entire system. The user may be experiencing a list bomb attack or similar and trying again in a few minutes should work.</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>450 4.4.6 Routing loop detected (G16)</summary><p class="info">An undeliverable mail loop was detected. Try again in a few minutes; if it does not subside, try contacting postmaster@emailsrvr.com</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>450 4.4.0 &lt;email@example.com&gt; Temporary DMARC DNS lookup failure (G1E)</summary><p class="info">A temporary failure while looking up sender's DMARC policy. Trying again in a few minutes should succeed.</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="yahoo">Yahoo<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 User is receiving mail too quickly</summary><p class="info">The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.</p><ul>
+<li><a href="https://postmaster.yahooinc.com/error-codes">https://postmaster.yahooinc.com/error-codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="yandex">Yandex<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 4.2.1 The recipient has exceeded message rate limit. Try again later.</summary><p class="info">The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.</p></details></dd>
+</div>
+<div class="card">
+<dt id="zerospam">ZeroSpam<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 4.2.0 &lt;email@example.com&gt;: Recipient address rejected: example.com greylisted for 60 seconds by ZEROSPAM</summary><p class="info">Greylisting is a common antispam measure. This mesage is asking the sending mail server to retry sending, most mail servers handle this automatically and will resend the message automatically, leading to a successful delivery.</p></details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Outlook.com</title>
+<meta charset="utf-8">
+<meta name="title" content="Outlook.com">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Outlook.com">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Outlook.com</h1>
+<p>Outlook is an email provider for predominantly Outlook, Hotmail, and Live freemail addresses, as part of Microsoft. For legitimate messages going to the spam filter or getting blocked, you'll likely need to file a false-positive report with Outlook support. For globally-blocked IPs, the adminstrator of the IP will need to request delisting directly.</p>
+<h2>Domains</h2>
+<p>hotmail.com &#183; outlook.com &#183; msn.com &#183; live.com</p>
+<h2>Codes</h2>
+<p><a href="#421">421</a> &#183; <a href="#450">450</a> &#183; <a href="#451">451</a> &#183; <a href="#452">452</a> &#183; <a href="#501">501</a> &#183; <a href="#550">550</a> &#183; <a href="#554">554</a></p>
+<dl>
+<div class="card">
+<dt id="421"><a href="/421">421</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 4.3.2 Service not available [outlook.com]</summary><p class="info">This indicates that the domain is not currently accepting email.</p></details></dd>
+</div>
+<div class="card">
+<dt id="450"><a href="/450">450</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 4.7.3 Organization queue quota exceeded. [outlook.com]</summary><p class="info">The receiving email domain is currently receiving an email at a high rate. This messages indicates the domain is not currently able to receive emial. Sending email in the future will most likely be successful.</p></details></dd>
+</div>
+<div class="card">
+<dt id="451"><a href="/451">451</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>451 4.3.2 Temporary server error. Please try again later ATTR17 [outlook.com]</summary><p class="info">The mail server encountered a temporary failure. Most likely it isn't anything to do with the session, but rather the server is overloaded or having issues. If you try again later, it should work.</p></details></dd>
+<dd><details><summary>451 4.4.0 Message failed to be replicated: No healthy secondary server available to accept replica at this time. [outlook.com]</summary><p class="info">The sender's domain is currently unable to accept this message. Sending email in the future will most likely be successful.</p></details></dd>
+<dd><details><summary>451 4.7.0 Temporary server error. Please try again later. PRX6 NextHop: outlook.com [outlook.com]</summary><p class="info">The sender's domain is currently unable to accept this message. Sending email in the future will most likely be successful.</p></details></dd>
+<dd><details><summary>451 4.7.650 The mail server [x.xx.xx.xx] has been temporarily rate limited due to IP reputation. For e-mail delivery information, see https://postmaster.live.com (S843)[#.prod.protection.outlook.com]</summary><p class="info">Outlook has determined that the sending IP address has a low reputation, so messages are now temporarily rejected. See Microsoft's documentation on how to determine the source of this poor reputation and how to improve deliverability.</p></details></dd>
+<dd><details><summary>451 4.7.651 The mail server [x.xx.xx.xx] has been temporarily rate limited due to IP reputation. For e-mail delivery information, see https://postmaster.live.com (S3114) [#.prod.outlook.com #]</summary><p class="info">Outlook has determined that the sending IP address has a low reputation, so messages are now temporarily rejected. See Microsoft's documentation on how to determine the source of this poor reputation and how to improve deliverability.</p></details></dd>
+</div>
+<div class="card">
+<dt id="452"><a href="/452">452</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>452 4.3.1 Insufficient system resources (TSTE) [outlook.com]</summary><p class="info">The receiving mail server is currently out of storage space. The administers at the receiving domain will need to resolve this issue. Once they've done this, they'll be able to start to receive messages again.</p></details></dd>
+</div>
+<div class="card">
+<dt id="501"><a href="/501">501</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>501 5.1.3 Invalid address [outlook.com]</dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>550 5.5.0 Requested action not taken: mailbox unavailable. [#.eop-nam12.prod.protection.outlook.com]</dd>
+<dd><details><summary>550 5.7.1 Service unavailable, MailFrom domain is listed in Spamhaus. To request removal from this list see https://www.spamhaus.org/query/lookup/ (S8002) [#.eop-nam02.prod.protection.outlook.com]</summary><p class="info">The MailFrom domain is also known as the Return-Path header domain, and is used to validate SPF authentication (it's not always the same domain as your From address for the message). Outlook checks your MailFrom domain against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.</p><ul>
+<li><a href="https://check.spamhaus.org">https://check.spamhaus.org</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 Unfortunately, messages from [x.xx.xx.xx] weren&#039;t sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshooting.aspx#errors. [#.eop-nam02.prod.protection.outlook.com]</summary><p class="info">This is Microsoft's way of throttling your sending IP, possibly related to IP reputation classification. It should automatically expire on its own and is generally caused by sending too much traffic too fast.</p><ul>
+<li><a href="https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx">https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.515 Access denied, sending domain example.com does not meet the required authentication level.</summary><p class="info">The 550 5.7.515 error means your message was rejected because it didn't meet Outlook’s authentication requirements for high-volume senders. If you're sending over 5,000 messages per day, your domain must pass SPF and DKIM, and have a DMARC policy in place.</p><ul>
+<li><a href="https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders/4399730">https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders/4399730</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.4.1 All recipient addresses rejected : Access denied [#.eop-nam02.prod.protection.outlook.com]</summary><p class="info">This could be due to an active block on the sender for abuse reasons, but typically it's a policy that only specific senders/servers are allowed to send mail to this host. Reach out the recipient directly for options to add the sender to their 'allow list'.</p></details></dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.2.122 The recipient has exceeded their limit for the number of messages they can receive per hour. For more information go to http://go.microsoft.com/fwlink/?LinkId=526653. (#) [outlook.com]</summary><p class="info">The Microsoft 365 or Office 365 recipient has exceeded the number of messages they can receive per hour from all senders.</p><ul>
+<li><a href="http://go.microsoft.com/fwlink/?LinkId=526653">http://go.microsoft.com/fwlink/?LinkId=526653</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.2.121 The sender has exceeded the limit for the number of messages they can send to this recipient per hour. For more information go to http://go.microsoft.com/fwlink/?LinkId=526653. [#.prod.outlook.com #]</summary><p class="info">The sender has exceeded the maximum number of messages they're allowed to send per hour to a specific recipient in Exchange Online.</p><ul>
+<li><a href="http://go.microsoft.com/fwlink/?LinkId=526653">http://go.microsoft.com/fwlink/?LinkId=526653</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

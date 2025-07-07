@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Proofpoint</title>
+<meta charset="utf-8">
+<meta name="title" content="Proofpoint">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Proofpoint">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Proofpoint</h1>
+<p>Proofpoint is a spam filter for businesses. Mail is routed through mailservers owned by Proofpoint (*.pphosted.com or *.ppe-hosted.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists and spam filtering policy levels. For globally-blocked IPs, the adminstrator of the IP will need to request delisting directly.</p>
+<h2>Codes</h2>
+<p><a href="#421">421</a> &#183; <a href="#550">550</a> &#183; <a href="#554">554</a></p>
+<dl>
+<div class="card">
+<dt id="421"><a href="/421">421</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>421 4.1.1 &lt;email@example.com&gt;: Recipient address rejected: unverified address: host example.com[x.xx.xx.xx] said: 450 4.1.1 &lt;email@example.com&gt;: Recipient address rejected: unverified address: lost connection with mail.example.com[x.xx.xx.xx] while sending RCPT TO (in reply to RCPT TO command)</dd>
+<dd>421 4.1.1 &lt;email@example.com&gt;: Recipient address rejected: unverified address: Address verification in progress</dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 5.1.1 &lt;email@example&gt;: Recipient address rejected: User unknown</summary><p class="info">The email address does not exist. Please check address for typos or other errors.</p></details></dd>
+<dd><details><summary>550 5.1.1 &lt;email@example.com&gt;: Recipient address rejected: undeliverable address: host example.com[x.xx.xx.xx] said: 550 5.1.1 &lt;email@example.com&gt;: Recipient address rejected: user unknown</summary><p class="info">Mail is routed through mailservers owned by Proofpoint before it's passed along to the recipient domain's mailservers for final delivery. If the message is rejected when Proofpoint attempts to finally deliver the message, they'll quote this rejection within the bounce response they send back to you. This is an example of that kind of relayed/quoted bounce.</p></details></dd>
+<dd><details><summary>550 5.1.1 User Unknown</summary><p class="info">The email address does not exist. Please check address for typos or other errors.</p></details></dd>
+<dd>550 5.1.1 - This is not a valid email address. Please verify that you have the correct email address for your recipient.</dd>
+<dd><details><summary>550 5.1.8 &lt;sender@example.com&gt;: Sender address rejected: Domain not found (in reply to RCPT TO command)</summary><p class="info">Make sure your 'From' and 'Return-Path' (envelope-from used for SPF) domains exist can receive mail.</p></details></dd>
+<dd><details><summary>550 5.1.8 Domain of sender address does not exist</summary><p class="info">Make sure your 'From' and 'Return-Path' (envelope-from used for SPF) domains exist can receive mail.</p></details></dd>
+<dd><details><summary>550 5.5.2 &lt;email@example.com&gt;: Sender address rejected: need fully-qualified address (in reply to RCPT TO command)</summary><p class="info">Make sure your 'From' and 'Return-Path' (envelope-from used for SPF) domains exist can receive mail.</p></details></dd>
+<dd><details><summary>550 5.7.0 Email rejected per sender&#039;s DMARC policy</summary><p class="info">The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC.</p></details></dd>
+<dd><details><summary>550 5.7.1 &lt;email@example.com&gt;: Recipient address rejected: User email address is marked as invalid.</summary><p class="info">The email address was marked as invalid by Proofpoint after being rejected by the recipient's mail server. If this is a valid address, the mail admin needs to remove it from the invalid list in the Proofpoint Admin Console.</p><ul>
+<li><a href="https://help.proofpoint.com/Proofpoint_Essentials/Email_Security/Administrator_Topics/110_logs/Common_Error_Codes_found_in_Message_Details">https://help.proofpoint.com/Proofpoint_Essentials/Email_Security/Administrator_Topics/110_logs/Common_Error_Codes_found_in_Message_Details</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 Relaying denied</summary><p class="info">Recipient is not a Proofpoint customer or you are not allowed to use Proofpoint as an SMTP relay.</p><ul>
+<li><a href="https://help.proofpoint.com/Proofpoint_Essentials/Email_Security/Administrator_Topics/110_logs/Common_Error_Codes_found_in_Message_Details">https://help.proofpoint.com/Proofpoint_Essentials/Email_Security/Administrator_Topics/110_logs/Common_Error_Codes_found_in_Message_Details</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 Relay access denied</summary><p class="info">Recipient is not a Proofpoint customer or you are not allowed to use Proofpoint as an SMTP relay</p></details></dd>
+<dd><details><summary>550 5.7.1 Service unavailable; client [x.xx.xx.xx] blocked using prs.proofpoint.com</summary><p class="info">Your IP has been blocked by Proofpoint Dynamic Reputation and must be delisted to deliver mail.</p><ul>
+<li><a href="https://ipcheck.proofpoint.com">https://ipcheck.proofpoint.com</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 Service unavailable; client [x.xx.xx.xx] blocked using Cloudmark Sender Intelligence (Visit http://csi.cloudmark.com/reset-request/ if you feel this is in error)</summary><p class="info">Your IP has been blocked by Cloudmark Sender Intelligence and must be delisted to deliver mail.</p><ul>
+<li><a href="http://csi.cloudmark.com/reset-request/">http://csi.cloudmark.com/reset-request/</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.7.1 &lt;email@example&gt;: Relay access denied</summary><ul>
+<li><a href="https://help.proofpoint.com/Proofpoint_Essentials/Email_Security/Administrator_Topics/040_usersandgroups/Outbound_mail_rejected_-_554_5.7.1%3A_Relay_access_denied">https://help.proofpoint.com/Proofpoint_Essentials/Email_Security/Administrator_Topics/040_usersandgroups/Outbound_mail_rejected_-_554_5.7.1%3A_Relay_access_denied</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

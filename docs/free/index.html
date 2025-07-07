@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Free</title>
+<meta charset="utf-8">
+<meta name="title" content="Free">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Free">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Free</h1>
+<p>Free is an internet service provider headquartered in France. It provides free email accounts to its customers, notably those of Free and Alice. Their postmaster page is filled with detailed information about error codes and IP lookup options, including instructions to report a false-positive spam verdict.</p>
+<h2>Codes</h2>
+<p><a href="#550">550</a> &#183; <a href="#552">552</a> &#183; <a href="#554">554</a></p>
+<dl>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 spam detected</summary><p class="info">Free.fr determined the message that you sent included spam content. Check your mail to make sure it should not be missdetected as a spam, either by using an antispam softwate or by checking if the mail is syntaxically correct.</p><ul>
+<li><a href="https://postmaster.free.fr/index_en.html">https://postmaster.free.fr/index_en.html</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.2.2 user quota exceeded</summary><ul>
+<li><a href="https://postmaster.free.fr/index_en.html">https://postmaster.free.fr/index_en.html</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.2.1 This mailbox has been blocked due to inactivity</summary><p class="info">The mailbox is not currently active because of inactivity from the recipient. Once the recipient reactivates their mailbox, they'll be able to receive messages again.</p><ul>
+<li><a href="https://postmaster.free.fr/index_en.html">https://postmaster.free.fr/index_en.html</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 virus detected</summary><p class="info">Free.fr has detected a virus in the message that you sent. Check your mail to make sure it should not be missdetected as a spam, either by using an antispam softwate or by checking if the mail is syntaxically correct.</p><ul>
+<li><a href="https://postmaster.free.fr/index_en.html">https://postmaster.free.fr/index_en.html</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="552"><a href="/552">552</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>552 5.2.2 user quota exceeded (UserSearch)</dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.2.2 &lt;example@free.fr&gt;: Recipient address rejected: Quota exceeded (mailbox for user is full)</summary><p class="info">The recepients email mailbox is full and currently unable to accept messages.</p><ul>
+<li><a href="https://postmaster.free.fr/index_en.html">https://postmaster.free.fr/index_en.html</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

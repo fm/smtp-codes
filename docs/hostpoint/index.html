@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Hostpoint</title>
+<meta charset="utf-8">
+<meta name="title" content="Hostpoint">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Hostpoint">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Hostpoint</h1>
+<p>Hostpoint is a swiss-based web and email provider that provides email hosting for domains hosted at Hostpoint.</p>
+<h2>Codes</h2>
+<p><a href="#550">550</a></p>
+<dl>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550-SPF-check failed: 550 example.com doesn&#039;t allow sending mails from xx.xx.xx.xx (in reply to MAIL FROM command)</summary><p class="info">The sent message failed the SPF policy for the sending domain. To resolve this, you'll need to make sure the mail server you are sending mail from is in the sending domain's SPF record.</p></details></dd>
+<dd><details><summary>550 Message from example.com failed sender&#039;s DMARC policy, REJECT</summary><p class="info">The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to configure SPF and/or DKIM properly.</p></details></dd>
+<dd><details><summary>550 no such address here</summary><p class="info">The email address does not exist. Check to make sure there are no typos or other mistakes with the address.</p></details></dd>
+<dd><details><summary>550 no such address here (MX do not point to us)</summary><p class="info">The domain was not found in their system, or was not added correctly, so they can't route emails.</p></details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

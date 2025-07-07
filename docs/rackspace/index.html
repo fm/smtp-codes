@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Rackspace</title>
+<meta charset="utf-8">
+<meta name="title" content="Rackspace">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Rackspace">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Rackspace</h1>
+<p>Rackspace is a cloud provider that also offers email hosting with spam filtering and block list features. Their public postmaster page is especially informative, including email addresses you can contact to resolve special cases.</p>
+<h2>Codes</h2>
+<p><a href="#421">421</a> &#183; <a href="#450">450</a> &#183; <a href="#451">451</a> &#183; <a href="#550">550</a> &#183; <a href="#554">554</a></p>
+<dl>
+<div class="card">
+<dt id="421"><a href="/421">421</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 Too many concurrent connections from this client (G2)</summary><p class="info">Too many concurrent connections from your IP. Throttle and reduce the number of connections your MTA is making.</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="450"><a href="/450">450</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 4.7.1 Client host {IP} has no PTR record (G1F)</summary><p class="info">Rackspace require that incoming IPs have a valid PTR. If you run your own server, consult your IP provider on how to add it. Else contact your email provider's support team.</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>450 4.7.1 Client host {IP} has no PTR record (G1F)</summary><p class="info">Rackspace require that incoming IPs have a valid PTR. If you run your own server, consult your IP provider on how to add it. Else, contact your email provider's support team.</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>450 4.4.1 &lt;email@example.com&gt;: The recipient&#039;s server was temporarily unavailable to accept your message (G6)</summary><p class="info">A temporary failure while attempting to verify the recipient address. Retrying in a few minutes should work.</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>450 4.2.1 &lt;email@example.com&gt;: Mailbox received too much email in a short period of time (G30)</summary><p class="info">Rackspace rate limit inbound email to mailboxes to protect the entire system. The user may be experiencing a list bomb attack or similar and trying again in a few minutes should work.</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>450 4.4.6 Routing loop detected (G16)</summary><p class="info">An undeliverable mail loop was detected. Try again in a few minutes; if it does not subside, try contacting postmaster@emailsrvr.com</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>450 4.4.0 &lt;email@example.com&gt; Temporary DMARC DNS lookup failure (G1E)</summary><p class="info">A temporary failure while looking up sender's DMARC policy. Trying again in a few minutes should succeed.</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="451"><a href="/451">451</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>451 4.7.1 Received too many messages from a new or untrusted IP (G28)</summary><p class="info">Rackspace require that incoming IPs establish good sending behavior before sending large volumes of mail to their platform. Be sure to warm up your IP correctly with them and throttle your sending for the next couple of weeks.</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 5.1.1 Email address could not be found, or was misspelled (G8) or (G9)</summary><p class="info">The email address does not exist. Check to make sure there are no typos or other mistakes with the address.</p><ul>
+<li><a href="https://postmaster.apps.rackspace.com/system-info/response-codes">https://postmaster.apps.rackspace.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 The recipient&#039;s server refused to accept your message (G7)</summary><p class="info">Contact the recipient by other means or try reaching out to postmaster@emailsrvr.com</p><ul>
+<li><a href="https://postmaster.apps.rackspace.com/system-info/response-codes">https://postmaster.apps.rackspace.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 Sender&#039;s MX record not allowed (G14)</summary><p class="info">The senders domain's MX records match a blocklisted provider.</p><ul>
+<li><a href="https://postmaster.apps.rackspace.com/system-info/response-codes">https://postmaster.apps.rackspace.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.1.0 Sender is not allowed to send from example.com</summary><p class="info">Make sure your email is authenticated and aligned with SPF and DKIM. Contact your email provider for more details.</p><ul>
+<li><a href="https://postmaster.apps.rackspace.com/system-info/response-codes">https://postmaster.apps.rackspace.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 Virus found (G3) or (G4) or (G5)</summary><p class="info">Your message was indentified as transmitting a virus.</p><ul>
+<li><a href="https://postmaster.apps.rackspace.com/system-info/response-codes">https://postmaster.apps.rackspace.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 Email rejected per DMARC policy for example.com (G15)</summary><p class="info">The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and/or DKIM. Contact your email provider for more details on how to configure them.</p><ul>
+<li><a href="https://postmaster.apps.rackspace.com/system-info/response-codes">https://postmaster.apps.rackspace.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.0 header_contenttype_1 (G18)</summary><p class="info">Your messahe was rejected for matching a known virus signature.</p><ul>
+<li><a href="https://postmaster.apps.rackspace.com/system-info/response-codes">https://postmaster.apps.rackspace.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.0 header_contenttype_2 - Multi-part MIME messages are rejected as dangerous (G19)</summary><p class="info">Partial MIME messages are not supported. Please check your message structure and try again.</p><ul>
+<li><a href="https://postmaster.apps.rackspace.com/system-info/response-codes">https://postmaster.apps.rackspace.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.0 mime_banned_file - Your message has been rejected because it contains a banned file attachment (G1A)</summary><p class="info">Executables in compressed attachments are not allowed.</p><ul>
+<li><a href="https://postmaster.apps.rackspace.com/system-info/response-codes">https://postmaster.apps.rackspace.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.0 mime_banned_file - Your message has been rejected because it contains a banned file attachment (G1B)</summary><p class="info">File Types that exploit vulnerabilities in Windows programs are not allowed.</p><ul>
+<li><a href="https://postmaster.apps.rackspace.com/system-info/response-codes">https://postmaster.apps.rackspace.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.0 mime_banned_file - File attachment is not allowed because they can be used to exploit Winzip (G1C)</summary><p class="info">Messages with attachment file extensions linked to WinZip vulnerabilities are not allowed.</p><ul>
+<li><a href="https://postmaster.apps.rackspace.com/system-info/response-codes">https://postmaster.apps.rackspace.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.0 mime_banned_file - CLSID file extensions are dangerous (G1D)</summary><p class="info">Messages with attachment file names containing Windows classIDs are not allowed.</p><ul>
+<li><a href="https://postmaster.apps.rackspace.com/system-info/response-codes">https://postmaster.apps.rackspace.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.7.1 user@example.com: Sender address rejected: Blocked by this recipient (GE)</summary><p class="info">You have been manually added to the recipient's block list.</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 ACL dns_rbl; Client host {IP} blocked using Senderscore. Please visit Senderscore for more information on why this message could not be delivered (G31)</summary><p class="info">Your IP has bad reputation with Validity's SenderScore. Use the link below to get more information.</p><ul>
+<li><a href="https://senderscore.org/rtbl">https://senderscore.org/rtbl</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 ACL dns_rbl; Client host {IP} blocked using Spamhaus XBL. Please visit Spamhaus for more information on why this message could not be delivered (G31)</summary><p class="info">Your IP is listed in the Spamhaus XBL. Use the link below to get more information.</p><ul>
+<li><a href="https://check.spamhaus.org">https://check.spamhaus.org</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

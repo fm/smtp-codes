@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>ZeroSpam</title>
+<meta charset="utf-8">
+<meta name="title" content="ZeroSpam">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="ZeroSpam">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>ZeroSpam</h1>
+<p>ZeroSpam is a spam filter, block list, and firewall promoted for businesses, headquartered in Quebec. Mail is routed through mailservers owned by ZeroSpam before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such as allow lists, but senders may also be able to contact a postmaster@zerospam.com and abuse@zerospam.com address to get more in-depth analysis.</p>
+<h2>Codes</h2>
+<p><a href="#450">450</a> &#183; <a href="#554">554</a></p>
+<dl>
+<div class="card">
+<dt id="450"><a href="/450">450</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 4.2.0 &lt;email@example.com&gt;: Recipient address rejected: example.com greylisted for 60 seconds by ZEROSPAM</summary><p class="info">Greylisting is a common antispam measure. This mesage is asking the sending mail server to retry sending, most mail servers handle this automatically and will resend the message automatically, leading to a successful delivery.</p></details></dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>554 5.7.1 &lt;email@example.com&gt;: Recipient address rejected: Not in recipient list</dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

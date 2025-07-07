@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>SMTP Error Code 554</title>
+<meta charset="utf-8">
+<meta name="title" content="SMTP Error Code 554">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="SMTP Error Code 554">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v={timestamp}">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>SMTP Error Code 554</h1>
+<p>The transaction failed permanently. The server will not try to send the message again. </p>
+<h2>Providers</h2>
+<p><a href="#barracuda">Barracuda</a> &#183; <a href="#comcast">Comcast</a> &#183; <a href="#exchangeonline">Exchange Online Protection</a> &#183; <a href="#free">Free</a> &#183; <a href="#godaddy">GoDaddy</a> &#183; <a href="#infomaniak">Infomaniak</a> &#183; <a href="#mimecast">Mimecast</a> &#183; <a href="#outlook">Outlook.com</a> &#183; <a href="#proofpoint">Proofpoint</a> &#183; <a href="#rackspace">Rackspace</a> &#183; <a href="#rambler">Rambler</a> &#183; <a href="#trendmicro">Trend Micro</a> &#183; <a href="#yahoo">Yahoo</a> &#183; <a href="#yandex">Yandex</a> &#183; <a href="#zerospam">ZeroSpam</a> &#183; <a href="#zoho">Zoho</a> &#183; <a href="#icloud">iCloud</a></p>
+<dl>
+<div class="card">
+<dt id="barracuda">Barracuda<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 rejected due to spam URL in content</summary><p class="info">A URL in your message content may be on a public or private block list. Some recipients may also filter URLs based on their geo-location. Check all of the domains, subdomains, and full URLs in your content against as many public lists as you can to narrow-down the culprit.</p><ul>
+<li><a href="http://multirbl.valli.org">http://multirbl.valli.org</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 rejecting banned content</summary><p class="info">Check your content, phrasing, and links for any potentially suspicious characteristics. Even something as simple as an unfortunate typo or a link to an exploited webpage can block a message from delivering.</p></details></dd>
+</div>
+<div class="card">
+<dt id="comcast">Comcast<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>host xx.comcast.net [x.xx.xx.xx] SMTP error from remote mail server after initial connection: 554 xx.comcast.net comcast x.xx.xx.xx Comcast requires that all mail servers must have a PTR record with a valid Reverse DNS entry. Currently your mail server does not fill that requirement. For more information, refer to: http://postmaster.comcast.net/smtp-error-codes.php#554</summary><ul>
+<li><a href="http://postmaster.comcast.net/smtp-error-codes.php#554">http://postmaster.comcast.net/smtp-error-codes.php#554</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 xx.comcast.net comcast x.xx.xx.xx Comcast block for spam. Please see http://postmaster.comcast.net/smtp-error-codes.php#BL000000</summary><ul>
+<li><a href="http://postmaster.comcast.net/smtp-error-codes.php#BL000000">http://postmaster.comcast.net/smtp-error-codes.php#BL000000</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="exchangeonline">Exchange Online Protection<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.4.14 Hop count exceeded - possible mail loop ATTR34</summary><p class="info">That means the message is being passed around like a hot potato between servers. Possible reasons include: A misconfigured hybrid environment; internal M365 wonkiness; they are forwarding it somewhere, and it's being sent back to 365 multiple times; a mailbox is being migrated between clusters, or the mailbox was corrupted/misconfigured. There is nothing you as the sender can do; if it's an important email, try contacting the recipient via alternate means.</p></details></dd>
+</div>
+<div class="card">
+<dt id="free">Free<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.2.2 &lt;example@free.fr&gt;: Recipient address rejected: Quota exceeded (mailbox for user is full)</summary><p class="info">The recepients email mailbox is full and currently unable to accept messages.</p><ul>
+<li><a href="https://postmaster.free.fr/index_en.html">https://postmaster.free.fr/index_en.html</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="godaddy">GoDaddy<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 $(_ipsrc) has been temporarily blocked for attempting to mail too many invalid recipients. IB112</summary><p class="info">The connecting IP has attempted to send to a number of invalid recipients, and has been blocked for at least an hour. Please check to ensure you aren't sending to lists containing invalid recipients. If you are, please remove those addresses from your list and try again later.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 $(_ipsrc) has been blocked for the day, for attempting to mail too many invalid recipients. IB113</summary><p class="info">The connecting IP has attempted to send to a number of invalid recipients, over the course of multiple hours and has been blocked for at least a day. Please check to ensure you aren't sending to lists containing invalid recipients. If you are, please remove those addresses from your list and try again later.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 $(_ipsrc) has been temporarily blocked for attempting to send too many messages containing content judged to be spam by the internet community. IB110</summary><p class="info">The connecting IP has attempted to send too many messages considered spam, and has been blocked for at least an hour. Please check to ensure you aren't sending messages considered as spam, and try again later.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 $(_ipsrc) has been blocked for the day, for attempting to send too many messages containing content judged to be spam by the internet community. IB111</summary><p class="info">The connecting IP has attempted to send too many messages considered spam over the course of multiple hours, and has been blocked for at least a day. Please check to ensure you aren't sending messages considered as spam, and try again later.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 RBL Reject -Please submit an unblock request</summary><p class="info">The connecting IP address exists on an internal block list. Please check to ensure you aren't sending messages considered as spam, to valid recipients and please submit an unblock request.</p><ul>
+<li><a href="http://unblock.secureserver.net">http://unblock.secureserver.net</a></li>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 IB103. Connection refused. $(_ipsrc) has a poor reputation on Cloudmark Sender Intelligence (CSI).</summary><p class="info">The connecting IP address exists on Cloudmark Sender Intelligence (CSI) block list. Please check to ensure you aren't sending messages considered as spam, to valid recipients and please submit an unblock request.</p><ul>
+<li><a href="http://csi.cloudmark.com/reset-request">http://csi.cloudmark.com/reset-request</a></li>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 IB104. Connection refused. $(_ipsrc) is listed on the Spamhaus Block List (SBL). Please visit http://www.spamhaus.org/sbl for more information or to request a delisting.</summary><p class="info">The connecting IP address exists on Spamhaus' (SBL) block list. Please check to ensure you aren't sending messages considered as spam, to valid recipients and please submit an unblock request.</p><ul>
+<li><a href="http://check.spamhaus.org">http://check.spamhaus.org</a></li>
+<li><a href="http://www.spamhaus.org/sbl">http://www.spamhaus.org/sbl</a></li>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 IB105. Connection refused. $(_ipsrc) is listed on the Exploits Block List (XBL). Please visit http://www.spamhaus.org/xblfor more information.</summary><p class="info">The connecting IP address exists on Spamhaus' (XBL) block list. Please check to ensure you aren't sending messages considered as spam, to valid recipients and please submit an unblock request.</p><ul>
+<li><a href="http://check.spamhaus.org">http://check.spamhaus.org</a></li>
+<li><a href="http://www.spamhaus.org/xbl">http://www.spamhaus.org/xbl</a></li>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 IB106. Connection refused. $(_ipsrc) is listed on the Spamhaus Block List (PBL). Please visit http://www.spamhaus.org/pbl for more information or to request a delisting.</summary><p class="info">The connecting IP address exists on Spamhaus' (PBL) block list. Please check to ensure you aren't sending messages considered as spam, to valid recipients and please submit an unblock request.</p><ul>
+<li><a href="http://check.spamhaus.org">http://check.spamhaus.org</a></li>
+<li><a href="http://www.spamhaus.org/pbl">http://www.spamhaus.org/pbl</a></li>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="infomaniak">Infomaniak<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.7.1 Relay access denied</summary><p class="info">You are sending an email to a server that has not been configured to receive email for that domain.</p></details></dd>
+</div>
+<div class="card">
+<dt id="mimecast">Mimecast<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 Email rejected due to security policies (e.g., MCSpamSignature.x.x).</summary><p class="info">A signature could be a virus or a spam score over the maximum threshold. The spam score isn't available in the Administration Console. If you aren't a Mimecast customer but have emails rejected with this error code, contact the recipient to adjust their configuration and permit your address. If unsuccessful, your IT department can- submit a request to review these email rejections via our Sender Feedback form linked below.</p><ul>
+<li><a href="https://go.smtp.codes/mimecastsenderfeedback">https://go.smtp.codes/mimecastsenderfeedback</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 Mail loop detected.</summary><p class="info">The message has too many Received Headers as it has been forwarded across multiple hops. Once 25 hops have been reached; the email is rejected.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 Host network not allowed.</summary><p class="info">The message has triggered a Geographical Restriction policy set by the administrator.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="outlook">Outlook.com<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.2.122 The recipient has exceeded their limit for the number of messages they can receive per hour. For more information go to http://go.microsoft.com/fwlink/?LinkId=526653. (#) [outlook.com]</summary><p class="info">The Microsoft 365 or Office 365 recipient has exceeded the number of messages they can receive per hour from all senders.</p><ul>
+<li><a href="http://go.microsoft.com/fwlink/?LinkId=526653">http://go.microsoft.com/fwlink/?LinkId=526653</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.2.121 The sender has exceeded the limit for the number of messages they can send to this recipient per hour. For more information go to http://go.microsoft.com/fwlink/?LinkId=526653. [#.prod.outlook.com #]</summary><p class="info">The sender has exceeded the maximum number of messages they're allowed to send per hour to a specific recipient in Exchange Online.</p><ul>
+<li><a href="http://go.microsoft.com/fwlink/?LinkId=526653">http://go.microsoft.com/fwlink/?LinkId=526653</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="proofpoint">Proofpoint<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.7.1 &lt;email@example&gt;: Relay access denied</summary><ul>
+<li><a href="https://help.proofpoint.com/Proofpoint_Essentials/Email_Security/Administrator_Topics/040_usersandgroups/Outbound_mail_rejected_-_554_5.7.1%3A_Relay_access_denied">https://help.proofpoint.com/Proofpoint_Essentials/Email_Security/Administrator_Topics/040_usersandgroups/Outbound_mail_rejected_-_554_5.7.1%3A_Relay_access_denied</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="rackspace">Rackspace<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.7.1 user@example.com: Sender address rejected: Blocked by this recipient (GE)</summary><p class="info">You have been manually added to the recipient's block list.</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 ACL dns_rbl; Client host {IP} blocked using Senderscore. Please visit Senderscore for more information on why this message could not be delivered (G31)</summary><p class="info">Your IP has bad reputation with Validity's SenderScore. Use the link below to get more information.</p><ul>
+<li><a href="https://senderscore.org/rtbl">https://senderscore.org/rtbl</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 ACL dns_rbl; Client host {IP} blocked using Spamhaus XBL. Please visit Spamhaus for more information on why this message could not be delivered (G31)</summary><p class="info">Your IP is listed in the Spamhaus XBL. Use the link below to get more information.</p><ul>
+<li><a href="https://check.spamhaus.org">https://check.spamhaus.org</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="rambler">Rambler<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.7.1 Spam message rejected; If this is not spam contact abuse</summary><p class="info">After reviewing your messages to ensure they follow sender best practices, you can contact Rambler's support team for review.</p><ul>
+<li><a href="https://help.rambler.ru/feedback/mail/form/144">https://help.rambler.ru/feedback/mail/form/144</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="trendmicro">Trend Micro<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.7.1 &lt;example@example.com&gt;: Recipient address rejected: BLOCK-SEND-ER.</summary><p class="info">There's certain criteria in the message itself that this recipient is blocking, which could include a block on the sender's domain/IP by an admin of the recipient's domain. </p><ul>
+<li><a href="https://success.trendmicro.com/solution/1055758-blocking-an-email-address-or-domain-in-hosted-email-security-hes#collapseTwo">https://success.trendmicro.com/solution/1055758-blocking-an-email-address-or-domain-in-hosted-email-security-hes#collapseTwo</a></li>
+</ul>
+</details></dd>
+<dd>554 5.7.1 &lt;example@example.com&gt;: Recipient address rejected: Invalid-Recipient.</dd>
+<dd><details><summary>554 5.7.1 &lt;example@example.com&gt;: Recipient address rejected: NO-DOMAIN.</summary><p class="info">The recipient is permanently undeliverable unless manual changes are made on the recipient's end to allow the sender's domain and/or sending IP. This doesn't necessarily mean the message was purposefully blocked, just that routing of the message through Trend Micro is not yet allowed. </p><ul>
+<li><a href="https://success.trendmicro.com/solution/1120618-send-outbound-mails-to-trend-micro-email-security-tmems-failed-with-554-return-code">https://success.trendmicro.com/solution/1120618-send-outbound-mails-to-trend-micro-email-security-tmems-failed-with-554-return-code</a></li>
+</ul>
+</details></dd>
+<dd>554 5.7.1 &lt;example@example.com&gt;: Recipient address rejected: BLOCK-RCPT.</dd>
+</div>
+<div class="card">
+<dt id="yahoo">Yahoo<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 delivery error: dd This user doesn&#039;t have a example.com account (example@example.com) [-9] - example.yahoo.com</summary><ul>
+<li><a href="https://postmaster.yahooinc.com/error-codes">https://postmaster.yahooinc.com/error-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 delivery error: dd Sorry, your message to example@example.com cannot be delivered. This mailbox is disabled (554.30). - example.yahoo.com</summary><p class="info">Yahoo email addresses are used for lots of different services -- not just for receiving email. This bounce means that while this recipient is not using Yahoo's email service, the address itself exists for login purposes for other services. The best option is suppress this email address from your lists, as it hasn't used its inbox in a very long time (if ever). </p><ul>
+<li><a href="https://postmaster.yahooinc.com/error-codes">https://postmaster.yahooinc.com/error-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 delivery error: dd Requested mail action aborted - example.yahoo.com</summary><ul>
+<li><a href="https://postmaster.yahooinc.com/error-codes">https://postmaster.yahooinc.com/error-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.9 Message not accepted for policy reasons.</summary><ul>
+<li><a href="https://postmaster.yahooinc.com/error-codes">https://postmaster.yahooinc.com/error-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 Message not allowed - [PH01] Email not accepted for policy reasons. Please visit https://postmaster.yahooinc.com/error-codes</summary><p class="info">This rejection occurs out of suspicion that the message or sender is phishing. Review the URLs and images in your content. Once investigated and you can verify your messages are safe, you can request a review from Verizon's support team. </p><ul>
+<li><a href="https://postmaster.yahooinc.com/sender-request">https://postmaster.yahooinc.com/sender-request</a></li>
+<li><a href="https://postmaster.yahooinc.com/error-codes">https://postmaster.yahooinc.com/error-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 Message not allowed - Headers are not RFC compliant [291]</summary><p class="info">Your message headers are not compliant. Double check your sending settings and parameters or ask your email provider for assistance.</p><ul>
+<li><a href="https://datatracker.ietf.org/doc/html/rfc2822.html">https://datatracker.ietf.org/doc/html/rfc2822.html</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 Message not allowed - [299]</summary><ul>
+<li><a href="https://postmaster.yahooinc.com/error-codes">https://postmaster.yahooinc.com/error-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 delivery error: dd example@example.com is no longer valid. [-20] - example.yahoo.com</summary><ul>
+<li><a href="https://postmaster.yahooinc.com/error-codes">https://postmaster.yahooinc.com/error-codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="yandex">Yandex<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.7.1 [1] Message rejected under suspicion of SPAM; https://ya.cc/1IrBc ##</summary><p class="info">While a message being rejected as spam isn't good news for anyone, this bounce response is especially helpful for those who don't typically send to Russian domains. In those cases, you'll see this bounce when online forms are being exploited by spam bots repeatedly victimizing Yandex recipients. Please check all of your online forms to be sure that they are properly protected.</p><ul>
+<li><a href="https://yandex.ru/support/mail/web/spam.html#troubleshooting__sending-limits">https://yandex.ru/support/mail/web/spam.html#troubleshooting__sending-limits</a></li>
+<li><a href="https://postmarkapp.com/blog/when-spambots-attack-protecting-your-forms-from-abuse">https://postmarkapp.com/blog/when-spambots-attack-protecting-your-forms-from-abuse</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="zerospam">ZeroSpam<span class="top"><a href="#">↑</a></span></dt>
+<dd>554 5.7.1 &lt;email@example.com&gt;: Recipient address rejected: Not in recipient list</dd>
+</div>
+<div class="card">
+<dt id="zoho">Zoho<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.2.3 MailPolicy violation Error delivering to mailboxes,mx.zoho.com</summary><p class="info">Reasons for this response vary significantly, so the best place to start is the Zoho Community forum.</p><ul>
+<li><a href="https://help.zoho.com/portal/en/community">https://help.zoho.com/portal/en/community</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 Email cannot be delivered. Reason: Email flagged as Spam.</summary><ul>
+<li><a href="https://www.zoho.com/mail/help/spam-reason.html">https://www.zoho.com/mail/help/spam-reason.html</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="icloud">iCloud<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.7.1 &lt;example@icloud.com&gt;: Relay access denied</summary><p class="info">The recipient domain has not been correctly setup in iCloud+</p><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 [CS01] Message rejected due to local policy.</summary><p class="info">Apple Mail is blocking the email because of an email filter policy on their end. Usually due to to the sender domain / IP reputation. If you're following Apple's suggested best practices, you can also contact Apple's postmaster team with mail logs for delivery support.</p><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 [HM08] Message rejected due to local policy.</summary><p class="info">Apple Mail is blocking the email because of an email filter policy on their end. Usually due to to the sender domain / IP reputation. If you're following Apple's suggested best practices, you can also contact Apple's postmaster team with mail logs for delivery support.</p><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 [BS01] Message rejected due to local policy.</summary><p class="info">Apple Mail is blocking the email because of an email filter policy on their end. Please make sure that affected customers have valid SPF, DKIM and DMARC to remediate them. If you're following Apple's suggested best practices, you can also contact Apple's postmaster team with mail logs for delivery support.</p><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

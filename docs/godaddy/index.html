@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>GoDaddy</title>
+<meta charset="utf-8">
+<meta name="title" content="GoDaddy">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="GoDaddy">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>GoDaddy</h1>
+<p>GoDaddy is a domain hosting provider with a range of online services. It offers both email to its customers (via Microsoft 365) as well as email through their own platform (Profesional Email) email forwarding, as well as mail originating from their hosting platforms. secureserver.net is the domain used for their email servers. Any mail to or from a server with that domain will be controlled by GoDaddy. All cases provide spam filtering with very little customization, but GoDaddy's support guide on SMTP errors also includes a link to a contact form for more investigation.</p>
+<h2>Domains</h2>
+<p>godaddy.com &#183; secureserver.net</p>
+<h2>Codes</h2>
+<p><a href="#421">421</a> &#183; <a href="#452">452</a> &#183; <a href="#501">501</a> &#183; <a href="#550">550</a> &#183; <a href="#552">552</a> &#183; <a href="#554">554</a></p>
+<dl>
+<div class="card">
+<dt id="421"><a href="/421">421</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 Temporarily rejected. Reverse DNS for $(_ipsrc) failed. IB108</summary><p class="info">The mail server encountered a temporary failure. Most likely it isn't anything to do with the session, but rather the server is overloaded or having issues. If you try again later, it should work.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#srb">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#srb</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="452"><a href="/452">452</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>452 $(_toemail) temporarily unavailable. Try again later.</summary><p class="info">The mail server encountered a temporary failure. Most likely it isn't anything to do with the session, but rather the server is overloaded or having issues. If you try again later, it should work.</p></details></dd>
+</div>
+<div class="card">
+<dt id="501"><a href="/501">501</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>HELO/EHLO rejected. IB301</summary><p class="info">The server is rejecting the HELO/EHLO command. Try using a different HELO/EHLO string, and verify the one you are using isn't being abused.</p></details></dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 $(_ipsrc) is not allowed to send from &lt;$(_fromdomain)&gt; per its SPF Record. Please inspect your SPF settings, and try again. IB508</summary><p class="info">The connecting IP is not allowed to send from the domain in the 'From' address. This can happen if the SPF record for the domain does not include the sending IP. Please check your SPF settings and try again.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#srb">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#srb</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 $(_ipsrc)&gt; This IP has sent too many messages this hour. IB504</summary><p class="info">The connecting IP has sent too many messages this hour based on it's class of service. Please try again later.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 $(_ipsrc)&gt; This message has exceded the max number of messages per session. Please open a new session and try again. IB510</summary><p class="info">The connecting IP has sent too many messages in a single session. Please open a new session and try again.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 $(_toemail)&gt; Recipient not found.</summary><p class="info">The recipient email address was not found to be a valid recipient on our system. Please check the address and try again.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#irbpl_id=3153&prog_id=3153#irb">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#irbpl_id=3153&prog_id=3153#irb</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="552"><a href="/552">552</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>552 $(_sid) - $(_id) Message size exceeds maximum permitted. Please reduce message size, and retry.</summary><p class="info"> The message size exceeds the maximum limit set by the recipient's email server. This can happen if the email contains large attachments or if the total size of the email exceeds the allowed limit (Currently 30MB).</p></details></dd>
+<dd><details><summary>552 $(_sid) - $(_id) Virus infected message rejected. IB705</summary><p class="info">A known virus was detected in your message content, attachments, and/or URLs. Run the full message and its headers through a virus scanner to identify the source.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#crb>">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#crb></a></li>
+</ul>
+</details></dd>
+<dd><details><summary>552 $(_sid) - $(_id) This message has been rejected due to content judged to be spam by the internet community IB212 - If you feel this is in error, please submit a request using the link below.</summary><p class="info">The message was rejected because it was detected as spam. This can happen if the email contains certain domains, keywords, ipaddresses, phrases, etc that are commonly associated with spam and have been reported as such.</p><ul>
+<li><a href="https://checkspam.secureserver.net/?sid=$(_sid)&mid=$(_id">https://checkspam.secureserver.net/?sid=$(_sid)&mid=$(_id</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 $(_ipsrc) has been temporarily blocked for attempting to mail too many invalid recipients. IB112</summary><p class="info">The connecting IP has attempted to send to a number of invalid recipients, and has been blocked for at least an hour. Please check to ensure you aren't sending to lists containing invalid recipients. If you are, please remove those addresses from your list and try again later.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 $(_ipsrc) has been blocked for the day, for attempting to mail too many invalid recipients. IB113</summary><p class="info">The connecting IP has attempted to send to a number of invalid recipients, over the course of multiple hours and has been blocked for at least a day. Please check to ensure you aren't sending to lists containing invalid recipients. If you are, please remove those addresses from your list and try again later.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 $(_ipsrc) has been temporarily blocked for attempting to send too many messages containing content judged to be spam by the internet community. IB110</summary><p class="info">The connecting IP has attempted to send too many messages considered spam, and has been blocked for at least an hour. Please check to ensure you aren't sending messages considered as spam, and try again later.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 $(_ipsrc) has been blocked for the day, for attempting to send too many messages containing content judged to be spam by the internet community. IB111</summary><p class="info">The connecting IP has attempted to send too many messages considered spam over the course of multiple hours, and has been blocked for at least a day. Please check to ensure you aren't sending messages considered as spam, and try again later.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 RBL Reject -Please submit an unblock request</summary><p class="info">The connecting IP address exists on an internal block list. Please check to ensure you aren't sending messages considered as spam, to valid recipients and please submit an unblock request.</p><ul>
+<li><a href="http://unblock.secureserver.net">http://unblock.secureserver.net</a></li>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 IB103. Connection refused. $(_ipsrc) has a poor reputation on Cloudmark Sender Intelligence (CSI).</summary><p class="info">The connecting IP address exists on Cloudmark Sender Intelligence (CSI) block list. Please check to ensure you aren't sending messages considered as spam, to valid recipients and please submit an unblock request.</p><ul>
+<li><a href="http://csi.cloudmark.com/reset-request">http://csi.cloudmark.com/reset-request</a></li>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 IB104. Connection refused. $(_ipsrc) is listed on the Spamhaus Block List (SBL). Please visit http://www.spamhaus.org/sbl for more information or to request a delisting.</summary><p class="info">The connecting IP address exists on Spamhaus' (SBL) block list. Please check to ensure you aren't sending messages considered as spam, to valid recipients and please submit an unblock request.</p><ul>
+<li><a href="http://check.spamhaus.org">http://check.spamhaus.org</a></li>
+<li><a href="http://www.spamhaus.org/sbl">http://www.spamhaus.org/sbl</a></li>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 IB105. Connection refused. $(_ipsrc) is listed on the Exploits Block List (XBL). Please visit http://www.spamhaus.org/xblfor more information.</summary><p class="info">The connecting IP address exists on Spamhaus' (XBL) block list. Please check to ensure you aren't sending messages considered as spam, to valid recipients and please submit an unblock request.</p><ul>
+<li><a href="http://check.spamhaus.org">http://check.spamhaus.org</a></li>
+<li><a href="http://www.spamhaus.org/xbl">http://www.spamhaus.org/xbl</a></li>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 IB106. Connection refused. $(_ipsrc) is listed on the Spamhaus Block List (PBL). Please visit http://www.spamhaus.org/pbl for more information or to request a delisting.</summary><p class="info">The connecting IP address exists on Spamhaus' (PBL) block list. Please check to ensure you aren't sending messages considered as spam, to valid recipients and please submit an unblock request.</p><ul>
+<li><a href="http://check.spamhaus.org">http://check.spamhaus.org</a></li>
+<li><a href="http://www.spamhaus.org/pbl">http://www.spamhaus.org/pbl</a></li>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

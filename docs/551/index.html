@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>SMTP Error Code 551</title>
+<meta charset="utf-8">
+<meta name="title" content="SMTP Error Code 551">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="SMTP Error Code 551">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v={timestamp}">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>SMTP Error Code 551</h1>
+<p>The transaction failed permanently. The server will not try to send the message again.</p>
+<h2>Providers</h2>
+<p><a href="#improvmx">ImprovMX</a> &#183; <a href="#yandex">Yandex</a></p>
+<dl>
+<div class="card">
+<dt id="improvmx">ImprovMX<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>551 5.7.1 Due to the very low reputation of the sending domain, this message has been blocked (Code 2).</summary><p class="info">Your domain is on a reputation blacklist such as the Spamhaus DBL. You will need to be delisted before you can send emails.</p></details></dd>
+<dd><details><summary>551 5.7.1 Loop detected: Email is sent and forwarded from/to improvmx.com. (#id-5.9.0)</summary><p class="info">The destination mailbox loops back to ImprovMX. They block these messages in order to avoid loops.</p></details></dd>
+<dd><details><summary>551 5.7.1 Domain not found (#id-5.9.2)</summary><p class="info">The domain was not found in the ImprovMX database.</p></details></dd>
+<dd>551 5.7.1 Our database returned invalid pieces of information about the requested recipient&rsquo;s domain (#id-5.9.3)</dd>
+<dd>551 5.7.1 Unable to correctly read the forwarding recipient (where to forward the email to) (#id-5.9.5)</dd>
+</div>
+<div class="card">
+<dt id="yandex">Yandex<span class="top"><a href="#">↑</a></span></dt>
+<dd>551 5.3.0 Unknown error</dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

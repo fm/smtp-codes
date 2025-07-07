@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Orange</title>
+<meta charset="utf-8">
+<meta name="title" content="Orange">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Orange">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Orange</h1>
+<p>Orange is an internet service provider that provides free email accounts to both its customers and registered non-customers, headquartered in France. Eurproean receivers tend to have high expectations for GDPR legal complaince, so after you've ensured the mail is legitimate and following all best practices, you can typically report false-positive blocks and spam filtering to Orange's "Abuse Cell" team to investigate.</p>
+<h2>Codes</h2>
+<p><a href="#501">501</a> &#183; <a href="#550">550</a> &#183; <a href="#552">552</a></p>
+<dl>
+<div class="card">
+<dt id="501"><a href="/501">501</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>501 5.1.0 Emetteur invalide. Invalid Sender. OFR004_405 [405]</summary><p class="info">This error suggests that Orange is seeing an issue with the Return-Path (SPF) of the message. Check the settings with your sending email provider to make sure your Return-Path is aligned with your sending domain.</p></details></dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>550 5.2.0 Mail rejete. Mail rejected. ofr_506 [506]</dd>
+<dd><details><summary>550 5.1.1 Adresse d au moins un destinataire invalide. Invalid recipient. OFR_416 [416]</summary><p class="info">You have sent to a mailbox that doesn't exist. Make sure there are no typos or other errors.</p></details></dd>
+<dd><details><summary>550 mwinfXXXX ME Adresse IP source bloquee pour incident de spam. Client host blocked for spamming issues. OFR006_102 Ref http://csi.cloudmark.com/reset-request/?ip=xxx.xxx.xxx.xxx [102]</summary><p class="info">Your IP has been blocked by Cloudmark Sender Intelligence and must be delisted to deliver mail.</p><ul>
+<li><a href="http://csi.cloudmark.com/reset-request">http://csi.cloudmark.com/reset-request</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="552"><a href="/552">552</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>552 5.1.1 Boite du destinataire pleine. Recipient overquota. OFR_417 [417]</dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

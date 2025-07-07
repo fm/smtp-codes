@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>iCloud</title>
+<meta charset="utf-8">
+<meta name="title" content="iCloud">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="iCloud">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>iCloud</h1>
+<p>iCloud provides Apple customers with free email accounts. Users can also link their custom domains to it. Their postmaster includes some basic deliverability recommendations, but troubleshooting requires contacting their Postmaster team.</p>
+<h2>Domains</h2>
+<p>icloud.com &#183; me.com &#183; mac.com</p>
+<h2>Codes</h2>
+<p><a href="#421">421</a> &#183; <a href="#451">451</a> &#183; <a href="#550">550</a> &#183; <a href="#552">552</a> &#183; <a href="#554">554</a></p>
+<dl>
+<div class="card">
+<dt id="421"><a href="/421">421</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 4.7.0 me.com Error: too many errors</summary><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>421 4.7.1 Messages to example@icloud.com deferred due to excessive volume. Try again later - https://support.apple.com/en-us/HT204137</summary><p class="info">The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.</p><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="451"><a href="/451">451</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>451 4.7.1 Service unavailable - try again later</summary><p class="info">Messages are not being accepted right now. You may usually see this for sends happening at the "top of the hour" when many senders around the world are also sending aggressively to Apple.</p><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 5.1.1 &lt;example@icloud.com&gt;: user does not exist</summary><p class="info">This mailbox does not exist at Apple. Check to make sure there are no typos with the address.</p><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 [CS01] Message rejected due to local policy. Please visit https://support.apple.com/en-us/HT204137</summary><p class="info">Apple Mail is blocking the email because of an email filter policy on their end. If you're unsure of the source of this issue, and following Apple's suggested best practices, you can contact Apple's postmaster team with mail logs for delivery support.</p><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 Your message was rejected due to example.com DMARC policy.</summary><p class="info">The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and/or DKIM. Contact your email provider for more details on how to configure them.</p><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 Your email was rejected due to having a domain present in the Spamhaus DBL -- see https://www.spamhaus.org/dbl/</summary><p class="info">Apple Mail checks all URLs in your message content against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.</p><ul>
+<li><a href="https://check.spamhaus.org">https://check.spamhaus.org</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="552"><a href="/552">552</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>552 5.2.2 &lt;example@icloud.com&gt;: user is overquota</summary><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.7.1 &lt;example@icloud.com&gt;: Relay access denied</summary><p class="info">The recipient domain has not been correctly setup in iCloud+</p><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 [CS01] Message rejected due to local policy.</summary><p class="info">Apple Mail is blocking the email because of an email filter policy on their end. Usually due to to the sender domain / IP reputation. If you're following Apple's suggested best practices, you can also contact Apple's postmaster team with mail logs for delivery support.</p><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 [HM08] Message rejected due to local policy.</summary><p class="info">Apple Mail is blocking the email because of an email filter policy on their end. Usually due to to the sender domain / IP reputation. If you're following Apple's suggested best practices, you can also contact Apple's postmaster team with mail logs for delivery support.</p><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 [BS01] Message rejected due to local policy.</summary><p class="info">Apple Mail is blocking the email because of an email filter policy on their end. Please make sure that affected customers have valid SPF, DKIM and DMARC to remediate them. If you're following Apple's suggested best practices, you can also contact Apple's postmaster team with mail logs for delivery support.</p><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Web.de</title>
+<meta charset="utf-8">
+<meta name="title" content="Web.de">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Web.de">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Web.de</h1>
+<p>Web.de is a search engine and email provider, headquartered in Germany. Eurproean receivers tend to have high expectations for GDPR legal complaince, and in some cases email deliverability is aided when the sender is included in high profile "whitelists" and certification programs.</p>
+<h2>Codes</h2>
+<p><a href="#550">550</a></p>
+<dl>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 &lt;example@example.com&gt;: Reject due to SPF policy. The originating IP of the message is not permitted by the domain owner</summary><p class="info">The email was rejected, because it was sent from a server that is not included in the domain owner's SPF record. This usually indicates that the sender address has been spoofed and that the email is spam/phishing.</p><ul>
+<li><a href="https://postmaster.web.de/en/error-messages">https://postmaster.web.de/en/error-messages</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 &lt;example@example.com&gt;: Syntax error in parameters or arguments</summary><p class="info">Due to an incorrect configuration, email reception has been refused. Please contact your administrator who should correct the server configuration based on their recommendations.</p><ul>
+<li><a href="https://postmaster.web.de/en/best-practice">https://postmaster.web.de/en/best-practice</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 &lt;example@example.com&gt;: Requested action not taken: mailbox unavailable</summary><p class="info">The specified recipient does not exist on their systems or the recipient has not used their inbox for an extended period of time and the inbox has been temporarily disabled due to inactivity.</p><ul>
+<li><a href="https://postmaster.web.de/en/error-messages">https://postmaster.web.de/en/error-messages</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 &lt;example@example.com&gt;: Bad DNS PTR resource record</summary><p class="info">Emails from your email server were rejected because the PTR Resource Record of your IP address does not follow their guidelines. Possible reasons for this can be: The PTR-RR states that the IP address was dynamically allocated or the PTR-RR is a generic standard entry of your provider. Please allocate an independent and fully qualified domain name to your email server.</p><ul>
+<li><a href="https://postmaster.web.de/en/error-messages">https://postmaster.web.de/en/error-messages</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 &lt;example@example.com&gt;: Reject due to policy restrictions (header based)</summary><p class="info">Your message will be rejected by their system if: any of the technical information included in the email doesn't meet the standards, the email violates their guidelines or, it is not plausible, i.e.: when specifying the date. This is applicable to all emails with more than one of the following headers: BCC, CC, Date, From, Sender, Subject, To. In addition, the headers "Date, From, Sender, To" must be syntactically correct.</p><ul>
+<li><a href="https://postmaster.web.de/en/email-policy">https://postmaster.web.de/en/email-policy</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 &lt;example@example.com&gt;: Reject due to policy restrictions (domain based)</summary><p class="info">The email has been rejected due to their current security policy. This may occur if the sender domain is known as a spam domain.</p><ul>
+<li><a href="https://postmaster.web.de/en/email-policy">https://postmaster.web.de/en/email-policy</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 &lt;example@example.com&gt;: Reject due to policy restrictions (IP based)</summary><p class="info">If a high percentage of e-mails are classified as spam by their filters, all messages coming from the sender's IP address will be temporarily rejected for a specific time frame.</p><ul>
+<li><a href="https://postmaster.web.de/en/email-policy">https://postmaster.web.de/en/email-policy</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 &lt;example@example.com&gt;: Requested mail action aborted: exceeded storage allocation, Quota exceeded</summary><p class="info">The potential recipient does not have sufficient free space in their inbox</p><ul>
+<li><a href="https://postmaster.web.de/en/error-messages">https://postmaster.web.de/en/error-messages</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 &lt;example@example.com&gt;: IP address is block listed</summary><p class="info">Your IP is in one of the block lists used by Web.de</p><ul>
+<li><a href="https://postmaster.web.de/en/error-messages">https://postmaster.web.de/en/error-messages</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 &lt;example@example.com&gt;: Invalid DNS MX or A/AAAA resource record</summary><p class="info">Your domain does not have an MX record or an A record that can receive replies or bounces, or the MX record is not resolvable.</p><ul>
+<li><a href="https://postmaster.web.de/en/error-messages">https://postmaster.web.de/en/error-messages</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Exchange Online Protection</title>
+<meta charset="utf-8">
+<meta name="title" content="Exchange Online Protection">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Exchange Online Protection">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Exchange Online Protection</h1>
+<p>Exchange Online Protection (EOP) is the spam filter for Microsoft 365, the business productivity suite from Microsoft. It provides businesses with spam filtering, block lists, and firewall protection. If a message is going to spam or getting blocked, there are typically instructions for the email admin to fix the specific error in Exchange documentation.</p>
+<h2>Codes</h2>
+<p><a href="#421">421</a> &#183; <a href="#451">451</a> &#183; <a href="#550">550</a> &#183; <a href="#554">554</a></p>
+<dl>
+<div class="card">
+<dt id="421"><a href="/421">421</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>421 4.3.2 The maximum number of concurrent connections per resource forest has exceeded a limit, closing transmission channel. example.com. PRX8 [example.com]</dd>
+</div>
+<div class="card">
+<dt id="451"><a href="/451">451</a><span class="top"><a href="#">↑</a></span></dt>
+<dd>451 4.7.0 Temporary server error. Please try again later. PRX4 NextHop: example.com [example.com]</dd>
+<dd>451 4.7.500 Server busy. Please try again later from [x.xx.xx.x]. (AS77712344) [#.prod.protection.outlook.com]</dd>
+<dd><details><summary>451 4.4.62 Mail sent to the wrong Office 365 region. ATTR35. For more information please go to  https://go.microsoft.com/fwlink/?linkid=865268 [#.prod.protection.outlook.com]</summary><p class="info">This error can result from misconfigured connectors, expired certificates, or incorrect mail routing in hybrid Exchange environments.</p><ul>
+<li><a href="https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/wrong-office-365-region-exo">https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/wrong-office-365-region-exo</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 5.4.1 [email@example.com]: Recipient address rejected: Access denied [example.com]</summary><p class="info">Usually this bounce means the recipient address is invalid, but sometimes it can be caused by internal setup or routing issues. Reach out to the recipient's mail admin to verify.</p><ul>
+<li><a href="https://support.microsoft.com/en-us/topic/ndr-error-code-550-5-4-1-recipient-address-rejected-access-denied-c0e98a8e-81db-49c2-9bf1-32a1734d3e77">https://support.microsoft.com/en-us/topic/ndr-error-code-550-5-4-1-recipient-address-rejected-access-denied-c0e98a8e-81db-49c2-9bf1-32a1734d3e77</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 Service unavailable, Client host [x.xx.xx.xx] blocked using Spamhaus. (AS16012611)</summary><p class="info">Exchange Online checks the sending IP against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.</p><ul>
+<li><a href="https://check.spamhaus.org">https://check.spamhaus.org</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 Service unavailable, Helo domain is listed in Spamhaus. (S8001) [#.prod.protection.outlook.com]</summary><p class="info">First, the forward DNS lookup (domain name to IP address) of your sending IP should match the HELO value set in your mailserver. Then Exchange Online checks this HELO domain against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.</p><ul>
+<li><a href="https://check.spamhaus.org">https://check.spamhaus.org</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.606 Access denied, banned sending IP [x.xx.xx.xx]. To request removal from this list please visit https://sender.office.com/ and follow the directions. For more information please go to  http://go.microsoft.com/fwlink/?LinkID=526655 (AS16012609)</summary><p class="info">Your IP has low reputation with Microsoft. Follow the instructions on the link below to suubmit mitigation. You may need to reply to their emails a few times.</p><ul>
+<li><a href="https://sender.office.com/">https://sender.office.com/</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 TRANSPORT.RULES.RejectMessage; the message was rejected by organization policy</summary><p class="info">Your message was blocked due to a mail flow rule configured by the recipient organization. You will have to contact their mail admins to discover why.</p><ul>
+<li><a href="https://sender.office.com/">https://sender.office.com/</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.4.14 Hop count exceeded - possible mail loop ATTR34</summary><p class="info">That means the message is being passed around like a hot potato between servers. Possible reasons include: A misconfigured hybrid environment; internal M365 wonkiness; they are forwarding it somewhere, and it's being sent back to 365 multiple times; a mailbox is being migrated between clusters, or the mailbox was corrupted/misconfigured. There is nothing you as the sender can do; if it's an important email, try contacting the recipient via alternate means.</p></details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Mimecast</title>
+<meta charset="utf-8">
+<meta name="title" content="Mimecast">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Mimecast">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Mimecast</h1>
+<p>Mimecast is a spam filter for businesses. Mail is routed through mailservers owned by Mimecast (*.mimecast.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in the user guide to identify and resolve delivery issues.</p>
+<h2>Codes</h2>
+<p><a href="#451">451</a> &#183; <a href="#550">550</a> &#183; <a href="#554">554</a></p>
+<dl>
+<div class="card">
+<dt id="451"><a href="/451">451</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>451 Open relay not allowed</summary><p class="info">The sender and recipient domains specified in the transmission are external to Mimecast. They aren't allowed to relay through the Mimecast service, and/or the connecting IP address isn't recognized as authorized.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>451 Internal resource temporarily unavailable</summary><p class="info">The sending mail server is subjected to Greylisting. This requires the server to retry the connection between one minute and 12 hours. Alternatively, the sender's IP address has a poor reputation.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>451 Account inbounds disabled.</summary><p class="info">The customer account Inbound emails are disabled in the Mimecast Administration Console.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>451 Account service is temporarily unavailable</summary><p class="info">There are too many concurrent inbound connections for the account. The default is 20.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 Administrative prohibition - envelope blocked</summary><p class="info">The sender's email address or domain has triggered a Blocked Senders Policy or an SPF hard rejection.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 Rejected by header based Anti-Spoofing policy: email@example.com</summary><p class="info">Often this bounce is related to sending both 'To' and 'From' the same domain but through a third party (like an ESP).</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 Rejected by header based manually Blocked Senders: email@example.com</summary><p class="info">A personal block policy is in place for the email address/domain.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 Envelope blocked - User Entry</summary><p class="info">This is not a global block for all Mimecast customers. Instead just this single recipient domain's user has blocked your email.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 Envelope blocked - User Domain Entry</summary><p class="info">This is not a global block for all Mimecast customers. Instead just this single recipient domain's user has blocked your domain.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 Rejected by header-based manually Blocked Senders - block for manual block.</summary><p class="info">This is not a global block for all Mimecast customers. Instead just this single recipient domain's user has blocked your address/domain.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 Rejected by header-based manually Blocked Senders - Block policy for Header From.</summary><p class="info">This is not a global block for all Mimecast customers. Instead just this single recipient domain's user has blocked your Header From address.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 Rejected by header-based manually Blocked Senders - Block policy for Envelope From address.</summary><p class="info">This is not a global block for all Mimecast customers. Instead just this single recipient domain's user has blocked your Envelope From address.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 Local CT IP Reputation - (reject)</summary><p class="info">Ongoing reputation checks have resulted in the message being rejected due to poor IP reputation. This could occur after a 4xx error.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 SPF Sender Invalid - envelope rejected.</summary><p class="info">The inbound message has been rejected because the originated IP address isn't listed in the published SPF records for the sending domain. Ensure all the IP addresses for your mail servers are listed in your SPF records.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 DKIM Sender Invalid - envelope rejected.</summary><p class="info">The DKIM key for the outbound message is broken and doesn't match the DNS record of the registered sender. Check your organization's DNS record is populated with the right public key.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 DMARC Sender Invalid - envelope rejected</summary><p class="info">The inbound message has been rejected because the sending IP address isn't listed in the published SPF records for the sending domain (Return-Path header domain). Ensure all the IP address for your mail servers are listed in your SPF records.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 Email rejected due to security policies (e.g., MCSpamSignature.x.x).</summary><p class="info">A signature could be a virus or a spam score over the maximum threshold. The spam score isn't available in the Administration Console. If you aren't a Mimecast customer but have emails rejected with this error code, contact the recipient to adjust their configuration and permit your address. If unsuccessful, your IT department can- submit a request to review these email rejections via our Sender Feedback form linked below.</p><ul>
+<li><a href="https://go.smtp.codes/mimecastsenderfeedback">https://go.smtp.codes/mimecastsenderfeedback</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 Mail loop detected.</summary><p class="info">The message has too many Received Headers as it has been forwarded across multiple hops. Once 25 hops have been reached; the email is rejected.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 Host network not allowed.</summary><p class="info">The message has triggered a Geographical Restriction policy set by the administrator.</p><ul>
+<li><a href="https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes">https://mimecastsupport.zendesk.com/hc/en-us/articles/34000709564691-Policies-Mimecast-SMTP-Error-Codes</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

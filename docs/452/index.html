@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>SMTP Error Code 452</title>
+<meta charset="utf-8">
+<meta name="title" content="SMTP Error Code 452">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="SMTP Error Code 452">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v={timestamp}">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>SMTP Error Code 452</h1>
+<p>The mail server encountered a temporary failure. If the command is repeated without any change, it might be completed. Mail servers can use temporary failures like this to keep untrusted senders at bay.</p>
+<h2>Providers</h2>
+<p><a href="#comcast">Comcast</a> &#183; <a href="#godaddy">GoDaddy</a> &#183; <a href="#google">Google</a> &#183; <a href="#outlook">Outlook.com</a> &#183; <a href="#rambler">Rambler</a> &#183; <a href="#yahoo">Yahoo</a> &#183; <a href="#zoho">Zoho</a></p>
+<dl>
+<div class="card">
+<dt id="comcast">Comcast<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>452 4.1.1 &lt;example@comcast.net&gt; too many recent messages; Try again later</summary><p class="info">The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.</p><ul>
+<li><a href="http://postmaster.comcast.net/">http://postmaster.comcast.net/</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>452 4.1.1 &lt;example@comcast.net&gt; user over quota</summary><p class="info">The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.</p><ul>
+<li><a href="http://postmaster.comcast.net/">http://postmaster.comcast.net/</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="godaddy">GoDaddy<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>452 $(_toemail) temporarily unavailable. Try again later.</summary><p class="info">The mail server encountered a temporary failure. Most likely it isn't anything to do with the session, but rather the server is overloaded or having issues. If you try again later, it should work.</p></details></dd>
+</div>
+<div class="card">
+<dt id="google">Google<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>452 4.2.2 The email account that you tried to reach is over quota. Please direct the recipient to https://support.google.com/mail/?p=OverQuotaTemp - gsmtp</summary><p class="info">Google Mail has has restrictions on the amount of storage a user can use, the recepiepnt is over their storage limit and unable to receive new messages. They will need to delete emails to start to receive messages again. Once they've done this, they'll be able to start to receive messages again.</p><ul>
+<li><a href="https://support.google.com/mail/answer/6374270?p=OverQuotaTemp&visit_id=637466814024175068-236829835&rd=2">https://support.google.com/mail/answer/6374270?p=OverQuotaTemp&visit_id=637466814024175068-236829835&rd=2</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="outlook">Outlook.com<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>452 4.3.1 Insufficient system resources (TSTE) [outlook.com]</summary><p class="info">The receiving mail server is currently out of storage space. The administers at the receiving domain will need to resolve this issue. Once they've done this, they'll be able to start to receive messages again.</p></details></dd>
+</div>
+<div class="card">
+<dt id="rambler">Rambler<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>452 4.5.3  rate limit exceeded</summary><p class="info">The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.</p><ul>
+<li><a href="http://postmaster.comcast.net/">http://postmaster.comcast.net/</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="yahoo">Yahoo<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>452 temporary domain failure &lt;example@example.com&gt;</summary><p class="info">The mail server encountered a temporary failure. Most likely it isn't anything to do with the session, but rather the server is overloaded or having issues. If you try again later, it should work.</p><ul>
+<li><a href="https://postmaster.yahooinc.com/error-codes">https://postmaster.yahooinc.com/error-codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="zoho">Zoho<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>452 &lt;example@zoho.com&gt; Mailbox delivery restricted by policy error</summary><p class="info">Zoho allows the receiving domain to set mail filters. The receiving domain has filters set-up that are blocking this message. To resolve this, you'll need to contact an administrator of this domain through another channel to have them adjust their filters and allow delivery.</p></details></dd>
+<dd><details><summary>452 4.3.1 Temporary System Error</summary><p class="info">This indicates that the domain at Zoho is not currently accepting email. Sending messages again in the future will most likely be successful.</p></details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

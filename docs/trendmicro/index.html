@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Trend Micro</title>
+<meta charset="utf-8">
+<meta name="title" content="Trend Micro">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Trend Micro">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1751914808">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Trend Micro</h1>
+<p>Trend Micro is a spam filter, block list, and firewall solution for businesses. Mail is routed through mailservers owned by Trend Micro (example: *.trendmicro.com). The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in the user guide to identify and resolve delivery issues.</p>
+<h2>Codes</h2>
+<p><a href="#550">550</a> &#183; <a href="#554">554</a></p>
+<dl>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 5.7.1 &lt;example@example.com&gt;: Recipient address rejected: ERS-Customized-Block.</summary><p class="info">'ERS' stands for Trend Micro's 'Email Reputation System', which provides custom levels of threat protection including sensitivity preferences and custom filters.</p><ul>
+<li><a href="https://success.trendmicro.com/solution/TP000087438-How-do-I-edit-Reputation-Settings">https://success.trendmicro.com/solution/TP000087438-How-do-I-edit-Reputation-Settings</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.7.1 &lt;example@example.com&gt;: Recipient address rejected: BLOCK-SEND-ER.</summary><p class="info">There's certain criteria in the message itself that this recipient is blocking, which could include a block on the sender's domain/IP by an admin of the recipient's domain. </p><ul>
+<li><a href="https://success.trendmicro.com/solution/1055758-blocking-an-email-address-or-domain-in-hosted-email-security-hes#collapseTwo">https://success.trendmicro.com/solution/1055758-blocking-an-email-address-or-domain-in-hosted-email-security-hes#collapseTwo</a></li>
+</ul>
+</details></dd>
+<dd>554 5.7.1 &lt;example@example.com&gt;: Recipient address rejected: Invalid-Recipient.</dd>
+<dd><details><summary>554 5.7.1 &lt;example@example.com&gt;: Recipient address rejected: NO-DOMAIN.</summary><p class="info">The recipient is permanently undeliverable unless manual changes are made on the recipient's end to allow the sender's domain and/or sending IP. This doesn't necessarily mean the message was purposefully blocked, just that routing of the message through Trend Micro is not yet allowed. </p><ul>
+<li><a href="https://success.trendmicro.com/solution/1120618-send-outbound-mails-to-trend-micro-email-security-tmems-failed-with-554-return-code">https://success.trendmicro.com/solution/1120618-send-outbound-mails-to-trend-micro-email-security-tmems-failed-with-554-return-code</a></li>
+</ul>
+</details></dd>
+<dd>554 5.7.1 &lt;example@example.com&gt;: Recipient address rejected: BLOCK-RCPT.</dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>

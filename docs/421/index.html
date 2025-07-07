@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>SMTP Error Code 421</title>
+<meta charset="utf-8">
+<meta name="title" content="SMTP Error Code 421">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="SMTP Error Code 421">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v={timestamp}">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>SMTP Error Code 421</h1>
+<p>The mail server encountered a temporary failure. If the command is repeated without any change, it might be completed. Mail servers can use temporary failures like this to keep untrusted senders at bay.</p>
+<h2>Providers</h2>
+<p><a href="#barracuda">Barracuda</a> &#183; <a href="#emailsecuritycloud">Email Security.cloud</a> &#183; <a href="#exchangeonline">Exchange Online</a> &#183; <a href="#godaddy">GoDaddy</a> &#183; <a href="#godaddy">GoDaddy</a> &#183; <a href="#godaddy">GoDaddy</a> &#183; <a href="#google">Google</a> &#183; <a href="#outlook">Outlook.com</a> &#183; <a href="#proofpoint">Proofpoint</a> &#183; <a href="#rackspace">Rackspace</a> &#183; <a href="#yahoo">Yahoo</a> &#183; <a href="#yandex">Yandex</a> &#183; <a href="#icloud">iCloud</a></p>
+<dl>
+<div class="card">
+<dt id="barracuda">Barracuda<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 Temporary failure, please try again later.</summary><p class="info">This response is followed by the bounce received from one of the intended recipients of the message. You'll want to resolve the delivery issue for the quoted recipient before sending to this group of addresses again.</p></details></dd>
+<dd><details><summary>422 License Expired</summary><p class="info">The recepient domain uses a Barracuda mail filter and their license for that service is expired. They'll need to resolve their license issue with Barracuda to start to receive messages again.</p></details></dd>
+</div>
+<div class="card">
+<dt id="emailsecuritycloud">Email Security.cloud<span class="top"><a href="#">↑</a></span></dt>
+<dd>421 Service Temporarily Unavailable</dd>
+</div>
+<div class="card">
+<dt id="exchangeonline">Exchange Online<span class="top"><a href="#">↑</a></span></dt>
+<dd>421 4.3.2 The maximum number of concurrent connections per resource forest has exceeded a limit, closing transmission channel. example.com. PRX8 [example.com]</dd>
+</div>
+<div class="card">
+<dt id="godaddy">GoDaddy<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 Connection refused, too many sessions from $(_ipsrc). Please lower the number of concurrent sessions. IB007 &lt;https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&amp;prog_id=3153#rlb</summary><p class="info">The connecting IP address has exceeded the maximum number of concurrent connections allowed to the server. This can happen if you are sending a large number of emails in a short period of time.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rlb</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="godaddy">GoDaddy<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 Server temporarily unavailable. Try again later. IB101</summary><p class="info">The mail server encountered a temporary failure. Most likely it isn't anything to do with the session, but rather the server is overloaded or having issues. If you try again later, it should work.</p></details></dd>
+</div>
+<div class="card">
+<dt id="godaddy">GoDaddy<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 Temporarily rejected. Reverse DNS for $(_ipsrc) failed. IB108</summary><p class="info">The mail server encountered a temporary failure. Most likely it isn't anything to do with the session, but rather the server is overloaded or having issues. If you try again later, it should work.</p><ul>
+<li><a href="https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#srb">https://www.secureserver.net/help/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#srb</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="google">Google<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 4.7.0 [x.xx.xx.xx] Our system has detected that this message is suspicious due to the very low reputation of the sending domain. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp</summary><p class="info">Gmail has determined that the sending domain has a low reputation, so messages are now temporarily rejected. See Google's documentation on how to determine the source of this poor reputation and how to improve deliverability.</p><ul>
+<li><a href="https://support.google.com/mail/answer/188131">https://support.google.com/mail/answer/188131</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>421 4.7.0 [x.xx.xx.xx] Our system has detected that this message is suspicious due to the nature of the content and/or the links within. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp</summary><p class="info">Gmail has determined that the content of the message has a low reputation. See Google's documentation on how to determine the source of this poor reputation and how to improve deliverability.</p><ul>
+<li><a href="https://support.google.com/mail/answer/188131">https://support.google.com/mail/answer/188131</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>421 4.7.28 [x.xx.xx.xx] Our system has detected an unusual rate of unsolicited mail originating from your IP address. To protect our users from spam, mail sent from your IP address has been temporarily rate limited. Please visit https://support.google.com/mail/?p=UnsolicitedRateLimitError to review our Bulk Email Senders Guidelines. - gsmtp</summary><p class="info">Gmail has determined your messages are unsolicted, so messages sent over this IP may be temporarily rejected. See Google's documentation for best practices on sending to Gmail to avoid this.</p><ul>
+<li><a href="https://support.google.com/mail/answer/81126">https://support.google.com/mail/answer/81126</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>4.7.26 This mail has been rate limited because it is unauthenticated. Gmail requires all senders to authenticate with either SPF or DKIM. Authentication results: DKIM = did not pass. SPF example.com with ip: x.x.x.x = did not pass</summary><p class="info">The message did not pass SPF or DKIM. As of February 2024, Google requires SPF and DKIM to be correctly set up in order to be able to send emails to their customers. Contact your email provider to set up SPF and/or DKIM correctly.</p><ul>
+<li><a href="https://redsift.com/guides/bulk-email-sender-requirements">https://redsift.com/guides/bulk-email-sender-requirements</a></li>
+<li><a href="https://support.google.com/mail/answer/81126#authentication">https://support.google.com/mail/answer/81126#authentication</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>4.7.32 This mail has been rate limited because there is no DMARC alignment</summary><p class="info">The message is missing DKIM or SPF alignment for DMARC. As of February 2024, Google requires SPF and DKIM to be correctly set up in order to be able to send emails to their customers. Contact your email provider to set up SPF and/or DKIM correctly.</p><ul>
+<li><a href="https://support.google.com/a/answer/10032578">https://support.google.com/a/answer/10032578</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="outlook">Outlook.com<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 4.3.2 Service not available [outlook.com]</summary><p class="info">This indicates that the domain is not currently accepting email.</p></details></dd>
+</div>
+<div class="card">
+<dt id="proofpoint">Proofpoint<span class="top"><a href="#">↑</a></span></dt>
+<dd>421 4.1.1 &lt;email@example.com&gt;: Recipient address rejected: unverified address: host example.com[x.xx.xx.xx] said: 450 4.1.1 &lt;email@example.com&gt;: Recipient address rejected: unverified address: lost connection with mail.example.com[x.xx.xx.xx] while sending RCPT TO (in reply to RCPT TO command)</dd>
+<dd>421 4.1.1 &lt;email@example.com&gt;: Recipient address rejected: unverified address: Address verification in progress</dd>
+</div>
+<div class="card">
+<dt id="rackspace">Rackspace<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 Too many concurrent connections from this client (G2)</summary><p class="info">Too many concurrent connections from your IP. Throttle and reduce the number of connections your MTA is making.</p><ul>
+<li><a href="https://postmaster.emailsrvr.com/system-info/response-codes">https://postmaster.emailsrvr.com/system-info/response-codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="yahoo">Yahoo<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 Service not available, closing transmission channel</summary><p class="info">This indicates that the domain is not currently accepting email.</p><ul>
+<li><a href="https://postmaster.yahooinc.com/error-codes">https://postmaster.yahooinc.com/error-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>421 Max message per connection reached, closing transmission channel</summary><p class="info">You have exceeded the number of messages you can send in a single connection. If you do not control the MTA, you may need to ask your email provider for adjustments.</p><ul>
+<li><a href="https://postmaster.yahooinc.com/error-codes">https://postmaster.yahooinc.com/error-codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>421 4.7.0 [TSS04] Messages from 0.0.0.0 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes</summary><p class="info">This could indicate one of few problems, either that your emails are generating an excessive amount of complaints from Yahoo users or Yahoo is seeing unsual traffic patterns from your mail servers. It could also mean that your email content contains objectionable content or show characteristics indicative of spam. Another possiblity is that your IP has a poor reputation</p><ul>
+<li><a href="https://postmaster.yahooinc.com/error-codes">https://postmaster.yahooinc.com/error-codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="yandex">Yandex<span class="top"><a href="#">↑</a></span></dt>
+<dd>421 4.4.2 mail.yandex.net Error: timeout exceeded</dd>
+</div>
+<div class="card">
+<dt id="icloud">iCloud<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 4.7.0 me.com Error: too many errors</summary><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>421 4.7.1 Messages to example@icloud.com deferred due to excessive volume. Try again later - https://support.apple.com/en-us/HT204137</summary><p class="info">The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.</p><ul>
+<li><a href="https://support.apple.com/en-us/HT204137">https://support.apple.com/en-us/HT204137</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>
