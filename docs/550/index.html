@@ -26,7 +26,7 @@
 <h1>SMTP Error Code 550</h1>
 <p>The transaction failed permanently. The server will not try to send the message again. This is used as a general error code, so there are many reasons why you could be seeing it.<br><br>It’s common for email service providers to add a status code (5.1.1) after the SMTP reply code (550) for additional categorization of the issue.</p>
 <h2>Providers</h2>
-<p><a href="#att">AT&T</a> &#183; <a href="#barracuda">Barracuda</a> &#183; <a href="#cisco">Cisco</a> &#183; <a href="#comcast">Comcast</a> &#183; <a href="#emailsecuritycloud">Email Security.cloud</a> &#183; <a href="#exchangeonline">Exchange Online</a> &#183; <a href="#fireeye">FireEye</a> &#183; <a href="#free">Free</a> &#183; <a href="#gmx">GMX</a> &#183; <a href="#godaddy">GoDaddy</a> &#183; <a href="#google">Google</a> &#183; <a href="#hey">HEY</a> &#183; <a href="#hostpoint">Hostpoint</a> &#183; <a href="#improvmx">ImprovMX</a> &#183; <a href="#infomaniak">Infomaniak</a> &#183; <a href="#mxroute">MXroute</a> &#183; <a href="#mailru">Mail.ru</a> &#183; <a href="#mimecast">Mimecast</a> &#183; <a href="#orange">Orange</a> &#183; <a href="#outlook">Outlook.com</a> &#183; <a href="#proofpoint">Proofpoint</a> &#183; <a href="#protonmail">Proton Mail</a> &#183; <a href="#qq">QQ</a> &#183; <a href="#rackspace">Rackspace</a> &#183; <a href="#trendmicro">Trend Micro</a> &#183; <a href="#webde">Web.de</a> &#183; <a href="#yahoo">Yahoo</a> &#183; <a href="#yandex">Yandex</a> &#183; <a href="#zoho">Zoho</a> &#183; <a href="#icloud">iCloud</a> &#183; <a href="#tonline">t-online</a></p>
+<p><a href="#att">AT&T</a> &#183; <a href="#barracuda">Barracuda</a> &#183; <a href="#cisco">Cisco</a> &#183; <a href="#comcast">Comcast</a> &#183; <a href="#emailsecuritycloud">Email Security.cloud</a> &#183; <a href="#exchangeonline">Exchange Online</a> &#183; <a href="#fireeye">FireEye</a> &#183; <a href="#free">Free</a> &#183; <a href="#gmx">GMX</a> &#183; <a href="#godaddy">GoDaddy</a> &#183; <a href="#google">Google</a> &#183; <a href="#hey">HEY</a> &#183; <a href="#hostpoint">Hostpoint</a> &#183; <a href="#improvmx">ImprovMX</a> &#183; <a href="#infomaniak">Infomaniak</a> &#183; <a href="#laposte">La Poste</a> &#183; <a href="#mxroute">MXroute</a> &#183; <a href="#mailru">Mail.ru</a> &#183; <a href="#mimecast">Mimecast</a> &#183; <a href="#orange">Orange</a> &#183; <a href="#outlook">Outlook.com</a> &#183; <a href="#proofpoint">Proofpoint</a> &#183; <a href="#protonmail">Proton Mail</a> &#183; <a href="#qq">QQ</a> &#183; <a href="#rackspace">Rackspace</a> &#183; <a href="#trendmicro">Trend Micro</a> &#183; <a href="#webde">Web.de</a> &#183; <a href="#yahoo">Yahoo</a> &#183; <a href="#yandex">Yandex</a> &#183; <a href="#zoho">Zoho</a> &#183; <a href="#icloud">iCloud</a> &#183; <a href="#tonline">t-online</a></p>
 <dl>
 <div class="card">
 <dt id="att">AT&T<span class="top"><a href="#">↑</a></span></dt>
@@ -225,6 +225,17 @@
 <dt id="infomaniak">Infomaniak<span class="top"><a href="#">↑</a></span></dt>
 <dd><details><summary>550 5.7.1 rejected by DMARC policy for example.com (in reply to end of DATA command),</summary><p class="info">The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and/or DKIM. Contact your email provider for more details on how to configure them.</p></details></dd>
 <dd><details><summary>550 5.1.1 Recipient address rejected: User unknown in virtual mailbox table,</summary><p class="info">The email address does not exist. Check to make sure there are no typos or other mistakes with the address</p></details></dd>
+</div>
+<div class="card">
+<dt id="laposte">La Poste<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 5.7.1 Suspicion de contenu non sollicite. Afin de preserver la qualite du service et limiter les volumes de spam sur la plateforme, ce message n&#039;a pas ete transmis. Likely unsolicited email. LPN007_510</summary><p class="info">La Poste has determined your messages are unsolicited, so your message was rejected. Contact their team to get more details about the reason behind the block.</p><ul>
+<li><a href="http://postmaster.laposte.net/contact">http://postmaster.laposte.net/contact</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.20 Message refuse, DKIM n&#039;est pas configure sur votre domaine d&#039;expedition. Message refused, DKIM is not configured on your sending domain. LPN007_402</summary><p class="info">The message does not have a DKIM signature, or, none of the DKIM signatures is aligned with the domain in the RFC5322.From header. Contact your email provider to setup DKIM correctly with a signature on your domain.</p><ul>
+<li><a href="https://postmaster.laposte.net/contents/mails-rejetes-pour-absence-de-signature-dkim-valide">https://postmaster.laposte.net/contents/mails-rejetes-pour-absence-de-signature-dkim-valide</a></li>
+</ul>
+</details></dd>
 </div>
 <div class="card">
 <dt id="mxroute">MXroute<span class="top"><a href="#">↑</a></span></dt>
