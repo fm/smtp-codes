@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>La Poste</title>
+<meta charset="utf-8">
+<meta name="title" content="La Poste">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="La Poste">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1763328364">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>La Poste</h1>
+<p>La Poste is a public-owned French postal company that also provides @laposte.net addresses to French residents. They have strict SPF, DKIM & DMARC requirements to reduce the amount of spam, similar to Gmail and Yahoo.</p>
+<h2>Links</h2>
+<ul>
+<li><a href="https://postmaster.laposte.net">https://postmaster.laposte.net</a></li>
+</ul>
+<h2>Domains</h2>
+<ul>
+<li>laposte.net</li>
+</ul>
+<h2>Codes</h2>
+<p><a href="#521">521</a> &#183; <a href="#550">550</a></p>
+<dl>
+<div class="card">
+<dt id="521"><a href="/521">521</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>521 5.7.1 Service unavailable LPN007_102</summary><p class="info">La Poste has blocked your IP for being in a blacklist. This code is usually associated with poor Validiy Sender Score reputation. Use the link below to check your Sender Score reputation and request a review.</p><ul>
+<li><a href="https://www.wombatmail.com/dns.cgi?t=ptr">https://www.wombatmail.com/dns.cgi?t=ptr</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 5.7.1 Suspicion de contenu non sollicite. Afin de preserver la qualite du service et limiter les volumes de spam sur la plateforme, ce message n&#039;a pas ete transmis. Likely unsolicited email. LPN007_510</summary><p class="info">La Poste has determined your messages are unsolicited, so your message was rejected. Contact their team to get more details about the reason behind the block.</p><ul>
+<li><a href="http://postmaster.laposte.net/contact">http://postmaster.laposte.net/contact</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.20 Message refuse, DKIM n&#039;est pas configure sur votre domaine d&#039;expedition. Message refused, DKIM is not configured on your sending domain. LPN007_402</summary><p class="info">The message does not have a DKIM signature, or, none of the DKIM signatures is aligned with the domain in the RFC5322.From header. Contact your email provider to setup DKIM correctly with a signature on your domain.</p><ul>
+<li><a href="https://postmaster.laposte.net/contents/mails-rejetes-pour-absence-de-signature-dkim-valide">https://postmaster.laposte.net/contents/mails-rejetes-pour-absence-de-signature-dkim-valide</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>
