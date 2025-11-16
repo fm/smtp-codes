@@ -1,0 +1,19 @@
+{
+    "code": 521,
+    "description": "The transaction failed permanently. The server will not try to send the message again.",
+    "providers": [
+        {
+            "id": "laposte",
+            "name": "La Poste",
+            "responses": [
+                {
+                    "response": "521 5.7.1 Service unavailable LPN007_102",
+                    "description": "La Poste has blocked your IP for being in a blacklist. This code is usually associated with poor Validiy Sender Score reputation. Use the link below to check your Sender Score reputation and request a review.",
+                    "links": [
+                        "https:\/\/www.wombatmail.com\/dns.cgi?t=ptr"
+                    ]
+                }
+            ]
+        },
+    ]
+}

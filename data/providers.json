@@ -170,6 +170,17 @@
         ]
     },
     {
+        "id": "laposte",
+        "name": "La Poste",
+        "domains": [
+            "laposte.net"
+        ],
+        "description": "La Poste is a public-owned French postal company that also provides @laposte.net addresses to French residents. They have strict SPF, DKIM & DMARC requirements to reduce the amount of spam, similar to Gmail and Yahoo.",
+        "links": [
+            "https:\/\/postmaster.laposte.net"
+        ]
+    },
+    {
         "id": "mailru",
         "name": "Mail.ru",
         "domains": [

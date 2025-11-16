@@ -1036,6 +1036,26 @@
                     ]
                 }
             ]
-        }
+        },
+        {
+            "id": "laposte",
+            "name": "La Poste",
+            "responses": [
+                {
+                    "response": "550 5.7.1 Suspicion de contenu non sollicite. Afin de preserver la qualite du service et limiter les volumes de spam sur la plateforme, ce message n'a pas ete transmis. Likely unsolicited email. LPN007_510",
+                    "description": "La Poste has determined your messages are unsolicited, so your message was rejected. Contact their team to get more details about the reason behind the block.",
+                    "links": [
+                        "http:\/\/postmaster.laposte.net\/contact"
+                    ]
+                },
+                {
+                    "response": "550 5.7.20 Message refuse, DKIM n'est pas configure sur votre domaine d'expedition. Message refused, DKIM is not configured on your sending domain. LPN007_402",
+                    "description": "The message does not have a DKIM signature, or, none of the DKIM signatures is aligned with the domain in the RFC5322.From header. Contact your email provider to setup DKIM correctly with a signature on your domain.",
+                    "links": [
+                        "https:\/\/postmaster.laposte.net\/contents\/mails-rejetes-pour-absence-de-signature-dkim-valide"
+                    ]
+                }
+            ]
+        },
     ]
 }
