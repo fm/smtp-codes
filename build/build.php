@@ -352,6 +352,9 @@ file_put_contents(__DIR__.'/../docs/index.html', $output);
 // Write the CNAME file
 file_put_contents(__DIR__.'/../docs/CNAME', 'smtp.codes');
 
+// Copy the 404 page
+copy(__DIR__.'/../site/404.html', __DIR__.'/../docs/404.html');
+
 $end = microtime(1);
 
 echo 'Built smtp.codes in '.round(($end - $start), 3).' seconds. View the site: https://smtp.codes"\n";';
