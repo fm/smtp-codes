@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'data/**'
+      - 'build/**'
+      - '.github/workflows/build.yml'
 
 jobs:
   build:
