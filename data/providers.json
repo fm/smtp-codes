@@ -10,23 +10,6 @@
         ]
     },
     {
-        "id": "att",
-        "name": "AT&T",
-        "domains": [
-            "att.net",
-            "sbcglobal.net",
-            "swbell.net",
-            "bellsouth.net",
-            "pacbell.net",
-            "prodigy.com"
-        ],
-        "description": "AT&T offers free email accounts for past customers at sbcglobal.net and bellsouth.net, and new and non-customers can register an att.net or currently.com free email account. AT&T provides a detailed Postmaster page with contact options for investigating false-positive spam verdicts.",
-        "links": [
-            "https:\/\/www.att.com\/support\/article\/email-support\/KM1401980\/",
-            "https:\/\/www.att.com\/support\/article\/email-support\/KM1010455\/"
-        ]
-    },
-    {
         "id": "barracuda",
         "name": "Barracuda",
         "description": "Barracuda is a spam filter, block list, and firewall for businesses. Mail is routed through mailservers owned by Barracuda before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such as allow lists, but sender reputation issues that affect all Barracuda customers globally may require contacting Barracuda support directly to resolve.",
@@ -62,7 +45,7 @@
     },
     {
         "id": "exchangeonline",
-        "name": "Exchange Online Protection",
+        "name": "Microsoft 365",
         "description": "Exchange Online Protection (EOP) is the spam filter for Microsoft 365, the business productivity suite from Microsoft. It provides businesses with spam filtering, block lists, and firewall protection. If a message is going to spam or getting blocked, there are typically instructions for the email admin to fix the specific error in Exchange documentation.",
         "links": [
             "https:\/\/docs.microsoft.com\/en-us\/exchange\/mail-flow-best-practices\/non-delivery-reports-in-exchange-online\/non-delivery-reports-in-exchange-online",
@@ -85,20 +68,9 @@
         ]
     },
     {
-        "id": "gmx",
-        "name": "GMX",
-        "domains": [],
-        "description": "GMX is an email provider including Mail.com recipients, headquartered in Germany. European receivers tend to have high expectations for GDPR legal complaince, and in some cases email deliverability is aided when the sender is included in high profile \"whitelists\" and certification programs. You can use the GMX postmaster site to investigate most issues, and their contact form to submit things for in-depth investigation. You can also reach out to mailsecurity@gmxnet.de directly in urgent cases. ",
-        "links": [
-            "https:\/\/postmaster.gmx.com",
-            "https:\/\/postmaster.gmx.net\/en\/contact"
-        ]
-    },
-    {
         "id": "godaddy",
         "name": "GoDaddy",
         "domains": [
-            "godaddy.com",
             "secureserver.net"
         ],
         "description": "GoDaddy is a domain hosting provider with a range of online services. It offers both email to its customers (via Microsoft 365) as well as email through their own platform (Profesional Email) email forwarding, as well as mail originating from their hosting platforms. secureserver.net is the domain used for their email servers. Any mail to or from a server with that domain will be controlled by GoDaddy. All cases provide spam filtering with very little customization, but GoDaddy's support guide on SMTP errors also includes a link to a contact form for more investigation.",
@@ -123,7 +95,9 @@
     {
         "id": "hey",
         "name": "HEY",
-        "domains": [],
+        "domains": [
+            "hey.com"
+        ],
         "description": "HEY is an email provider offered by the software company 37Signals. It's a paid service for both hey.com recipients and those with their own domain hosting email in the HEY app. HEY boasts especially strict spam filtering and a manual screening process per sender. There's little a sender can do to troubleshoot delivery, as the individual recipient decides which email addresses they accept mail from.",
         "links": [
             "https:\/\/hey.com\/how-it-works\/"
@@ -237,17 +211,18 @@
         "id": "proofpoint",
         "name": "Proofpoint",
         "description": "Proofpoint is a spam filter for businesses. Mail is routed through mailservers owned by Proofpoint (*.pphosted.com or *.ppe-hosted.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists and spam filtering policy levels. For globally-blocked IPs, the adminstrator of the IP will need to request delisting directly.",
-        "links": [
-            "https:\/\/help.proofpoint.com\/Proofpoint_Essentials\/Email_Security\/User_Topics\/040_spamsettings\/041_adjustingyourspamsettings",
-            "https:\/\/help.proofpoint.com\/Proofpoint_Essentials\/Email_Security\/Administrator_Topics\/110_logs\/Common_Error_Codes_found_in_Message_Details",
-            "https:\/\/help.proofpoint.com\/Proofpoint_Essentials\/Email_Security\/Administrator_Topics\/Other_Features\/Proofpoint_Dynamic_Reputation_(PDR)_IP_blocklisting_and_IP_address_removal"
-        ]
+        "links": []
     },
     {
         "id": "protonmail",
         "name": "Proton Mail",
-        "domains": [],
-        "description": "Proton Mail is a swiss-based email provider and the largest end-to-end encrypted email host.",
+        "domains": [
+            "protonmail.ch",
+            "protonmail.com",
+            "proton.me",
+            "pm.me" 
+        ],
+        "description": "Proton Mail is a swiss-based email provider and the largest end-to-end encrypted email host. They do not have a postmaster page, but their team is very responsive via postmaster@proton.me",
         "links": []
     },
     {
@@ -298,12 +273,36 @@
         ]
     },
     {
-        "id": "webde",
-        "name": "Web.de",
-        "domains": [],
-        "description": "Web.de is a search engine and email provider, headquartered in Germany. Eurproean receivers tend to have high expectations for GDPR legal complaince, and in some cases email deliverability is aided when the sender is included in high profile \"whitelists\" and certification programs.",
+        "id": "unitedinternet",
+        "name": "United Internet (1&1, IONOS, GMX, web.de, mail.com)",
+        "domains": [
+            "gmx.at",
+            "gmx.biz",
+            "gmx.ch",
+            "gmx.co.uk",
+            "gmx.com",
+            "gmx.de",
+            "gmx.es",
+            "gmx.eu",
+            "gmx.fr",
+            "gmx.info",
+            "gmx.it",
+            "gmx.li",
+            "gmx.net",
+            "gmx.org",
+            "gmx.se",
+            "gmx.tm",
+            "gmx.us",
+            "web.de",
+            "mail.com",
+            "usa.com"
+        ],
+        "description": "United Internet is a German internet services company that operates several email brands including 1&1, IONOS, web.de, GMX, and Mail.com. European receivers tend to have high expectations for GDPR legal compliance, and in some cases email deliverability is aided when the sender is included in high profile \"whitelists\" and certification programs. You can use their postmaster site to investigate most issues, and their contact form to submit things for in-depth investigation. A more complete list of domains can be found at https:\/\/www.spamresource.com\/2020\/03\/reference-webde-gmx-and-mailcom-domains.html",
         "links": [
-            "https:\/\/postmaster.web.de\/en\/error-messages"
+            "https:\/\/postmaster.gmx.com",
+            "https:\/\/postmaster.gmx.com\/en\/contact",
+            "https:\/\/postmaster.web.de",
+            "https:\/\/postmaster.web.de\/en\/contact"
         ]
     },
     {
@@ -312,9 +311,15 @@
         "domains": [
             "yahoo.com",
             "aol.com",
-            "verizon.net"
+            "verizon.net",
+            "att.net",
+            "sbcglobal.net",
+            "swbell.net",
+            "bellsouth.net",
+            "pacbell.net",
+            "prodigy.com"
         ],
-        "description": "Known for its freemail services AOL and Yahoo, they provide a detailed Postmaster page with contact options for investigating false-positive spam verdicts. Some senders may also qualify for their \"Email Marketing Data Feeds\" with detailed insight on performance in the inbox.",
+        "description": "Known for its freemail services AOL and Yahoo, they provide a detailed Postmaster page with contact options for investigating false-positive spam verdicts. They offer a Senders Hub Insights Dashboard, as well as a Complaint Feedback Loop, more details can be found on the link below. As of August 2025, they also handle the incomming connections for the AT&T domains.",
         "links": [
             "https:\/\/senders.yahooinc.com"
         ]

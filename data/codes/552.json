@@ -120,8 +120,8 @@
             ]
         },
         {
-            "id": "gmx",
-            "name": "GMX",
+            "id": "unitedinternet",
+            "name": "United Internet (1&1, IONOS, web.de, GMX)",
             "responses": [
                 {
                     "response": "552 Requested mail action aborted: exceeded storage allocation Quota exceeded.",

@@ -23,8 +23,8 @@
             ]
         },
         {
-            "id": "exchangeonline",
-            "name": "Exchange Online Protection",
+            "id": "microsoft365",
+            "name": "Microsoft 365",
             "responses": [
                 {
                     "response": "554 5.4.14 Hop count exceeded - possible mail loop ATTR34",

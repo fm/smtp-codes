@@ -27,8 +27,8 @@
             ]
         },
         {
-            "id": "gmx",
-            "name": "GMX",
+            "id": "unitedinternet",
+            "name": "United Internet (1&1, IONOS, web.de, GMX)",
             "responses": [
                 {
                     "response": "501 Syntax error in parameters or arguments",

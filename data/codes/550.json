@@ -171,8 +171,9 @@
                 {
                     "response": "550 5.7.1 Unfortunately, messages from [x.xx.xx.xx] weren't sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http:\/\/mail.live.com\/mail\/troubleshooting.aspx#errors. [#.eop-nam02.prod.protection.outlook.com]",
                     "description": "This is Microsoft's way of throttling your sending IP, possibly related to IP reputation classification. It should automatically expire on its own and is generally caused by sending too much traffic too fast.",
+                    "description": "This is Microsoft's way of throttling your sending IP, possibly related to IP reputation classification. It should automatically expire on its own and is generally caused by sending too much traffic too fast. You can read the article below that further explains about it.",
                     "links": [
-                        "https:\/\/sendersupport.olc.protection.outlook.com\/pm\/troubleshooting.aspx"
+                        "https:\/\/www.engagor.ai\/resources\/blog\/microsoft-s3150-most-frustrating-error-code"
                     ]
                 },
                 {
@@ -183,7 +184,7 @@
                     ]
                 },
                 {
-                    "response": "550 5.4.1 All recipient addresses rejected : Access denied [#.eop-nam02.prod.protection.outlook.com]",
+                    "response": "550 5.4.1 All recipient addresses rejected: Access denied [#.eop-nam02.prod.protection.outlook.com]",
                     "description": "This could be due to an active block on the sender for abuse reasons, but typically it's a policy that only specific senders\/servers are allowed to send mail to this host. Reach out the recipient directly for options to add the sender to their 'allow list'.",
                     "links": []
                 }
@@ -230,33 +231,6 @@
                     "description": "The email was sent to a non-existing address.",
                     "links": [
                         "https:\/\/yandex.com\/support\/mail\/bounces\/yandex.html"
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "att",
-            "name": "AT&T",
-            "responses": [
-                {
-                    "response": "550 5.2.1 <EXAMPLE@PRODIGY.NET>... Addressee unknown, relay=[x.xx.xx.xx]",
-                    "description": "",
-                    "links": [
-                        "https:\/\/www.att.com\/support\/article\/email-support\/KM1401980\/"
-                    ]
-                },
-                {
-                    "response": "550 5.2.1 <example@prodigy.net>... blank mailhost - invalid address, relay=[x.xx.xx.xx]",
-                    "description": "",
-                    "links": [
-                        "https:\/\/www.att.com\/support\/article\/email-support\/KM1401980\/"
-                    ]
-                },
-                {
-                    "response": "550 5.7.1 Connections not accepted from servers without a valid sender domain. ## Fix reverse DNS for x.xx.xx.xx",
-                    "description": "Usually this is a reverse DNS (PTR) issue with the sending IP, but sometimes lookup failures by AT&T can cause this bounce to be a false-positive. After confirming reverse DNS is properly set up and the record has fully propagated, try resending the message.",
-                    "links": [
-                        "https:\/\/www.att.com\/support\/article\/email-support\/KM1401980\/"
                     ]
                 }
             ]
@@ -312,8 +286,8 @@
             ]
         },
         {
-            "id": "gmx",
-            "name": "GMX",
+            "id": "unitedinternet",
+            "name": "United Internet (1&1, IONOS, web.de, GMX)",
             "responses": [
                 {
                     "response": "550 Requested action not taken: mailbox unavailable",
@@ -576,7 +550,7 @@
             "responses": [
                 {
                     "response": "550 Unauthenticated mail not allowed from this range",
-                    "description": "The sending IP is in a range of IPs that are considered low reputation or should not be sending emails. If you believe this to be a false positive, request a review at https:\/\/whitelistrequest.mxrouting.net",
+                    "description": "The sending IP is in a range of IPs that are considered low reputation or should not be sending emails. If you believe this to be a false positive, request a review at https:\/\/esf.mxroute.com",
                     "links": []
                 },
                 {
@@ -631,8 +605,8 @@
             ]
         },
         {
-            "id": "webde",
-            "name": "Web.de",
+            "id": "unitedinternet",
+            "name": "United Internet (1&1, IONOS, web.de, GMX)",
             "responses": [
                 {
                     "response": "550 <example@example.com>: Reject due to SPF policy. The originating IP of the message is not permitted by the domain owner",
@@ -876,8 +850,8 @@
             ]
         },
         {
-            "id": "exchangeonline",
-            "name": "Exchange Online",
+            "id": "microsoft365",
+            "name": "Microsoft 365",
             "responses": [
                 {
                     "response": "550 5.4.1 [email@example.com]: Recipient address rejected: Access denied [example.com]",

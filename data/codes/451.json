@@ -149,8 +149,8 @@
             ]
         },
         {
-            "id": "exchangeonline",
-            "name": "Exchange Online",
+            "id": "microsoft365",
+            "name": "Microsoft 365",
             "responses": [
                 {
                     "response": "451 4.7.0 Temporary server error. Please try again later. PRX4 NextHop: example.com [example.com]",
