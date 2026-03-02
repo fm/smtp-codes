@@ -26,23 +26,8 @@
 <h1>SMTP Error Code 550</h1>
 <p>The transaction failed permanently. The server will not try to send the message again. This is used as a general error code, so there are many reasons why you could be seeing it.<br><br>It’s common for email service providers to add a status code (5.1.1) after the SMTP reply code (550) for additional categorization of the issue.</p>
 <h2>Providers</h2>
-<p><a href="#att">AT&T</a> &#183; <a href="#barracuda">Barracuda</a> &#183; <a href="#cisco">Cisco</a> &#183; <a href="#comcast">Comcast</a> &#183; <a href="#emailsecuritycloud">Email Security.cloud</a> &#183; <a href="#exchangeonline">Exchange Online</a> &#183; <a href="#fireeye">FireEye</a> &#183; <a href="#free">Free</a> &#183; <a href="#gmx">GMX</a> &#183; <a href="#godaddy">GoDaddy</a> &#183; <a href="#google">Google</a> &#183; <a href="#hey">HEY</a> &#183; <a href="#hostpoint">Hostpoint</a> &#183; <a href="#improvmx">ImprovMX</a> &#183; <a href="#infomaniak">Infomaniak</a> &#183; <a href="#laposte">La Poste</a> &#183; <a href="#mxroute">MXroute</a> &#183; <a href="#mailru">Mail.ru</a> &#183; <a href="#mimecast">Mimecast</a> &#183; <a href="#orange">Orange</a> &#183; <a href="#outlook">Outlook.com</a> &#183; <a href="#proofpoint">Proofpoint</a> &#183; <a href="#protonmail">Proton Mail</a> &#183; <a href="#qq">QQ</a> &#183; <a href="#rackspace">Rackspace</a> &#183; <a href="#trendmicro">Trend Micro</a> &#183; <a href="#webde">Web.de</a> &#183; <a href="#yahoo">Yahoo</a> &#183; <a href="#yandex">Yandex</a> &#183; <a href="#zoho">Zoho</a> &#183; <a href="#icloud">iCloud</a> &#183; <a href="#tonline">t-online</a></p>
+<p><a href="#barracuda">Barracuda</a> &#183; <a href="#cisco">Cisco</a> &#183; <a href="#comcast">Comcast</a> &#183; <a href="#emailsecuritycloud">Email Security.cloud</a> &#183; <a href="#fireeye">FireEye</a> &#183; <a href="#free">Free</a> &#183; <a href="#godaddy">GoDaddy</a> &#183; <a href="#google">Google</a> &#183; <a href="#hey">HEY</a> &#183; <a href="#hostpoint">Hostpoint</a> &#183; <a href="#improvmx">ImprovMX</a> &#183; <a href="#infomaniak">Infomaniak</a> &#183; <a href="#laposte">La Poste</a> &#183; <a href="#mxroute">MXroute</a> &#183; <a href="#mailru">Mail.ru</a> &#183; <a href="#microsoft365">Microsoft 365</a> &#183; <a href="#mimecast">Mimecast</a> &#183; <a href="#orange">Orange</a> &#183; <a href="#outlook">Outlook.com</a> &#183; <a href="#proofpoint">Proofpoint</a> &#183; <a href="#protonmail">Proton Mail</a> &#183; <a href="#qq">QQ</a> &#183; <a href="#rackspace">Rackspace</a> &#183; <a href="#trendmicro">Trend Micro</a> &#183; <a href="#unitedinternet">United Internet (1&1, IONOS, web.de, GMX)</a> &#183; <a href="#unitedinternet">United Internet (1&1, IONOS, web.de, GMX)</a> &#183; <a href="#yahoo">Yahoo</a> &#183; <a href="#yandex">Yandex</a> &#183; <a href="#zoho">Zoho</a> &#183; <a href="#icloud">iCloud</a> &#183; <a href="#tonline">t-online</a></p>
 <dl>
-<div class="card">
-<dt id="att">AT&T<span class="top"><a href="#">↑</a></span></dt>
-<dd><details><summary>550 5.2.1 &lt;EXAMPLE@PRODIGY.NET&gt;... Addressee unknown, relay=[x.xx.xx.xx]</summary><ul>
-<li><a href="https://www.att.com/support/article/email-support/KM1401980/">https://www.att.com/support/article/email-support/KM1401980/</a></li>
-</ul>
-</details></dd>
-<dd><details><summary>550 5.2.1 &lt;example@prodigy.net&gt;... blank mailhost - invalid address, relay=[x.xx.xx.xx]</summary><ul>
-<li><a href="https://www.att.com/support/article/email-support/KM1401980/">https://www.att.com/support/article/email-support/KM1401980/</a></li>
-</ul>
-</details></dd>
-<dd><details><summary>550 5.7.1 Connections not accepted from servers without a valid sender domain. ## Fix reverse DNS for x.xx.xx.xx</summary><p class="info">Usually this is a reverse DNS (PTR) issue with the sending IP, but sometimes lookup failures by AT&T can cause this bounce to be a false-positive. After confirming reverse DNS is properly set up and the record has fully propagated, try resending the message.</p><ul>
-<li><a href="https://www.att.com/support/article/email-support/KM1401980/">https://www.att.com/support/article/email-support/KM1401980/</a></li>
-</ul>
-</details></dd>
-</div>
 <div class="card">
 <dt id="barracuda">Barracuda<span class="top"><a href="#">↑</a></span></dt>
 <dd><details><summary>550 cuda_nsu 5.1.1 &lt;email@example.com&gt; Recipient address rejected: User unknown</summary><p class="info">This mailbox does not exist at this mail server. Check to make sure there are no typos with the address.</p></details></dd>
@@ -82,29 +67,6 @@
 <dd>550 Invalid recipient &lt;email@example.com&gt; (#5.1.1)</dd>
 </div>
 <div class="card">
-<dt id="exchangeonline">Exchange Online<span class="top"><a href="#">↑</a></span></dt>
-<dd><details><summary>550 5.4.1 [email@example.com]: Recipient address rejected: Access denied [example.com]</summary><p class="info">Usually this bounce means the recipient address is invalid, but sometimes it can be caused by internal setup or routing issues. Reach out to the recipient's mail admin to verify.</p><ul>
-<li><a href="https://support.microsoft.com/en-us/topic/ndr-error-code-550-5-4-1-recipient-address-rejected-access-denied-c0e98a8e-81db-49c2-9bf1-32a1734d3e77">https://support.microsoft.com/en-us/topic/ndr-error-code-550-5-4-1-recipient-address-rejected-access-denied-c0e98a8e-81db-49c2-9bf1-32a1734d3e77</a></li>
-</ul>
-</details></dd>
-<dd><details><summary>550 5.7.1 Service unavailable, Client host [x.xx.xx.xx] blocked using Spamhaus. (AS16012611)</summary><p class="info">Exchange Online checks the sending IP against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.</p><ul>
-<li><a href="https://check.spamhaus.org">https://check.spamhaus.org</a></li>
-</ul>
-</details></dd>
-<dd><details><summary>550 5.7.1 Service unavailable, Helo domain is listed in Spamhaus. (S8001) [#.prod.protection.outlook.com]</summary><p class="info">First, the forward DNS lookup (domain name to IP address) of your sending IP should match the HELO value set in your mailserver. Then Exchange Online checks this HELO domain against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.</p><ul>
-<li><a href="https://check.spamhaus.org">https://check.spamhaus.org</a></li>
-</ul>
-</details></dd>
-<dd><details><summary>550 5.7.606 Access denied, banned sending IP [x.xx.xx.xx]. To request removal from this list please visit https://sender.office.com/ and follow the directions. For more information please go to  http://go.microsoft.com/fwlink/?LinkID=526655 (AS16012609)</summary><p class="info">Your IP has low reputation with Microsoft. Follow the instructions on the link below to suubmit mitigation. You may need to reply to their emails a few times.</p><ul>
-<li><a href="https://sender.office.com/">https://sender.office.com/</a></li>
-</ul>
-</details></dd>
-<dd><details><summary>550 5.7.1 TRANSPORT.RULES.RejectMessage; the message was rejected by organization policy</summary><p class="info">Your message was blocked due to a mail flow rule configured by the recipient organization. You will have to contact their mail admins to discover why.</p><ul>
-<li><a href="https://sender.office.com/">https://sender.office.com/</a></li>
-</ul>
-</details></dd>
-</div>
-<div class="card">
 <dt id="fireeye">FireEye<span class="top"><a href="#">↑</a></span></dt>
 <dd><details><summary>550 5.7.26 &lt;example@example.com&gt;: ETP205 DMARC Failure for domain</summary><p class="info">The email failed DMARC and you have a reject policy. Make sure your email is authenticated and aligned with SPF and/or DKIM. Contact your email provider for more details on how to configure them.</p></details></dd>
 </div>
@@ -124,17 +86,6 @@
 </details></dd>
 <dd><details><summary>550 virus detected</summary><p class="info">Free.fr has detected a virus in the message that you sent. Check your mail to make sure it should not be missdetected as a spam, either by using an antispam softwate or by checking if the mail is syntaxically correct.</p><ul>
 <li><a href="https://postmaster.free.fr/index_en.html">https://postmaster.free.fr/index_en.html</a></li>
-</ul>
-</details></dd>
-</div>
-<div class="card">
-<dt id="gmx">GMX<span class="top"><a href="#">↑</a></span></dt>
-<dd><details><summary>550 Requested action not taken: mailbox unavailable</summary><p class="info">The specified recipient does not exist on their systems or the recipient has not used their inbox for an extended period of time and the inbox has been temporarily disabled due to inactivity. Please check the spelling of the email address.</p><ul>
-<li><a href="https://postmaster.gmx.net/en/error-messages">https://postmaster.gmx.net/en/error-messages</a></li>
-</ul>
-</details></dd>
-<dd><details><summary>Requested action not taken: mailbox unavailable Reject due to policy restrictions.</summary><p class="info">The message is being rejected due to policy reasons. This is likely down to the sender or IP being a spam source, or technical information included in the email doesn't meet some RFC standards.</p><ul>
-<li><a href="https://www.gmx.net/mail/senderguidelines/">https://www.gmx.net/mail/senderguidelines/</a></li>
 </ul>
 </details></dd>
 </div>
@@ -239,7 +190,7 @@
 </div>
 <div class="card">
 <dt id="mxroute">MXroute<span class="top"><a href="#">↑</a></span></dt>
-<dd><details><summary>550 Unauthenticated mail not allowed from this range</summary><p class="info">The sending IP is in a range of IPs that are considered low reputation or should not be sending emails. If you believe this to be a false positive, request a review at https://whitelistrequest.mxrouting.net</p></details></dd>
+<dd><details><summary>550 Unauthenticated mail not allowed from this range</summary><p class="info">The sending IP is in a range of IPs that are considered low reputation or should not be sending emails. If you believe this to be a false positive, request a review at https://esf.mxroute.com</p></details></dd>
 <dd><details><summary>550 No such recipient here</summary><p class="info">The email address does not exist. Check to make sure there are no typos or other mistakes with the address.</p><ul>
 <li><a href="https://docs.mxroute.com/docs/troubleshooting/no-such-recipient.html">https://docs.mxroute.com/docs/troubleshooting/no-such-recipient.html</a></li>
 </ul>
@@ -263,6 +214,29 @@
 </ul>
 </details></dd>
 <dd>550 Message was not accepted -- invalid mailbox. Local mailbox example@mail.ru is unavailable: account is disabled</dd>
+</div>
+<div class="card">
+<dt id="microsoft365">Microsoft 365<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 5.4.1 [email@example.com]: Recipient address rejected: Access denied [example.com]</summary><p class="info">Usually this bounce means the recipient address is invalid, but sometimes it can be caused by internal setup or routing issues. Reach out to the recipient's mail admin to verify.</p><ul>
+<li><a href="https://support.microsoft.com/en-us/topic/ndr-error-code-550-5-4-1-recipient-address-rejected-access-denied-c0e98a8e-81db-49c2-9bf1-32a1734d3e77">https://support.microsoft.com/en-us/topic/ndr-error-code-550-5-4-1-recipient-address-rejected-access-denied-c0e98a8e-81db-49c2-9bf1-32a1734d3e77</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 Service unavailable, Client host [x.xx.xx.xx] blocked using Spamhaus. (AS16012611)</summary><p class="info">Exchange Online checks the sending IP against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.</p><ul>
+<li><a href="https://check.spamhaus.org">https://check.spamhaus.org</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 Service unavailable, Helo domain is listed in Spamhaus. (S8001) [#.prod.protection.outlook.com]</summary><p class="info">First, the forward DNS lookup (domain name to IP address) of your sending IP should match the HELO value set in your mailserver. Then Exchange Online checks this HELO domain against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.</p><ul>
+<li><a href="https://check.spamhaus.org">https://check.spamhaus.org</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.606 Access denied, banned sending IP [x.xx.xx.xx]. To request removal from this list please visit https://sender.office.com/ and follow the directions. For more information please go to  http://go.microsoft.com/fwlink/?LinkID=526655 (AS16012609)</summary><p class="info">Your IP has low reputation with Microsoft. Follow the instructions on the link below to suubmit mitigation. You may need to reply to their emails a few times.</p><ul>
+<li><a href="https://sender.office.com/">https://sender.office.com/</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 TRANSPORT.RULES.RejectMessage; the message was rejected by organization policy</summary><p class="info">Your message was blocked due to a mail flow rule configured by the recipient organization. You will have to contact their mail admins to discover why.</p><ul>
+<li><a href="https://sender.office.com/">https://sender.office.com/</a></li>
+</ul>
+</details></dd>
 </div>
 <div class="card">
 <dt id="mimecast">Mimecast<span class="top"><a href="#">↑</a></span></dt>
@@ -331,15 +305,15 @@
 <li><a href="https://check.spamhaus.org">https://check.spamhaus.org</a></li>
 </ul>
 </details></dd>
-<dd><details><summary>550 5.7.1 Unfortunately, messages from [x.xx.xx.xx] weren&#039;t sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshooting.aspx#errors. [#.eop-nam02.prod.protection.outlook.com]</summary><p class="info">This is Microsoft's way of throttling your sending IP, possibly related to IP reputation classification. It should automatically expire on its own and is generally caused by sending too much traffic too fast.</p><ul>
-<li><a href="https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx">https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx</a></li>
+<dd><details><summary>550 5.7.1 Unfortunately, messages from [x.xx.xx.xx] weren&#039;t sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshooting.aspx#errors. [#.eop-nam02.prod.protection.outlook.com]</summary><p class="info">This is Microsoft's way of throttling your sending IP, possibly related to IP reputation classification. It should automatically expire on its own and is generally caused by sending too much traffic too fast. You can read the article below that further explains about it.</p><ul>
+<li><a href="https://www.engagor.ai/resources/blog/microsoft-s3150-most-frustrating-error-code">https://www.engagor.ai/resources/blog/microsoft-s3150-most-frustrating-error-code</a></li>
 </ul>
 </details></dd>
 <dd><details><summary>550 5.7.515 Access denied, sending domain example.com does not meet the required authentication level.</summary><p class="info">The 550 5.7.515 error means your message was rejected because it didn't meet Outlook’s authentication requirements for high-volume senders. If you're sending over 5,000 messages per day, your domain must pass SPF and DKIM, and have a DMARC policy in place.</p><ul>
 <li><a href="https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders/4399730">https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders/4399730</a></li>
 </ul>
 </details></dd>
-<dd><details><summary>550 5.4.1 All recipient addresses rejected : Access denied [#.eop-nam02.prod.protection.outlook.com]</summary><p class="info">This could be due to an active block on the sender for abuse reasons, but typically it's a policy that only specific senders/servers are allowed to send mail to this host. Reach out the recipient directly for options to add the sender to their 'allow list'.</p></details></dd>
+<dd><details><summary>550 5.4.1 All recipient addresses rejected: Access denied [#.eop-nam02.prod.protection.outlook.com]</summary><p class="info">This could be due to an active block on the sender for abuse reasons, but typically it's a policy that only specific senders/servers are allowed to send mail to this host. Reach out the recipient directly for options to add the sender to their 'allow list'.</p></details></dd>
 </div>
 <div class="card">
 <dt id="proofpoint">Proofpoint<span class="top"><a href="#">↑</a></span></dt>
@@ -464,7 +438,18 @@
 </details></dd>
 </div>
 <div class="card">
-<dt id="webde">Web.de<span class="top"><a href="#">↑</a></span></dt>
+<dt id="unitedinternet">United Internet (1&1, IONOS, web.de, GMX)<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 Requested action not taken: mailbox unavailable</summary><p class="info">The specified recipient does not exist on their systems or the recipient has not used their inbox for an extended period of time and the inbox has been temporarily disabled due to inactivity. Please check the spelling of the email address.</p><ul>
+<li><a href="https://postmaster.gmx.net/en/error-messages">https://postmaster.gmx.net/en/error-messages</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>Requested action not taken: mailbox unavailable Reject due to policy restrictions.</summary><p class="info">The message is being rejected due to policy reasons. This is likely down to the sender or IP being a spam source, or technical information included in the email doesn't meet some RFC standards.</p><ul>
+<li><a href="https://www.gmx.net/mail/senderguidelines/">https://www.gmx.net/mail/senderguidelines/</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="unitedinternet">United Internet (1&1, IONOS, web.de, GMX)<span class="top"><a href="#">↑</a></span></dt>
 <dd><details><summary>550 &lt;example@example.com&gt;: Reject due to SPF policy. The originating IP of the message is not permitted by the domain owner</summary><p class="info">The email was rejected, because it was sent from a server that is not included in the domain owner's SPF record. This usually indicates that the sender address has been spoofed and that the email is spam/phishing.</p><ul>
 <li><a href="https://postmaster.web.de/en/error-messages">https://postmaster.web.de/en/error-messages</a></li>
 </ul>

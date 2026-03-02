@@ -26,7 +26,7 @@
 <h1>SMTP Error Code 451</h1>
 <p>The mail server encountered a temporary failure. If the command is repeated without any change, it might be completed. Mail servers can use temporary failures like this to keep untrusted senders at bay.</p>
 <h2>Providers</h2>
-<p><a href="#barracuda">Barracuda</a> &#183; <a href="#exchangeonline">Exchange Online</a> &#183; <a href="#google">Google</a> &#183; <a href="#mimecast">Mimecast</a> &#183; <a href="#outlook">Outlook.com</a> &#183; <a href="#rackspace">Rackspace</a> &#183; <a href="#yahoo">Yahoo</a> &#183; <a href="#yandex">Yandex</a> &#183; <a href="#zoho">Zoho</a> &#183; <a href="#icloud">iCloud</a></p>
+<p><a href="#barracuda">Barracuda</a> &#183; <a href="#google">Google</a> &#183; <a href="#microsoft365">Microsoft 365</a> &#183; <a href="#mimecast">Mimecast</a> &#183; <a href="#outlook">Outlook.com</a> &#183; <a href="#rackspace">Rackspace</a> &#183; <a href="#yahoo">Yahoo</a> &#183; <a href="#yandex">Yandex</a> &#183; <a href="#zoho">Zoho</a> &#183; <a href="#icloud">iCloud</a></p>
 <dl>
 <div class="card">
 <dt id="barracuda">Barracuda<span class="top"><a href="#">↑</a></span></dt>
@@ -35,18 +35,18 @@
 <dd>451 cuda_nsu 4.4.3 Temporary server error. Please try again later</dd>
 </div>
 <div class="card">
-<dt id="exchangeonline">Exchange Online<span class="top"><a href="#">↑</a></span></dt>
-<dd>451 4.7.0 Temporary server error. Please try again later. PRX4 NextHop: example.com [example.com]</dd>
-<dd>451 4.7.500 Server busy. Please try again later from [x.xx.xx.x]. (AS77712344) [#.prod.protection.outlook.com]</dd>
-<dd><details><summary>451 4.4.62 Mail sent to the wrong Office 365 region. ATTR35. For more information please go to  https://go.microsoft.com/fwlink/?linkid=865268 [#.prod.protection.outlook.com]</summary><p class="info">This error can result from misconfigured connectors, expired certificates, or incorrect mail routing in hybrid Exchange environments.</p><ul>
-<li><a href="https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/wrong-office-365-region-exo">https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/wrong-office-365-region-exo</a></li>
+<dt id="google">Google<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>451 4.3.0 Mail server temporarily rejected message. - gsmtp</summary><p class="info">The mail server encountered a temporary failure. Most likely it isn't anything to do with the session, but rather the server is overloaded or having issues. If you try again later, it should work.</p><ul>
+<li><a href="https://support.google.com/mail/answer/81126">https://support.google.com/mail/answer/81126</a></li>
 </ul>
 </details></dd>
 </div>
 <div class="card">
-<dt id="google">Google<span class="top"><a href="#">↑</a></span></dt>
-<dd><details><summary>451 4.3.0 Mail server temporarily rejected message. - gsmtp</summary><p class="info">The mail server encountered a temporary failure. Most likely it isn't anything to do with the session, but rather the server is overloaded or having issues. If you try again later, it should work.</p><ul>
-<li><a href="https://support.google.com/mail/answer/81126">https://support.google.com/mail/answer/81126</a></li>
+<dt id="microsoft365">Microsoft 365<span class="top"><a href="#">↑</a></span></dt>
+<dd>451 4.7.0 Temporary server error. Please try again later. PRX4 NextHop: example.com [example.com]</dd>
+<dd>451 4.7.500 Server busy. Please try again later from [x.xx.xx.x]. (AS77712344) [#.prod.protection.outlook.com]</dd>
+<dd><details><summary>451 4.4.62 Mail sent to the wrong Office 365 region. ATTR35. For more information please go to  https://go.microsoft.com/fwlink/?linkid=865268 [#.prod.protection.outlook.com]</summary><p class="info">This error can result from misconfigured connectors, expired certificates, or incorrect mail routing in hybrid Exchange environments.</p><ul>
+<li><a href="https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/wrong-office-365-region-exo">https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/wrong-office-365-region-exo</a></li>
 </ul>
 </details></dd>
 </div>
