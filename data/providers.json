@@ -220,7 +220,7 @@
             "protonmail.ch",
             "protonmail.com",
             "proton.me",
-            "pm.me" 
+            "pm.me"
         ],
         "description": "Proton Mail is a swiss-based email provider and the largest end-to-end encrypted email host. They do not have a postmaster page, but their team is very responsive via postmaster@proton.me",
         "links": []
@@ -353,6 +353,15 @@
         "description": "Zoho is a range of online services for businesses. It includes an email hosting product with spam filtering, firewall, and block list features.",
         "links": [
             "https:\/\/www.zoho.com\/mail\/help\/spam-reason.html"
+        ]
+    },
+    {
+        "id": "titan",
+        "name": "Titan Email",
+        "domains": [],
+        "description": "Titan Email is a hosted business email platform commonly resold by registrars and hosting providers for custom domains. Their SMTP responses frequently reflect recipient validation, sender authentication failures, anti-abuse enforcement, sender reputation checks, and inbound quota controls.",
+        "links": [
+            "https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes"
         ]
     }
 ]
