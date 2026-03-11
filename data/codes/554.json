@@ -253,26 +253,26 @@
             "name": "Mimecast",
             "responses": [
                 {
-                "response": "554 Email rejected due to security policies (e.g., MCSpamSignature.x.x).",
-                "description": "A signature could be a virus or a spam score over the maximum threshold. The spam score isn't available in the Administration Console. If you aren't a Mimecast customer but have emails rejected with this error code, contact the recipient to adjust their configuration and permit your address. If unsuccessful, your IT department can- submit a request to review these email rejections via our Sender Feedback form linked below.",
-                "links": [
-                    "https:\/\/go.smtp.codes\/mimecastsenderfeedback"
-                ]
-            },
-            {
-                "response": "554 Mail loop detected.",
-                "description": "The message has too many Received Headers as it has been forwarded across multiple hops. Once 25 hops have been reached; the email is rejected.",
-                "links": [
-                    "https:\/\/mimecastsupport.zendesk.com\/hc\/en-us\/articles\/34000709564691-Policies-Mimecast-SMTP-Error-Codes"
-                ]
-            },
-            {
-                "response": "554 Host network not allowed.",
-                "description": "The message has triggered a Geographical Restriction policy set by the administrator.",
-                "links": [
-                    "https:\/\/mimecastsupport.zendesk.com\/hc\/en-us\/articles\/34000709564691-Policies-Mimecast-SMTP-Error-Codes"
-                ]
-            }
+                    "response": "554 Email rejected due to security policies (e.g., MCSpamSignature.x.x).",
+                    "description": "A signature could be a virus or a spam score over the maximum threshold. The spam score isn't available in the Administration Console. If you aren't a Mimecast customer but have emails rejected with this error code, contact the recipient to adjust their configuration and permit your address. If unsuccessful, your IT department can- submit a request to review these email rejections via our Sender Feedback form linked below.",
+                    "links": [
+                        "https:\/\/go.smtp.codes\/mimecastsenderfeedback"
+                    ]
+                },
+                {
+                    "response": "554 Mail loop detected.",
+                    "description": "The message has too many Received Headers as it has been forwarded across multiple hops. Once 25 hops have been reached; the email is rejected.",
+                    "links": [
+                        "https:\/\/mimecastsupport.zendesk.com\/hc\/en-us\/articles\/34000709564691-Policies-Mimecast-SMTP-Error-Codes"
+                    ]
+                },
+                {
+                    "response": "554 Host network not allowed.",
+                    "description": "The message has triggered a Geographical Restriction policy set by the administrator.",
+                    "links": [
+                        "https:\/\/mimecastsupport.zendesk.com\/hc\/en-us\/articles\/34000709564691-Policies-Mimecast-SMTP-Error-Codes"
+                    ]
+                }
             ]
         },
         {
@@ -420,6 +420,34 @@
                         "http:\/\/check.spamhaus.org",
                         "http:\/\/www.spamhaus.org\/pbl",
                         "https:\/\/www.secureserver.net\/help\/fix-rejected-email-with-a-bounce-error-40685?pl_id=3153&prog_id=3153#rbl"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "titan",
+            "name": "Titan Email",
+            "responses": [
+                {
+                    "response": "554 5.7.1 <user@example.com>: Relay access denied;",
+                    "description": "Recipient email address does not exist",
+                    "links": [
+                        "https:\/\/support.titan.email\/hc\/en-us\/articles\/35175377981977-Understanding-Incoming-Email-Reject-Codes"
+                    ]
+                },
+                {
+                    "response": "554 5.7.1 Service unavailable; Client host [<ip>] blocked using b.barracudacentral.org;",
+                    "description": "IP address is found on an RBL, Titan rejected the email from that suspicious IP",
+                    "links": [
+                        "https:\/\/support.titan.email\/hc\/en-us\/articles\/35175377981977-Understanding-Incoming-Email-Reject-Codes",
+                        "http:\/\/b.barracudacentral.org"
+                    ]
+                },
+                {
+                    "response": "554 5.7.1 command rejected",
+                    "description": "IP address is suspicious, Titan rejected the email from that suspicious IP",
+                    "links": [
+                        "https:\/\/support.titan.email\/hc\/en-us\/articles\/35175377981977-Understanding-Incoming-Email-Reject-Codes"
                     ]
                 }
             ]

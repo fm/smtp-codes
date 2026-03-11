@@ -156,6 +156,19 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "titan",
+            "name": "Titan Email",
+            "responses": [
+                {
+                    "response": "552 5.2.2 user@example.com: Recipient address rejected: Quota exceeded (mailbox for user is full)",
+                    "description": "Titan enforces disk quotas to ensure that users do not exceed their allocated storage space",
+                    "links": [
+                        "https:\/\/support.titan.email\/hc\/en-us\/articles\/35175377981977-Understanding-Incoming-Email-Reject-Codes"
+                    ]
+                }
+            ]
         }
     ]
 }
