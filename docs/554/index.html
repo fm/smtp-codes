@@ -26,7 +26,7 @@
 <h1>SMTP Error Code 554</h1>
 <p>The transaction failed permanently. The server will not try to send the message again. </p>
 <h2>Providers</h2>
-<p><a href="#barracuda">Barracuda</a> &#183; <a href="#comcast">Comcast</a> &#183; <a href="#free">Free</a> &#183; <a href="#godaddy">GoDaddy</a> &#183; <a href="#infomaniak">Infomaniak</a> &#183; <a href="#microsoft365">Microsoft 365</a> &#183; <a href="#mimecast">Mimecast</a> &#183; <a href="#outlook">Outlook.com</a> &#183; <a href="#proofpoint">Proofpoint</a> &#183; <a href="#rackspace">Rackspace</a> &#183; <a href="#rambler">Rambler</a> &#183; <a href="#trendmicro">Trend Micro</a> &#183; <a href="#yahoo">Yahoo</a> &#183; <a href="#yandex">Yandex</a> &#183; <a href="#zerospam">ZeroSpam</a> &#183; <a href="#zoho">Zoho</a> &#183; <a href="#icloud">iCloud</a></p>
+<p><a href="#barracuda">Barracuda</a> &#183; <a href="#comcast">Comcast</a> &#183; <a href="#free">Free</a> &#183; <a href="#godaddy">GoDaddy</a> &#183; <a href="#infomaniak">Infomaniak</a> &#183; <a href="#microsoft365">Microsoft 365</a> &#183; <a href="#mimecast">Mimecast</a> &#183; <a href="#outlook">Outlook.com</a> &#183; <a href="#proofpoint">Proofpoint</a> &#183; <a href="#rackspace">Rackspace</a> &#183; <a href="#rambler">Rambler</a> &#183; <a href="#titan">Titan Email</a> &#183; <a href="#trendmicro">Trend Micro</a> &#183; <a href="#yahoo">Yahoo</a> &#183; <a href="#yandex">Yandex</a> &#183; <a href="#zerospam">ZeroSpam</a> &#183; <a href="#zoho">Zoho</a> &#183; <a href="#icloud">iCloud</a></p>
 <dl>
 <div class="card">
 <dt id="barracuda">Barracuda<span class="top"><a href="#">↑</a></span></dt>
@@ -161,6 +161,22 @@
 <dt id="rambler">Rambler<span class="top"><a href="#">↑</a></span></dt>
 <dd><details><summary>554 5.7.1 Spam message rejected; If this is not spam contact abuse</summary><p class="info">After reviewing your messages to ensure they follow sender best practices, you can contact Rambler's support team for review.</p><ul>
 <li><a href="https://help.rambler.ru/feedback/mail/form/144">https://help.rambler.ru/feedback/mail/form/144</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="titan">Titan Email<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.7.1 &lt;user@example.com&gt;: Relay access denied;</summary><p class="info">Recipient email address does not exist</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 Service unavailable; Client host [&lt;ip&gt;] blocked using b.barracudacentral.org;</summary><p class="info">IP address is found on an RBL, Titan rejected the email from that suspicious IP</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+<li><a href="http://b.barracudacentral.org">http://b.barracudacentral.org</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 command rejected</summary><p class="info">IP address is suspicious, Titan rejected the email from that suspicious IP</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
 </ul>
 </details></dd>
 </div>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Titan Email</title>
+<meta charset="utf-8">
+<meta name="title" content="Titan Email">
+<meta name="description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:title" content="Titan Email">
+<meta property="og:url" content="{url}">
+<meta property="og:description" content="A collection of SMTP responses from email systems and what they mean.">
+<meta property="og:image" content="{image}">
+<meta name="fediverse:creator" content="@faisal@social.lol">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/style.css?v=1773950718">
+<script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+</head>
+
+<body>
+
+<main>
+
+<nav><a href="/">Home</a> &#183; <a href="/contributors">Contributors</a> &#183; <a href="https://github.com/fm/smtp-codes" target="_blank">GitHub</a></nav>
+
+<h1>Titan Email</h1>
+<p>Titan Email is a hosted business email platform commonly resold by registrars and hosting providers for custom domains. Their SMTP responses frequently reflect recipient validation, sender authentication failures, anti-abuse enforcement, sender reputation checks, and inbound quota controls.</p>
+<h2>Links</h2>
+<ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+<h2>Codes</h2>
+<p><a href="#421">421</a> &#183; <a href="#450">450</a> &#183; <a href="#550">550</a> &#183; <a href="#552">552</a> &#183; <a href="#554">554</a></p>
+<dl>
+<div class="card">
+<dt id="421"><a href="/421">421</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>421 4.7.0  : Sender IP rejected: sending IP has insufficient reputation.  Please retry later.</summary><p class="info">Your email couldn't be delivered because the sending IP address doesn't yet have sufficient reputation, as it's new in our system. This rejection is temporary—please try sending your email again later.</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="450"><a href="/450">450</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>450 4.2.0 &lt;user@example.com&gt;: Recipient address rejected: greylisted : please retry after sometime;</summary><p class="info">When an email is received from a suspicious IP address (often due to issues with reverse DNS), the server temporarily defers the message. The sending mail server is expected to hold the email for a short period before attempting to resend it. Subsequent retries from the sending server will then be accepted.</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>550 5.5.1 Protocol error</summary><p class="info">Error message indicating that there is a problem with the way the email is being sent, usually related to the protocol commands or their sequence.</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.1.8 &lt;user@example.org&gt;: Sender address rejected: Domain not found</summary><p class="info">Email rejected as no DNS MX and no DNS A record for the sender domain. These records specify the mail servers responsible for receiving emails on behalf of the sender domain. If an email cannot be delivered, a bounce message is sent back to the sender. Without proper MX and A records, the sender domain cannot receive these bounce messages, making it difficult to manage and rectify email delivery issues.</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.27 &lt;user@example.org&gt;: Sender address rejected: Domain example.org does not accept mail (nullMX)</summary><p class="info">Email rejected as a malformed MX record such as a record with a zero-length MX hostname found for the sender domain</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.1.1 &lt;user@example.com&gt;: Recipient address rejected: User unknown in virtual mailbox table</summary><p class="info">Recipient email address does not exist</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.1.1 &lt;user@example.com&gt;: Recipient address rejected: User unknown in local recipient table</summary><p class="info">Recipient email address does not exist</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 &lt;user@example.com&gt;: Recipient address rejected: Message rejected due to: SPF fail - not authorized.</summary><p class="info">SPF Hard failure : The SPF record for the sender domain specifies a set of IP addresses that are allowed to send emails on behalf of that domain. If the IP address of the sending mail server is not listed in the SPF record of the sender domain, and the SPF record explicitly indicates that the IP address is not authorized (e.g., through the "-all" mechanism), the receiving mail server will consider the email as a hard failure.</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.4.7 &lt;user@example.com&gt;: Recipient address rejected: Recipients Domain Hourly Quota Exceeded</summary><p class="info">Ratelimit exceeded https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive?utm_campaign=Titan+Support&utm_source=support-email</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+<li><a href="https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive">https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.4.7 &lt;user@example.com&gt;: Recipient address rejected: Recipients Domain Daily Quota Exceeded</summary><p class="info">Ratelimit exceeded https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive?utm_campaign=Titan+Support&utm_source=support-email</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+<li><a href="https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive">https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.4.6 &lt;user@example.com&gt;: Recipient address rejected: Recipient Quota Exceeded;</summary><p class="info">Ratelimit exceeded https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive?utm_campaign=Titan+Support&utm_source=support-email</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+<li><a href="https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive">https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.4.6 &lt;user@example.com&gt;: Recipient address rejected: Mailbox Does Not Exist : Domains Hourly Quota Exceeded;</summary><p class="info">Ratelimit exceeded https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive?utm_campaign=Titan+Support&utm_source=support-email</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+<li><a href="https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive">https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.4.6 &lt;user@example.com&gt;: Recipient address rejected: Mailbox Does Not Exist : Domains Daily Quota Exceeded;</summary><p class="info">Ratelimit exceeded https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive?utm_campaign=Titan+Support&utm_source=support-email</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+<li><a href="https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive">https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.1 message content rejected</summary><p class="info">Ratelimit exceeded https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive?utm_campaign=Titan+Support&utm_source=support-email</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+<li><a href="https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive">https://support.titan.email/hc/en-us/articles/360038836914-How-many-emails-can-I-send-and-receive</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.2.1 &lt;user@example.com&gt;: Recipient address rejected: Incoming suspended due to abuse</summary><p class="info">This recipient domain is suspended due to suspicious activity , currently incoming emails are not getting accepted</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.2.1 &lt;user@example.com&gt; : Recipient address rejected: Incoming temporarily suspended due to partner migration</summary><p class="info">This domain is suspended due to ongoing partner migration, currently incoming emails are not being accepted.</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.2 &lt;ip&gt;: Sender IP rejected: spam rate exceeded</summary><p class="info">Your email was rejected because the sending mail server has been sending an unusually high volume of spam or suspicious messages. To protect our users, we block emails from servers that exceed safe sending thresholds.</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="552"><a href="/552">552</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>552 5.2.2 user@example.com: Recipient address rejected: Quota exceeded (mailbox for user is full)</summary><p class="info">Titan enforces disk quotas to ensure that users do not exceed their allocated storage space</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 5.7.1 &lt;user@example.com&gt;: Relay access denied;</summary><p class="info">Recipient email address does not exist</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 Service unavailable; Client host [&lt;ip&gt;] blocked using b.barracudacentral.org;</summary><p class="info">IP address is found on an RBL, Titan rejected the email from that suspicious IP</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+<li><a href="http://b.barracudacentral.org">http://b.barracudacentral.org</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 5.7.1 command rejected</summary><p class="info">IP address is suspicious, Titan rejected the email from that suspicious IP</p><ul>
+<li><a href="https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes">https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes</a></li>
+</ul>
+</details></dd>
+</div>
+</dl>
+
+
+</main>
+
+<footer>
+A project by <a href="https://neatnik.net" target="_blank">Neatnik</a> and <a href="https://faisal.fm" target="_blank">Faisal Misle</a>
+</footer>
+
+</body>
+</html>
