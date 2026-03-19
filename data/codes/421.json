@@ -216,6 +216,19 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "titan",
+            "name": "Titan Email",
+            "responses": [
+                {
+                    "response": "421 4.7.0  : Sender IP rejected: sending IP has insufficient reputation.  Please retry later.",
+                    "description": "Your email couldn't be delivered because the sending IP address doesn't yet have sufficient reputation, as it's new in our system. This rejection is temporary—please try sending your email again later.",
+                    "links": [
+                        "https:\/\/support.titan.email\/hc\/en-us\/articles\/35175377981977-Understanding-Incoming-Email-Reject-Codes"
+                    ]
+                }
+            ]
         }
     ]
 }
