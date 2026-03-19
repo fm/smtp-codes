@@ -1086,7 +1086,7 @@
                 },
                 {
                     "response": "550 5.4.7 <user@example.com>: Recipient address rejected: Recipients Domain Hourly Quota Exceeded",
-                    "description": "Ratelimit exceeded https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive?utm_campaign=Titan+Support&utm_source=support-email",
+                    "description": "Ratelimit exceeded https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive",
                     "links": [
                         "https:\/\/support.titan.email\/hc\/en-us\/articles\/35175377981977-Understanding-Incoming-Email-Reject-Codes",
                         "https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive"
@@ -1094,7 +1094,7 @@
                 },
                 {
                     "response": "550 5.4.7 <user@example.com>: Recipient address rejected: Recipients Domain Daily Quota Exceeded",
-                    "description": "Ratelimit exceeded https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive?utm_campaign=Titan+Support&utm_source=support-email",
+                    "description": "Ratelimit exceeded https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive",
                     "links": [
                         "https:\/\/support.titan.email\/hc\/en-us\/articles\/35175377981977-Understanding-Incoming-Email-Reject-Codes",
                         "https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive"
@@ -1102,7 +1102,7 @@
                 },
                 {
                     "response": "550 5.4.6 <user@example.com>: Recipient address rejected: Recipient Quota Exceeded;",
-                    "description": "Ratelimit exceeded https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive?utm_campaign=Titan+Support&utm_source=support-email",
+                    "description": "Ratelimit exceeded https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive",
                     "links": [
                         "https:\/\/support.titan.email\/hc\/en-us\/articles\/35175377981977-Understanding-Incoming-Email-Reject-Codes",
                         "https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive"
@@ -1110,7 +1110,7 @@
                 },
                 {
                     "response": "550 5.4.6 <user@example.com>: Recipient address rejected: Mailbox Does Not Exist : Domains Hourly Quota Exceeded;",
-                    "description": "Ratelimit exceeded https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive?utm_campaign=Titan+Support&utm_source=support-email",
+                    "description": "Ratelimit exceeded https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive",
                     "links": [
                         "https:\/\/support.titan.email\/hc\/en-us\/articles\/35175377981977-Understanding-Incoming-Email-Reject-Codes",
                         "https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive"
@@ -1118,7 +1118,7 @@
                 },
                 {
                     "response": "550 5.4.6 <user@example.com>: Recipient address rejected: Mailbox Does Not Exist : Domains Daily Quota Exceeded;",
-                    "description": "Ratelimit exceeded https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive?utm_campaign=Titan+Support&utm_source=support-email",
+                    "description": "Ratelimit exceeded https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive",
                     "links": [
                         "https:\/\/support.titan.email\/hc\/en-us\/articles\/35175377981977-Understanding-Incoming-Email-Reject-Codes",
                         "https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive"
@@ -1126,7 +1126,7 @@
                 },
                 {
                     "response": "550 5.7.1 message content rejected",
-                    "description": "Ratelimit exceeded https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive?utm_campaign=Titan+Support&utm_source=support-email",
+                    "description": "Something in your message content was rejected by the filters. You can contact support@titan.email with details (To, From, Subject, Date) for more information.",
                     "links": [
                         "https:\/\/support.titan.email\/hc\/en-us\/articles\/35175377981977-Understanding-Incoming-Email-Reject-Codes",
                         "https:\/\/support.titan.email\/hc\/en-us\/articles\/360038836914-How-many-emails-can-I-send-and-receive"

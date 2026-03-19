@@ -169,7 +169,7 @@
             "name": "Titan Email",
             "responses": [
                 {
-                    "response": "450 4.2.0 <user@example.com>: Recipient address rejected: greylisted : please retry after sometime;",
+                    "response": "450 4.2.0 <user@example.com>: Recipient address rejected: greylisted: please retry after sometime",
                     "description": "When an email is received from a suspicious IP address (often due to issues with reverse DNS), the server temporarily defers the message. The sending mail server is expected to hold the email for a short period before attempting to resend it. Subsequent retries from the sending server will then be accepted.",
                     "links": [
                         "https:\/\/support.titan.email\/hc\/en-us\/articles\/35175377981977-Understanding-Incoming-Email-Reject-Codes"

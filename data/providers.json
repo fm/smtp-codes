@@ -253,6 +253,15 @@
         ]
     },
     {
+        "id": "titan",
+        "name": "Titan Email",
+        "domains": [],
+        "description": "Titan Email is a hosted business email platform commonly resold by registrars and hosting providers for custom domains. Their SMTP responses frequently reflect recipient validation, sender authentication failures, anti-abuse enforcement, sender reputation checks, and inbound quota controls. Their team at support@titan.email is generally responsive to issues.",
+        "links": [
+            "https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes"
+        ]
+    },
+    {
         "id": "trendmicro",
         "name": "Trend Micro",
         "description": "Trend Micro is a spam filter, block list, and firewall solution for businesses. Mail is routed through mailservers owned by Trend Micro (example: *.trendmicro.com). The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in the user guide to identify and resolve delivery issues.",
@@ -353,15 +362,6 @@
         "description": "Zoho is a range of online services for businesses. It includes an email hosting product with spam filtering, firewall, and block list features.",
         "links": [
             "https:\/\/www.zoho.com\/mail\/help\/spam-reason.html"
-        ]
-    },
-    {
-        "id": "titan",
-        "name": "Titan Email",
-        "domains": [],
-        "description": "Titan Email is a hosted business email platform commonly resold by registrars and hosting providers for custom domains. Their SMTP responses frequently reflect recipient validation, sender authentication failures, anti-abuse enforcement, sender reputation checks, and inbound quota controls.",
-        "links": [
-            "https://support.titan.email/hc/en-us/articles/35175377981977-Understanding-Incoming-Email-Reject-Codes"
         ]
     }
 ]
