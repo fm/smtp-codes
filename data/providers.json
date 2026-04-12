@@ -51,7 +51,7 @@
     },
     {
         "id": "free",
-        "name": "Free",
+        "name": "Free.fr",
         "domains": [],
         "description": "Free is an internet service provider headquartered in France. It provides free email accounts to its customers, notably those of Free and Alice. Their postmaster page is filled with detailed information about error codes and IP lookup options, including instructions to report a false-positive spam verdict.",
         "links": [
@@ -343,14 +343,6 @@
         "links": [
             "https:\/\/yandex.com\/support\/mail\/web\/spam\/honest-mailers.html",
             "https:\/\/yandex.com\/support\/mail\/bounces\/yandex.html"
-        ]
-    },
-    {
-        "id": "zerospam",
-        "name": "ZeroSpam",
-        "description": "ZeroSpam is a spam filter, block list, and firewall promoted for businesses, headquartered in Quebec. Mail is routed through mailservers owned by ZeroSpam before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such as allow lists, but senders may also be able to contact a postmaster@zerospam.com and abuse@zerospam.com address to get more in-depth analysis.",
-        "links": [
-            "https:\/\/www.zerospam.ca\/en\/press-and-media-blog-archives\/archive-template-5\/archive-email-best-practices"
         ]
     },
     {

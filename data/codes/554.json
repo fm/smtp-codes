@@ -149,7 +149,7 @@
             "name": "Proton Mail",
             "responses": [
                 {
-                    "response": "550 5.7.1 We do not accept viral traffic",
+                    "response": "554 5.7.1 We do not accept viral traffic",
                     "description": "Your email included a malicious file (or something in the message matched a malicious hash). Revise your email for any unwanted malicious content prior to resending. You can use virustotal.com to check.",
                     "links": []
                 }

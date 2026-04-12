@@ -154,17 +154,6 @@
             ]
         },
         {
-            "id": "zerospam",
-            "name": "ZeroSpam",
-            "responses": [
-                {
-                    "response": "450 4.2.0 <email@example.com>: Recipient address rejected: example.com greylisted for 60 seconds by ZEROSPAM",
-                    "description": "Greylisting is a common antispam measure. This mesage is asking the sending mail server to retry sending, most mail servers handle this automatically and will resend the message automatically, leading to a successful delivery.",
-                    "links": []
-                }
-            ]
-        },
-        {
             "id": "titan",
             "name": "Titan Email",
             "responses": [
