@@ -1,15 +1,5 @@
 [
     {
-        "id": "amazonses",
-        "name": "Amazon Simple Email Service",
-        "domains": [],
-        "description": "Amazon Simple Email Service (also known as \"Amazon SES\") is an email platform used for inbound and outbound email sending as a part of Amazon Web Services (AWS). It is also used as a MTA backend for Amazon WorkMail, their email hosting product. Typically the recipient themselves will need to open a ticket with AWS support for in-depth troubleshooting if the issue can't be resolved using manual controls.",
-        "links": [
-            "https:\/\/docs.aws.amazon.com\/ses\/latest\/DeveloperGuide\/receiving-email.html",
-            "https:\/\/aws.amazon.com\/workmail\/"
-        ]
-    },
-    {
         "id": "barracuda",
         "name": "Barracuda",
         "description": "Barracuda is a spam filter, block list, and firewall for businesses. Mail is routed through mailservers owned by Barracuda before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such as allow lists, but sender reputation issues that affect all Barracuda customers globally may require contacting Barracuda support directly to resolve.",

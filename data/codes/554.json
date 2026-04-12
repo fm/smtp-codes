@@ -348,17 +348,6 @@
             ]
         },
         {
-            "id": "zerospam",
-            "name": "ZeroSpam",
-            "responses": [
-                {
-                    "response": "554 5.7.1 <email@example.com>: Recipient address rejected: Not in recipient list",
-                    "description": "",
-                    "links": []
-                }
-            ]
-        },
-        {
             "id": "godaddy",
             "name": "GoDaddy",
             "responses": [
