@@ -861,6 +861,21 @@
                     ]
                 },
                 {
+                    "response": "550 5.7.515 Access denied, sending domain [$domain] doesn't meet the required authentication level. The sender's domain in the 5322.From address doesn't meet the authentication requirements defined for the sender. Spf=Pass Dkim=Fail DMARC=Pass",
+                    "description": "Often there is something in the message which is \"off\" and Microsoft is handling it differently from the DKIM signing code and so DKIM fails. You can check for long lines, or for non-standard encoding in the message or for some duplicate headers. All of those factors have been reported elsewhere as reasons it's failing. You can read the articles below as well for more guidance.",
+                    "links": [
+                        "https:\/\/www.spamresource.com\/2026\/05\/troubleshooting-4-different-types-of.html",
+                        "https:\/\/www.wordtothewise.com\/2025\/11\/folding-email-headers"
+                    ]
+                },
+                {
+                    "response": "550 5.7.515 Access denied, sending domain [$domain] doesn't meet the required authentication level. The sender's domain in the 5322.From address doesn't meet the authentication requirements defined for the sender. Spf=Fail Dkim=Pass DMARC=Pass",
+                    "description": "There's a couple of things you can do. First, check the SPF record of the Return-Path (RFC5321 From). If this is happening to only a few messages, a tiny percentage of sends, you might want to see if future sends to the same person go through just fine, without any configuration changes. That could indicate that Microsoft's having intermittent trouble resolving your SPF record in DNS. You can read the articles below as well for more guidance.",
+                    "links": [
+                        "https:\/\/www.spamresource.com\/2025\/11\/dkim-pass-dmarc-pass-spf-fail-confusing.html"
+                    ]
+                },
+                {
                     "response": "550 5.7.1 Service unavailable, Client host [x.xx.xx.xx] blocked using Spamhaus. (AS16012611)",
                     "description": "Exchange Online checks the sending IP against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.",
                     "links": [

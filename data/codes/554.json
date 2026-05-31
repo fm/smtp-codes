@@ -425,6 +425,33 @@
             ]
         },
         {
+            "id": "mxroute",
+            "name": "MXroute",
+            "responses": [
+                {
+                    "response": "554 Your IP is sending excessive rejected recipients.",
+                    "description": "Triggered when an IP sends a high volume of messages to recipients that don't exist or are otherwise rejected. Common causes include compromised servers sending spam to harvested address lists, or misconfigured mailing lists with large numbers of stale addresses. Note: It will automatically unblock in 48 hours",
+                    "links": [
+                        "https:\/\/docs.mxroute.com\/docs\/troubleshooting\/smtp-blocks.html"
+                    ]
+                },
+                {
+                    "response": "554 Your IP is generating excessive authentication failures.",
+                    "description": "Triggered when an IP repeatedly fails SMTP authentication. This typically indicates a brute-force password attack or a mail client/application configured with outdated credentials. Note: It will automatically unblock in 24 hours",
+                    "links": [
+                        "https:\/\/docs.mxroute.com\/docs\/troubleshooting\/smtp-blocks.html"
+                    ]
+                },
+                {
+                    "response": "554 Your IP address is flooding our SMTP server with abusive requests",
+                    "description": "Your IP is sending excessive rejected messages. Note: It will automatically unblock in 24 hours",
+                    "links": [
+                        "https:\/\/docs.mxroute.com\/docs\/troubleshooting\/smtp-blocks.html"
+                    ]
+                }
+            ]
+        },
+        {
             "id": "titan",
             "name": "Titan Email",
             "responses": [
