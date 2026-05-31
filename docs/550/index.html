@@ -221,6 +221,15 @@
 <li><a href="https://support.microsoft.com/en-us/topic/ndr-error-code-550-5-4-1-recipient-address-rejected-access-denied-c0e98a8e-81db-49c2-9bf1-32a1734d3e77">https://support.microsoft.com/en-us/topic/ndr-error-code-550-5-4-1-recipient-address-rejected-access-denied-c0e98a8e-81db-49c2-9bf1-32a1734d3e77</a></li>
 </ul>
 </details></dd>
+<dd><details><summary>550 5.7.515 Access denied, sending domain [$domain] doesn&#039;t meet the required authentication level. The sender&#039;s domain in the 5322.From address doesn&#039;t meet the authentication requirements defined for the sender. Spf=Pass Dkim=Fail DMARC=Pass</summary><p class="info">Often there is something in the message which is "off" and Microsoft is handling it differently from the DKIM signing code and so DKIM fails. You can check for long lines, or for non-standard encoding in the message or for some duplicate headers. All of those factors have been reported elsewhere as reasons it's failing. You can read the articles below as well for more guidance.</p><ul>
+<li><a href="https://www.spamresource.com/2026/05/troubleshooting-4-different-types-of.html">https://www.spamresource.com/2026/05/troubleshooting-4-different-types-of.html</a></li>
+<li><a href="https://www.wordtothewise.com/2025/11/folding-email-headers">https://www.wordtothewise.com/2025/11/folding-email-headers</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>550 5.7.515 Access denied, sending domain [$domain] doesn&#039;t meet the required authentication level. The sender&#039;s domain in the 5322.From address doesn&#039;t meet the authentication requirements defined for the sender. Spf=Fail Dkim=Pass DMARC=Pass</summary><p class="info">There's a couple of things you can do. First, check the SPF record of the Return-Path (RFC5321 From). If this is happening to only a few messages, a tiny percentage of sends, you might want to see if future sends to the same person go through just fine, without any configuration changes. That could indicate that Microsoft's having intermittent trouble resolving your SPF record in DNS. You can read the articles below as well for more guidance.</p><ul>
+<li><a href="https://www.spamresource.com/2025/11/dkim-pass-dmarc-pass-spf-fail-confusing.html">https://www.spamresource.com/2025/11/dkim-pass-dmarc-pass-spf-fail-confusing.html</a></li>
+</ul>
+</details></dd>
 <dd><details><summary>550 5.7.1 Service unavailable, Client host [x.xx.xx.xx] blocked using Spamhaus. (AS16012611)</summary><p class="info">Exchange Online checks the sending IP against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.</p><ul>
 <li><a href="https://check.spamhaus.org">https://check.spamhaus.org</a></li>
 </ul>

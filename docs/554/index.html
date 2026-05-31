@@ -26,7 +26,7 @@
 <h1>SMTP Error Code 554</h1>
 <p>The transaction failed permanently. The server will not try to send the message again. </p>
 <h2>Providers</h2>
-<p><a href="#barracuda">Barracuda</a> &#183; <a href="#comcast">Comcast</a> &#183; <a href="#free">Free</a> &#183; <a href="#godaddy">GoDaddy</a> &#183; <a href="#infomaniak">Infomaniak</a> &#183; <a href="#microsoft365">Microsoft 365</a> &#183; <a href="#mimecast">Mimecast</a> &#183; <a href="#outlook">Outlook.com</a> &#183; <a href="#proofpoint">Proofpoint</a> &#183; <a href="#protonmail">Proton Mail</a> &#183; <a href="#rackspace">Rackspace</a> &#183; <a href="#rambler">Rambler</a> &#183; <a href="#titan">Titan Email</a> &#183; <a href="#trendmicro">Trend Micro</a> &#183; <a href="#yahoo">Yahoo</a> &#183; <a href="#yandex">Yandex</a> &#183; <a href="#zoho">Zoho</a> &#183; <a href="#icloud">iCloud</a></p>
+<p><a href="#barracuda">Barracuda</a> &#183; <a href="#comcast">Comcast</a> &#183; <a href="#free">Free</a> &#183; <a href="#godaddy">GoDaddy</a> &#183; <a href="#infomaniak">Infomaniak</a> &#183; <a href="#mxroute">MXroute</a> &#183; <a href="#microsoft365">Microsoft 365</a> &#183; <a href="#mimecast">Mimecast</a> &#183; <a href="#outlook">Outlook.com</a> &#183; <a href="#proofpoint">Proofpoint</a> &#183; <a href="#protonmail">Proton Mail</a> &#183; <a href="#rackspace">Rackspace</a> &#183; <a href="#rambler">Rambler</a> &#183; <a href="#titan">Titan Email</a> &#183; <a href="#trendmicro">Trend Micro</a> &#183; <a href="#yahoo">Yahoo</a> &#183; <a href="#yandex">Yandex</a> &#183; <a href="#zoho">Zoho</a> &#183; <a href="#icloud">iCloud</a></p>
 <dl>
 <div class="card">
 <dt id="barracuda">Barracuda<span class="top"><a href="#">↑</a></span></dt>
@@ -104,6 +104,21 @@
 <div class="card">
 <dt id="infomaniak">Infomaniak<span class="top"><a href="#">↑</a></span></dt>
 <dd><details><summary>554 5.7.1 Relay access denied</summary><p class="info">You are sending an email to a server that has not been configured to receive email for that domain.</p></details></dd>
+</div>
+<div class="card">
+<dt id="mxroute">MXroute<span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 Your IP is sending excessive rejected recipients.</summary><p class="info">Triggered when an IP sends a high volume of messages to recipients that don't exist or are otherwise rejected. Common causes include compromised servers sending spam to harvested address lists, or misconfigured mailing lists with large numbers of stale addresses. Note: It will automatically unblock in 48 hours</p><ul>
+<li><a href="https://docs.mxroute.com/docs/troubleshooting/smtp-blocks.html">https://docs.mxroute.com/docs/troubleshooting/smtp-blocks.html</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 Your IP is generating excessive authentication failures.</summary><p class="info">Triggered when an IP repeatedly fails SMTP authentication. This typically indicates a brute-force password attack or a mail client/application configured with outdated credentials. Note: It will automatically unblock in 24 hours</p><ul>
+<li><a href="https://docs.mxroute.com/docs/troubleshooting/smtp-blocks.html">https://docs.mxroute.com/docs/troubleshooting/smtp-blocks.html</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 Your IP address is flooding our SMTP server with abusive requests</summary><p class="info">Your IP is sending excessive rejected messages. Note: It will automatically unblock in 24 hours</p><ul>
+<li><a href="https://docs.mxroute.com/docs/troubleshooting/smtp-blocks.html">https://docs.mxroute.com/docs/troubleshooting/smtp-blocks.html</a></li>
+</ul>
+</details></dd>
 </div>
 <div class="card">
 <dt id="microsoft365">Microsoft 365<span class="top"><a href="#">↑</a></span></dt>

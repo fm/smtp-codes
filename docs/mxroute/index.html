@@ -13,7 +13,7 @@
 <meta name="fediverse:creator" content="@faisal@social.lol">
 <meta name="color-scheme" content="light dark">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/assets/style.css?v=1776004549">
+<link rel="stylesheet" href="/assets/style.css?v=1780262559">
 <script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
 </head>
 
@@ -26,7 +26,7 @@
 <h1>MXroute</h1>
 <p>MXroute is an email host obsessed with high IP reputation. They offer a low-cost, no-frills solution that guarantees delivery of your corporate emails.</p>
 <h2>Codes</h2>
-<p><a href="#550">550</a></p>
+<p><a href="#550">550</a> &#183; <a href="#554">554</a></p>
 <dl>
 <div class="card">
 <dt id="550"><a href="/550">550</a><span class="top"><a href="#">↑</a></span></dt>
@@ -42,6 +42,21 @@
 </details></dd>
 <dd><details><summary>550 Sender verify failed</summary><p class="info">This error has a very specific meaning, but the correct resolution depends on your specific setup and use case. It occurs because of how MXroute's mail servers validate sender addresses. Read the link below to fix it.</p><ul>
 <li><a href="https://docs.mxroute.com/docs/troubleshooting/sender-verify-failed.html">https://docs.mxroute.com/docs/troubleshooting/sender-verify-failed.html</a></li>
+</ul>
+</details></dd>
+</div>
+<div class="card">
+<dt id="554"><a href="/554">554</a><span class="top"><a href="#">↑</a></span></dt>
+<dd><details><summary>554 Your IP is sending excessive rejected recipients.</summary><p class="info">Triggered when an IP sends a high volume of messages to recipients that don't exist or are otherwise rejected. Common causes include compromised servers sending spam to harvested address lists, or misconfigured mailing lists with large numbers of stale addresses. Note: It will automatically unblock in 48 hours</p><ul>
+<li><a href="https://docs.mxroute.com/docs/troubleshooting/smtp-blocks.html">https://docs.mxroute.com/docs/troubleshooting/smtp-blocks.html</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 Your IP is generating excessive authentication failures.</summary><p class="info">Triggered when an IP repeatedly fails SMTP authentication. This typically indicates a brute-force password attack or a mail client/application configured with outdated credentials. Note: It will automatically unblock in 24 hours</p><ul>
+<li><a href="https://docs.mxroute.com/docs/troubleshooting/smtp-blocks.html">https://docs.mxroute.com/docs/troubleshooting/smtp-blocks.html</a></li>
+</ul>
+</details></dd>
+<dd><details><summary>554 Your IP address is flooding our SMTP server with abusive requests</summary><p class="info">Your IP is sending excessive rejected messages. Note: It will automatically unblock in 24 hours</p><ul>
+<li><a href="https://docs.mxroute.com/docs/troubleshooting/smtp-blocks.html">https://docs.mxroute.com/docs/troubleshooting/smtp-blocks.html</a></li>
 </ul>
 </details></dd>
 </div>
