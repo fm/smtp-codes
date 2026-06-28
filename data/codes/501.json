@@ -19,9 +19,9 @@
             "responses": [
                 {
                     "response": "501 Syntax error in parameters or arguments",
-                    "description": "",
+                    "description": "It usually happens when a server cannot read the command you sent because of invalid characters, missing domains, or improper spacing. Review how the message is structured and try again.",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/error-codes"
+                        "https:\/\/senders.yahooinc.com\/smtp-error-codes"
                     ]
                 }
             ]

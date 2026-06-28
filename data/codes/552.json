@@ -53,7 +53,7 @@
                     "response": "552 1 Requested mail action aborted, mailbox not found",
                     "description": "Treat this bounce as a 'bad-mailbox'. Experience has shown that the email address is invalid and should not be sent to in the future.",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/error-codes"
+                        "https:\/\/senders.yahooinc.com\/smtp-error-codes"
                     ]
                 }
             ]

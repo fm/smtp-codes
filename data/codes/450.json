@@ -21,9 +21,9 @@
             "responses": [
                 {
                     "response": "450 User is receiving mail too quickly",
-                    "description": "The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.",
+                    "description": "The email address is currently receiving an email at a high rate. Re-sending email in the future will most likely be successful.",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/error-codes"
+                        "https:\/\/senders.yahooinc.com\/smtp-error-codes"
                     ]
                 }
             ]

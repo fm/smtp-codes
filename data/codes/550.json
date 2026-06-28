@@ -81,7 +81,7 @@
                     "response": "550 relaying denied for <example@example.com>",
                     "description": "This domain is not hosted at Yahoo. There is little you can do, as it is likely a misconfiguration on the receipient's end.",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/error-codes"
+                        "https:\/\/senders.yahooinc.com\/smtp-error-codes"
                     ]
                 }
             ]
@@ -811,7 +811,7 @@
                 },
                 {
                     "response": "550 5.7.0 Email rejected per sender's DMARC policy",
-                    "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC.",
+                    "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to configure how to send a message that passes DMARC.",
                     "links": []
                 },
                 {

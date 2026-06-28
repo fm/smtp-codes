@@ -21,16 +21,16 @@
             "responses": [
                 {
                     "response": "451 example.yahoo.com Resources temporarily unavailable. Please try again later [#4.16.1].",
-                    "description": "The sender's domain is currently unable to accept this message. Sending email in the future will most likely be successful.",
+                    "description": "The sender's domain is currently unable to accept this message. Re-sending email in the future will most likely be successful.",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/error-codes"
+                        "https:\/\/senders.yahooinc.com\/smtp-error-codes"
                     ]
                 },
                 {
                     "response": "451 4.3.2 Internal server error",
                     "description": "The mail server encountered a temporary failure. Most likely it isn't anything to do with the session, but rather the server is overloaded or having issues. If you try again later, it should work.",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/error-codes"
+                        "https:\/\/senders.yahooinc.com\/smtp-error-codes"
                     ]
                 }
             ]

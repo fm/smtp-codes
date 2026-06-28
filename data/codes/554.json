@@ -38,39 +38,39 @@
             "name": "Yahoo",
             "responses": [
                 {
-                    "response": "554 delivery error: dd This user doesn't have a example.com account (example@example.com) [-9] - example.yahoo.com",
-                    "description": "",
+                    "response": "554 5.7.9 This mail has been blocked because it failed authentication checks against the sending domains DMARC policy.",
+                    "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to configure how to send a message that passes DMARC.",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/error-codes"
+                        "https:\/\/senders.yahooinc.com\/smtp-error-codes#dmarc-fail"
                     ]
                 },
                 {
                     "response": "554 delivery error: dd Sorry, your message to example@example.com cannot be delivered. This mailbox is disabled (554.30). - example.yahoo.com",
-                    "description": "Yahoo email addresses are used for lots of different services -- not just for receiving email. This bounce means that while this recipient is not using Yahoo's email service, the address itself exists for login purposes for other services. The best option is suppress this email address from your lists, as it hasn't used its inbox in a very long time (if ever). ",
+                    "description": "The message of the reciever is disabled. It may come back at somepint, or it may not. The best option is suppress this email address from your lists, as it hasn't used its inbox in a very long time.",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/error-codes"
+                        "https:\/\/senders.yahooinc.com\/smtp-error-codes"
                     ]
                 },
                 {
                     "response": "554 delivery error: dd Requested mail action aborted - example.yahoo.com",
                     "description": "",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/error-codes"
+                        "https:\/\/senders.yahooinc.com\/smtp-error-codes"
                     ]
                 },
                 {
                     "response": "554 5.7.9 Message not accepted for policy reasons.",
-                    "description": "",
+                    "description": "This rejection occurs out of suspicion that the message or sender is not trustowrthy. Review the URLs and images in your content. Once investigated and you can verify your messages are safe, you can request a review from the Yahoo Postmaster Support team.",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/error-codes"
+                        "https:\/\/senders.yahooinc.com\/contact"
                     ]
                 },
                 {
-                    "response": "554 Message not allowed - [PH01] Email not accepted for policy reasons. Please visit https:\/\/postmaster.yahooinc.com\/error-codes",
-                    "description": "This rejection occurs out of suspicion that the message or sender is phishing. Review the URLs and images in your content. Once investigated and you can verify your messages are safe, you can request a review from Verizon's support team. ",
+                    "response": "554 Message not allowed - [PH01] Email not accepted for policy reasons.",
+                    "description": "This rejection occurs out of suspicion that the message or sender is phishing. Review the URLs and images in your content. Once investigated and you can verify your messages are safe, you can request a review from the Yahoo Postmaster Support team. ",
                     "links": [
-                        "https:\/\/postmaster.yahooinc.com\/sender-request",
-                        "https:\/\/postmaster.yahooinc.com\/error-codes"
+                        "https:\/\/senders.yahooinc.com\/contact\/",
+                        "https:\/\/senders.yahooinc.com\/smtp-error-codes"
                     ]
                 },
                 {
@@ -78,20 +78,6 @@
                     "description": "Your message headers are not compliant. Double check your sending settings and parameters or ask your email provider for assistance.",
                     "links": [
                         "https:\/\/datatracker.ietf.org\/doc\/html\/rfc2822.html"
-                    ]
-                },
-                {
-                    "response": "554 Message not allowed - [299]",
-                    "description": "",
-                    "links": [
-                        "https:\/\/postmaster.yahooinc.com\/error-codes"
-                    ]
-                },
-                {
-                    "response": "554 delivery error: dd example@example.com is no longer valid. [-20] - example.yahoo.com",
-                    "description": "",
-                    "links": [
-                        "https:\/\/postmaster.yahooinc.com\/error-codes"
                     ]
                 }
             ]

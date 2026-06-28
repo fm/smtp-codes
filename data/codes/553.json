@@ -31,11 +31,11 @@
             "name": "Yahoo",
             "responses": [
                 {
-                    "response": "host xx.yahoodns.net [x.xx.xx.xx] SMTP error from remote mail server after MAIL FROM:<user@example.com> SIZE=2022: 553 5.7.1 [BL21] Connections will not be accepted from x.xx.xx.xx, because the ip is in Spamhaus's list; see http:\/\/postmaster.yahoo.com\/550-bl23.html",
+                    "response": "host xx.yahoodns.net [x.xx.xx.xx] SMTP error from remote mail server after MAIL FROM:<user@example.com> SIZE=2022: 553 5.7.1 [BL21] Connections will not be accepted from x.xx.xx.xx, because the ip is in Spamhaus's list",
                     "description": "Your IP is listed in the Spamhaus ZEN list. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.",
                     "links": [
                         "https:\/\/check.spamhaus.org",
-                        "https:\/\/postmaster.yahooinc.com\/error-codes"
+                        "https:\/\/senders.yahooinc.com\/smtp-error-codes"
                     ]
                 },
                 {
@@ -43,7 +43,7 @@
                     "description": "Your IP is listed in the Spamhaus XBL list. Spamhaus is a very reputable block list with few false-positive listings. Use the link below to check the status of your IP. You must cooperate with Spamhaus to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.",
                     "links": [
                         "https:\/\/check.spamhaus.org",
-                        "https:\/\/postmaster.yahooinc.com\/error-codes"
+                        "https:\/\/senders.yahooinc.com\/smtp-error-codes"
                     ]
                 }
             ]
