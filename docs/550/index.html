@@ -15,6 +15,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/assets/style.css?v={timestamp}">
 <script defer src="https://um.smtp.codes/script.js" data-website-id="242ddbfa-05fb-4370-b8ff-e9fe1958909e"></script>
+<script src="https://neatstats.net/view.js"></script>
 </head>
 
 <body>
@@ -333,7 +334,7 @@
 <dd><details><summary>550 5.1.8 &lt;sender@example.com&gt;: Sender address rejected: Domain not found (in reply to RCPT TO command)</summary><p class="info">Make sure your 'From' and 'Return-Path' (envelope-from used for SPF) domains exist can receive mail.</p></details></dd>
 <dd><details><summary>550 5.1.8 Domain of sender address does not exist</summary><p class="info">Make sure your 'From' and 'Return-Path' (envelope-from used for SPF) domains exist can receive mail.</p></details></dd>
 <dd><details><summary>550 5.5.2 &lt;email@example.com&gt;: Sender address rejected: need fully-qualified address (in reply to RCPT TO command)</summary><p class="info">Make sure your 'From' and 'Return-Path' (envelope-from used for SPF) domains exist can receive mail.</p></details></dd>
-<dd><details><summary>550 5.7.0 Email rejected per sender&#039;s DMARC policy</summary><p class="info">The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC.</p></details></dd>
+<dd><details><summary>550 5.7.0 Email rejected per sender&#039;s DMARC policy</summary><p class="info">The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to configure how to send a message that passes DMARC.</p></details></dd>
 <dd><details><summary>550 5.7.1 &lt;email@example.com&gt;: Recipient address rejected: User email address is marked as invalid.</summary><p class="info">The email address was marked as invalid by Proofpoint after being rejected by the recipient's mail server. If this is a valid address, the mail admin needs to remove it from the invalid list in the Proofpoint Admin Console.</p><ul>
 <li><a href="https://help.proofpoint.com/Proofpoint_Essentials/Email_Security/Administrator_Topics/110_logs/Common_Error_Codes_found_in_Message_Details">https://help.proofpoint.com/Proofpoint_Essentials/Email_Security/Administrator_Topics/110_logs/Common_Error_Codes_found_in_Message_Details</a></li>
 </ul>
@@ -572,7 +573,7 @@
 <div class="card">
 <dt id="yahoo">Yahoo<span class="top"><a href="#">↑</a></span></dt>
 <dd><details><summary>550 relaying denied for &lt;example@example.com&gt;</summary><p class="info">This domain is not hosted at Yahoo. There is little you can do, as it is likely a misconfiguration on the receipient's end.</p><ul>
-<li><a href="https://postmaster.yahooinc.com/error-codes">https://postmaster.yahooinc.com/error-codes</a></li>
+<li><a href="https://senders.yahooinc.com/smtp-error-codes">https://senders.yahooinc.com/smtp-error-codes</a></li>
 </ul>
 </details></dd>
 </div>
